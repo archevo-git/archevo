@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Register | ArchEvo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="William Cardoso">
+        <meta name="description" 
+            content="">
+        <base href="C:/_PROJETOS/archevo/">
+        <link rel="icon" href="imgs/_logos/logo-archevo-2.png">
+        <link rel="stylesheet" href="styles/auth.css">    
+    </head>
+
+    <body>
+        <form action="bla" autocomplete="on" method="POST">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <label>
+                    Nome Completo:<br>
+                    <input autofocus 
+                        id="full-name"
+                        maxlength="50"
+                        minlength="5"
+                        name="full-name"
+                        required
+                        type="text">
+                </label>
+                <label>
+                    Data de Nascimento:<br>
+                    <input required
+                        min="1900-01-01"
+                        type="date">
+                </label>
+                <label>
+                    Um pouco sobre mim:<br>
+                    <textarea></textarea>
+                </label>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Dados Profissionais</legend>
+                <label>
+                    Cargo:<br>
+                    <input type="select">
+                </label>
+                <label>
+                    Depto./Coordenação:<br>
+                    <input type="select">
+                </label>
+                <label>
+                    Gerência:<br>
+                    <input type="select">
+                </label>
+                
+            </fieldset>
+
+            <fieldset>
+                <legend>Dados de Login</legend>
+                <label>
+                    E-mail:<br>
+                    <input id="email" 
+                        name="email" 
+                        placeholder="email@servidor.com" 
+                        type="email">
+                </label>
+                <label>
+                    Senha:<br>
+                    <input id="pwd" 
+                        name="pwd" 
+                        placeholder="Ab@123" 
+                        type="password">
+                </label>
+            </fieldset>
+            <label>
+                <input id="termos"
+                    name="termos"
+                    type="checkbox">
+                Declaro que li e aceito os <a href="termos-de-uso.html" target="_blank">Termos de Uso</a>.
+            </label>
+            <input type="submit">
+        </form>
+    </body>
+
+</html>

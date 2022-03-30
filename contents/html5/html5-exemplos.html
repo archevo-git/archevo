@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>HTML5 - Exemplos (temp) | ArchEvo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" 
+            content="initial-scale=1.0, user-scalable=no, width=device-width">
+        <meta name="author" content="William Cardoso">
+        <meta name="description" 
+            content="O 'HTML5 - Básico' é uma página para consultas rápidas e aprendizado, que centraliza diversos conteúdos resumidos, links úteis, padrões, recomendações e boas práticas.">
+        <base href="C:/_TI-PROJETOS/_dev/archevo/">
+        <link rel="icon" href="medias/_logos/logo-archevo-2.png" type="image/x-icon">
+        <style>
+            *{
+                box-sizing: border-box; 
+            }
+
+            body{
+                background-color: #222;
+                color: white;
+                margin: 10px;
+                width: 100%;
+            }
+
+            #div1, #div2 {
+                float: left;
+                width: 300px;
+                height: 400px;
+                margin: 10px;
+                padding: 10px;
+                border: 1px solid #eee;
+            }
+
+            @media (min-width: 1000px) {
+                body{
+                    background-color: darkblue;
+                }
+            }
+
+            @media (min-width: 700px) and (max-width: 999px) {
+                body{
+                    background-color: darkgreen;
+                }
+            }
+
+            @media only screen{
+                body{
+                    background-color: black;
+                    color: #eee;
+                }
+            }
+
+            @media only print{
+                body{
+                    background-color: #eee;
+                    color: black;
+                }
+            }
+
+            
+            .box-item{
+                border: 2px solid blue;
+                height: 200px;
+                width: 200px;
+            }
+
+            .box-container{
+                display: flex;
+            }
+
+            @media (orientation: landscape){
+                .box-container{
+                    flex-direction: row;
+                }
+            }
+
+            @media (orientation: portrait){
+                .box-container{
+                    flex-direction: column;
+                }
+            }
+        </style>
+        <script src="scripts/js-exemplos.js"></script>
+        <script src="scripts/js-ex1-video1.js"></script>
+    </head>
+
+    <body>
+        <div id="video-ex1" style="margin: 1%;"> 
+            <video
+                autofocus
+                autoplay
+                controls
+                
+                id="video1"
+                poster="medias/examples/enzo-into-a-egg.JPG"
+                width="250"> 
+                <!--
+                    autofocus
+                    autoplay 
+                    loop 
+
+                    poster => imagem inicial do video
+                    preload="none/auto/metadata" => Pré-carrega a mídia para ser reproduzida
+                    muted
+                -->
+              <source src="medias/examples/VFTO0677.MP4" type="video/mp4">
+              <source src="" type="video/ogg">
+              Your browser does not support HTML video.
+            </video>
+            <br>
+            <button onclick="playPause()">Play/Pause</button> 
+            <button onclick="makeBig()">Big</button>
+            <button onclick="makeSmall()">Small</button>
+            <button onclick="makeNormal()">Normal</button>
+        </div>
+        <br>
+        <div id="audio-ex1" style="margin: 1%;">
+            <audio autoplay controls>
+                <source src="medias/examples/ground_truth.wav" type="audio/ogg">
+                <source src="" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <br>
+        <div id="iframe-ex1" style="margin: 1%;">
+            <iframe controls height="345" 
+                src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=0&mute=0&loop=0">
+            </iframe>
+        </div>
+        <br>
+        <div id="geo-location-ex1">
+            <p>Click the button to get your coordinates.</p>
+            <button onclick="getLocation()">Geo Location. Try It!</button>
+            <p id="demo"></p>
+        </div>
+        <br>
+        <div id="drag-and-drop-ex1" style="display: inline;">
+            <strong>Drag and Drop</strong>
+            <p>Drag the image back and forth between the two div elements.</p>
+
+            <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img src="medias/examples/enzo-jumping.JPG" draggable="true" ondragstart="drag(event)" id="drag1" width="100%">
+            </div>
+            <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+        <br>
+
+        <div id="media-ex1" class="box-container">
+            <div class="box-item">Caixa-1</div>
+            <div class="box-item">Caixa-2</div>
+            <div class="box-item">Caixa-3</div>
+            <div class="box-item">Caixa-4</div>
+        </div>
+    </body>
+</html>

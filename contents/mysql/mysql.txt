@@ -1,0 +1,31 @@
+Intro
+    - Comandos terminam com ";"
+    - Char armazenamento fixo (exemplo: UF), Varchar armazenamento variável;
+
+CREATE DATABASE Burger;
+SHOW DATABASES;  --no plural
+USE Burger;
+
+CREATE TABLE NossoProduto(
+    id          INT             DEFAULT '0000' NOT NULL AUTO_INCREMENT,
+    nome        VARCHAR(50)     NOT NULL,
+    descricao   VARCHAR(500)    NOT NULL,
+    preco       DECIMAL(5,2)    DEFAULT '0,00' NOT NULL,
+    PRIMARY KEY(id));
+)
+
+SHOW TABLES;
+
+INSERT INTO NossoProduto (nome, descricao, preco) VALUES
+('X-Salada', 'O X-Salada vem com um hambúrguer de 120g, alface americana, tomate, cebola roxa, maionese e molho especial, dentro de um pão com gergelim', '12.90'),
+('X-Bacon', 'Feito com bacons selecionados, o X-Bacon contém um hambúrguer de 120g, alface americana, cebola roxa, maionese e molho especial, dentro de um pão com gergelim', '16.90');
+
+SELECT * FROM NossoProduto;
+ALTER TABLE NossoProduto ADD COLUMN observacao VARCHAR (500) AFTER preco;
+ALTER TABLE NossoProduto MODIFY COLUMN nome VARCHAR(100) NOT NULL;
+ALTER TABLE NossoProduto CHANGE COLUMN nome nome_produto VARCHAR(100) NOT NULL;
+ALTER TABLE NossoProduto DROP COLUMN observacao;
+
+alter add column
+first
+after nome

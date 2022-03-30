@@ -1,0 +1,5 @@
+O QUE são?
+
+  Para ajudar a manter a disponibilidade do aplicativo quando um único componente falha, você pode projetar esse aplicativo por uma abordagem de microsserviços.
+
+  Em uma abordagem de microsserviços, os componentes do aplicativo têm um acoplamento fraco. Neste caso, se um único componente falhar, os outros componentes continuarão funcionando porque estarão em comunicação uns com os outros. O acoplamento fraco evita a falha completa do aplicativo.

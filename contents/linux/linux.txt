@@ -1,0 +1,140 @@
+O QUE é?
+
+  Linux é um termo popularmente empregado para se referir a sistemas operativos ou sistemas operacionais que utilizam o Kernel Linux, um núcleo desenvolvido pelo programador finlandês Linus Torvalds, inspirado no sistema Minix.
+
+  É de código aberto – O código está disponível publicamente e os usuários podem modificá-lo e expandi-lo.
+  Pode ser usado por vários usuários e é multitarefa.
+  É criado para lidar com redes.
+  Fornece ferramentas e utilitários do sistema.
+
+COMO funciona o Shell?
+  Quando você usa a CLI, o shell selecionado define a lista de comandos e funções que você pode executar. Um shell interpreta o comando que você digita e chama o componente do kernel apropriado que executa o comando.
+
+  Existem muitos tipos de shells que você pode usar, e cada distribuição Linux define os tipos com os quais é compatível.
+
+  O bash shell é o shell padrão do Linux. 
+  Normalmente, é o único shell que você deve conhecer para o Linux. 
+  Cada shell tem sua própria sintaxe ou forma de formatar comandos. 
+  O shell fornece o prompt de comando.
+
+  sh: Este é o shell original do Unix e a base de muitos dos shells do Linux.
+  bash: Este é o shell padrão do Linux e representa um superconjunto da funcionalidade do shell Bourne.
+  ksh: este é um shell Unix comum que também estende o shell Bourne.
+
+QUAIS os principais componentes?
+  Kernel: Fornece a funcionalidade principal do sistema operacional • Fornecem suporte extra para o sistema ou o usuário.
+    Um kernel do sistema operacional é: 
+      – Um programa de computador 
+      – Controlador de tudo no sistema operacional
+    O kernel do Linux gerencia:
+      – Agendamento do tempo do processador 
+      – Alocação de memória para o sistema operacional e para aplicativos 
+      – Acesso a dispositivos periféricos (placa de som, unidade de disco rígido, placa de rede, entre outros)
+
+  Daemons: Incluem programas como editores de texto, navegadores da Web e bancos de dados.
+    • São programas de computador executados em segundo plano 
+    • Não estão sob o controle de um usuário interativo 
+    • Normalmente, fornecem um serviço de sistema 
+    • Os nomes dos processos costumam terminar com a letra d
+      • Exemplos: 
+        – syslogd: Quando aplicativos do sistema ou do usuário geram mensagens, o daemon syslogd captura as mensagens e as armazena em um arquivo, que é chamado de log.  
+        - sshd: O daemon sshd lida com conexões Secure Shell (SSH) com o computador. Esse tipo de conexão usa criptografia para proteger a comunicação entre o cliente e o servidor.
+
+  Aplicativos: Incluem conteúdo do usuário, como arquivos de texto, arquivos de música e arquivos de imagem;
+
+  Arquivos de Configuração: Contêm configurações para Linux, serviços e aplicativos Arquivos de configuração armazenados em arquivos de texto.
+    Os arquivos de configuração são um tipo especial de arquivo que contém configurações iniciais ou armazena valores para um programa do sistema. 
+      • Exemplo: o arquivo /etc/group contém a lista de usuários autorizados a usar o sistema.
+
+    As extensões comuns de nome de arquivo de configuração são: 
+      – .cnf 
+      – .conf 
+      – .cfg 
+      – .cf 
+      – .ini
+
+O QUE é o man?
+  • As páginas de manual do Linux, ou páginas man, contêm a documentação dos comandos do Linux.
+  • As páginas do manual fornecem um breve resumo da finalidade, da sintaxe e das opções associadas a um comando específico.
+  • Você pode acessar as páginas man usando o comando man.
+
+  Comando Man
+    - Permite visualizar a página man de um comando
+    - Informações comuns exibidas para um comando: 
+      – Nome 
+      – Sinopse 
+      – Descrição 
+      – Opções
+    - Sintaxe: man <commandName> 
+    - Exemplo: man ma
+
+  Recursos do comando man:
+    • Normalmente, você usa o comando man para determinar a sintaxe de um comando e as opções disponíveis.
+    • Você pode navegar pelas várias páginas da documentação usando os botões do teclado: 
+      • Tecla de seta para cima ou para baixo: rola para cima ou para baixo uma linha, respectivamente
+      • Page Up ou Page Down: rola uma página para cima ou para baixo, respectivamente 
+      • Barra de espaço: rola uma página para baixo
+    • Para procurar uma string na documentação, use a tecla de barra: 
+      • /<searchString>
+    • Digite q para sair da documentação. 
+
+QUAIS as principais distribuições do Linux?
+  • Normalmente, você usa o comando man para determinar a sintaxe de um comando e as opções disponíveis.
+  • Você pode navegar pelas várias páginas da documentação usando os botões do teclado: • Tecla de seta para cima ou para baixo: rola para cima ou para baixo uma linha, respectivamente
+  • Page Up ou Page Down: rola uma página para cima ou para baixo, respectivamente • Barra de espaço: rola uma página para baixo
+  • Para procurar uma string na documentação, use a tecla de barra: • /<searchString>
+  • Digite q para sair da documentação.
+
+O QUE o PuTTy?
+  https://www.putty.org/
+
+Contas de usuário
+  • As contas de usuário representam os usuários no sistema. 
+  • As informações do usuário podem ser armazenadas localmente ou em outro servidor acessível por meio de uma rede.
+  • Quando as informações são armazenadas localmente, o Linux as armazena no arquivo /etc/passwd/.
+  • A prática recomendada é atribuir um usuário por conta. 
+  • Não compartilhe contas.
+
+QUAIS as vantagens?
+
+QUAIS as desvantagens?
+
+/etc/passwd
+  Ele é formatado como um arquivo separado por dois-pontos que contém as seguintes informações: 
+    • Nome do usuário 
+    • Senha criptografada 
+    • ID de usuário 
+    • ID do grupo do usuário 
+    • Nome completo do usuário 
+    • Diretório inicial do usuário 
+    • O shell que é usado após o login
+
+O QUE são grupos de usuários?
+  • Um grupo é um conjunto de contas. 
+  • Os grupos são uma maneira conveniente de associar contas de usuário a necessidades de segurança semelhantes.
+  • Por exemplo, é mais fácil conceder permissões a um grupo de quatro usuários do que conceder permissões individualmente a cada um dos quatro usuários individualmente.
+  • O local de armazenamento para grupos é o arquivo /etc/grupo.
+
+QUAIS são os tipos de usuários
+  root
+    • Acessa qualquer arquivo 
+    • Altera qualquer arquivo 
+    • Controla os serviços 
+    • Gerencia qualquer conta 
+    • Gerencia o hardware 
+    • Gerencia o Kernel do Linux 
+    • Gerencia o software
+
+  padrão
+    • Acessa todos os arquivos se tem permissões para fazer isso
+    • Controla todos os arquivos de propriedade do usuário
+    • Acesso limitado para gerenciar o sistema
+
+QUAIS são as diferenças do comando su em comparação ao comando sudo?
+• O comando su ativa permissões administrativas completas. 
+  • Usado quando todas as permissões administrativas são necessárias 
+  • Os usuários são solicitados a fornecer a senha raiz
+
+• O comando sudo ativa apenas as permissões delegadas. 
+  • É usado para delegar uma tarefa administrativa específica a um usuário padrão específico
+  • Os usuários são solicitados a fornecer sua própria senha  

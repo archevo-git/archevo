@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Login | ArchEvo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="William Cardoso">
+        <meta name="description" 
+            content="">
+        <base href="C:/_PROJETOS/archevo/">
+        <link rel="icon" href="imgs/_logos/logo-archevo-2.png">
+        <link rel="stylesheet" href="styles/auth.css">
+        <style>
+            *{
+                box-sizing: border-box; 
+                margin: 0;
+                padding: 0;
+            }
+
+            body{
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                margin: 10%
+            }
+
+            label{
+                display: block;
+                font-size: 1.1vw;
+                margin-bottom: 10px;
+                margin-top: 10px;
+            }
+
+            input{
+                padding: 0.5%;
+            }
+
+            input[type=text],
+            input[type=email],
+            input[type=password]{
+                border: 1px solid #ffec00;
+                border-radius: 10px;
+                font-size: 1.1vw;
+                /* outline: 0; */
+                /* width: 100%; */
+            }
+        </style>
+    
+    </head>
+
+    <body class="">
+        <section>
+            <label>
+                E-mail:<br>
+                <input autofocus
+                    id="email" 
+                    name="email"
+                    maxlength="50"
+                    placeholder="email@servidor.com"
+                    required
+                    size="80"
+                    type="email">
+            </label>
+            <label>
+                Senha:<br>
+                <input id="pwd" 
+                    name="pwd" 
+                    placeholder="Ab@123"
+                    required
+                    type="password">
+            </label>
+        </section>
+    </body>
+
+</html>

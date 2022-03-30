@@ -1,0 +1,72 @@
+REACT
+
+O QUE é?
+
+    - Biblioteca JavaScript
+    - Permite criar páginas web e interfaces de usuário interativas puramente com JavaScript;
+    - React gera e insere HTML dentro de um contêiner HTML pré-existente, como um elemento <div> em sua página;
+    - React usa JSX (JavaScript XML), uma sintaxe de marcação que combina User Interface (UI) com lógica;
+    - Basicamente o JSX fala ao browser o que renderizar e como;
+
+--------------------------------
+Pré-Requisitos e Preaparação do Ambiente:
+
+    - Instalar Node.js;
+    - Instalar VSCode;
+    - Instalar npm;
+    - Instalar react através do cmd ou PowerShell: npm install react (Opcional ?);
+    - Criar o app com o npx create-reactapp nome_aplicacao
+--------------------------------
+Primeiros Passos
+
+    - No documento HTML, crie um elemento com um ID para indicar onde o React irá inserir o conteúdo:
+        <div id="root"><div>
+    - Crie um script React com a extensão .jsx;
+    - No começo desse script, importe o React e um segundo pacote chamado ReactDOM para renderizar seu conteúdo em uma 
+    página da web:
+        import React from "react";
+        import ReactDOM from "react-dom";
+    - Chame a função que faz essa renderização:
+        ReactDOM.render();
+    - Como parâmetro dessa função, passe qual conteúdo e onde ele será renderizado:
+        ReactDOM.render(
+            <h1>Título</h1>,
+            document.getElementByID("root")
+        );
+
+-------------------------------------
+JSX e Expressões Embutidas
+
+- É possível usar variáveis com JSX:
+    var header = <h1>Título</h1>
+- É possível também usar variáveis para inserir JSX dentro de outros elementos, usando Expressões Embutidas:
+    var app = <div>{header}</div>
+- Expressões Embutidas são valores envolvidos por chaves {}, dentro de um elemento JSX existente;
+- Expressões Embutidas também trabalham com strings e booleans, por exemplo:
+    var name = "Domain-Driven Design";
+    var app = <div>Muito bom o livro {name}</div>
+- Também é possível passar os valores para os atributos dos elementos JSX;
+
+------------------------------------
+Componentes Funcionais
+
+- Aplicativos React dependem de blocos de contrução chamados componentes;
+- Componentes Funcionais são funções especiais que retornam elementos JSX individuais;
+- Uma vez criado o componente funcional, podemos renderizá-lo com a marcação JSX;
+- Usamos a palavra-chave props como argumento para acessar os valores passados pelos atributos JSX; 
+
+------------------------------------
+Componentes de Classe
+
+- Componentes de classe são criadas com classes, templates que para objetos que 
+mantém na informação o que pode mudar com o tempo;
+- 
+
+
+
+
+
+-------------------------------
+Padrões Básicos
+
+- Aplicativos React geralmente usam o nome "App" para o componente superior 

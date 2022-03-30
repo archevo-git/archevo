@@ -1,0 +1,81 @@
+pt-br
+
+###############
+Tamanhos da Fonte na Resolução para 1366x768
+
+3.3vw = 40px: header h1
+2.2vw = 30px: header h2
+1.69vw = 23px: h3
+1.32vw = 18px: main
+1.25vw = 17px: nav top-menu
+1.18vw = 16px: 
+
+nav - height: 50px;
+nav img-home - width: 20%;
+
+header - height: 250px;
+header - margin-top: 50px;
+header img-logo - width: 40%;
+
+aside - width: fit-content; (65px)
+aside icons - background-size: 55px;
+
+main - font-size: 1.25vw;
+
+
+-----
+Tamanhos da Fonte na Resolução para Celular
+
+nav - height: 60px;
+nav img-home - width: 50%
+nav top-menu: font-size: 3.75vw;
+
+header - height: 36vw;
+header - margin-top: 60px;
+header h1 - font-size: 40px = 6.6vw;
+header h2 - font-size: 30px = 4.4vw;
+header img-logo - width: 75%;
+
+aside - width: 55px;
+aside icons - background-size: 45px;
+
+main - font-size: 3.75vw; (igual ao nav top-menu)
+
+-----
+Tamanhos da Fonte na Resolução para Tablet
+
+nav - height: 6.5vh;
+nav img-home - width: 30%;
+nav top-menu: font-size: 1.7vw;
+
+header - height: 27vw;
+header - margin-top: 6.5vh;
+header h1 - font-size: 40px = 4.95vw;
+header h2 - font-size: 30px = 3.3vw;
+header img-logo - width: 63%; (sempre se lembrar da margem aplicada)
+
+aside - width: fit-content (60px);
+aside icons - background-size: 50px;
+
+main - font-size: 1.7vw; (igual ao nav top-menu)
+
+############### 
+Implantação
+
+- Alterações das Páginas da Pasta "archevo/contents/"
+
+
+
+---------
+Manutenções:
+- Corrigir hover dos links summary do aside - OK
+- Segregar CSS dos ícones do menu lateral para centralizar em um arquivo as configrurações que serão usadas em várias páginas - OK
+- Organizar nomes de classes
+- Configurar responsividade do logo do header
+- Configurar responsividade do <aside>
+- Rever áreas dos links da lateral direita - OK
+- Rever links do <nav>
+- Corrigir tamanho variável da área de links  da direita - OK
+- Configurar para que quando o <details> do <article> estiver aberto, o <details> da área de links se abra também e vice-e-versa
+- Criar JavaScript para maior responsividade com os marcadores dos <details>
+- Configurar responsividade das imagens dos <article> (emeplo no tópico das listas)

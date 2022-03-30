@@ -1,0 +1,20 @@
+
+####################################
+PADRÕES BÁSICOS
+
+Nomenclaturas:
+- Variáveis:
+--- Pode começar com letra mínuscula ou underscore(_);
+--- Pode conter letras (A-z), números e underscore(_);
+--- Deve ser significativa e declarativa;
+--- Deve ser no padrão "snake case";
+--- Exemplo: nome_do_usuario
+ Operações e Comparações:
+ - O espaço envolta dos operadores (como +, %, >) é opcional, mas é recomendado para facilitar a leitura do código.
+
+ - Funções:
+ -- Possui quase todas as características dos nomes de variáveis, mas começam com verbo;
+ -- As que retornam valores, geralmente iniciam com "get", "compute" ou "calculate";
+ -- Funções similares devem usar o mesmo verbo inicial, como "calculate_sum" e "calculate_difference";
+ -- Funções que retornam boolean, geralmente iniciam com "is", "has" e "can"
+

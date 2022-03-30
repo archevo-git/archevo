@@ -1,0 +1,998 @@
+CSS
+
+  https://www.w3schools.com/css/css_examples.asp
+  https://www.w3schools.com/css/css_rwd_templates.asp
+  https://www.w3schools.com/css/css_quiz.asp
+
+-----
+O .css é lido de cima para baixo e a posição que os estilos são definidos interfere no resultado final;
+-----------------------------
+Seletores
+
+  Seletores: Herança
+
+  - prop de texto são herdadas
+  - prop de estrutura não são herdadas 
+
+  --------------------
+  Seletores: Especifidade 
+
+  A especificidade é como o navegador decide/verifica qual regra se aplica se várias regras têm seletores diferentes, que poderiam ser aplicadas ao mesmo elemento. É basicamente uma medição de qual das regras/caracteristicas específica será a mais indicada/específica de um seletor:
+  - Um seletor de elemento é menos específico - ele selecionará todos os elementos daquele tipo que aparecem em uma página - portanto, obterá uma pontuação mais baixa.
+  - Um seletor de classe é mais específico - ele selecionará apenas os elementos em uma página que possuem um valor de atributo de classe específico - portanto, obterá uma pontuação mais alta.
+
+  .container{color:red;}
+  div{color:blue;}
+
+------------------------
+Cascata
+
+  - CSS lido de cima pra baixo;
+  - CSS Externo >> CSS Embutido >> CSS Inline;
+
+-------------------
+
+Width e height
+
+  - Sempre lembrar que existem a largura e altura do padding e da margin também;
+  - min-height e max-height tem prioridade sobre height;
+  - min-width e max-width tem prioridade sobre width;
+
+-------------------
+Unidades de Medida
+
+  Medidas Absoluta:
+  - pl, pt, in, cm, mm
+
+  Medidas Relativas à Fonte:
+  - em: Baseado nas medidas da fonte do elemento pai, diretamente anterior. Padrão 1em = 16px. Fontes
+  - rem: Baseado nas medidas da fonte do elemento pai raiz. Fontes
+  - %: Baseado nas medidas do elemento pai, diretamente anterior. Estruturas
+  - ex: Baseado nas medidas da letra "x" da fonte do elemento pai, diretamente anterior. 
+  - ch: Tamanho dos caracteres das fontes monoespaçadas (onde todos os caracteres tem a mesma largura). Fontes
+  - vh: 100vh = 100% da altura da tela visível
+  - vw: 100vw = 100% da largura da tela visível
+  - vmin: verifica na largura e altura quem é o menor e o usa como referência
+  - vmax: verifica na largura e altura quem é o maior e o usa como referência
+
+-----------------
+inherit
+
+  -mais usado para fontes;
+
+------------------
+color
+
+  border: 1px solid currentColor; /*aproveita a cor do elemento pai */
+
+--------------
+Box-Sizing
+
+  content-box
+    Essa é o estilo padrão, conforme especificado pela norma CSS. As propriedades width (largura) e height (altura) são medidas incluindo só o conteúdo, mas não o padding, border ou margin. Nota: Padding, border e margin serão fora da box. Exemplo.: Se .box {width: 350px} então se você aplicar uma propriedade {border: 10px solid black;} o resultado renderizado no navegador (browser) será .box {width: 370px;}
+  padding-box 
+    As propriedades de largura (width) e de altura (height) incluem o tamanho padding size, mas não incluem a propriedade border ou margem.
+  border-box
+    As propriedades de largura (width) e de altura (height) incluem o tamanho padding size e a propriedade border, mas não incluem a propriedade margin.
+
+---------------------
+Text
+
+  letter-spacing: 4px OU -1.5px OU normal;
+  line-height: 0.8;
+  line-height: 10px;
+  line-height: 1.8;
+  text-align: left OU center OU right OU justify;
+  text-decoration: none OU overline OU underline OU line-through;
+    - Podem ser combinados;
+  text-indent: 60px;
+  text-shadow: DIREITA-BAIXO-BLUR-COR
+  text-transform: capitalize OU uppercase OU lowercase;
+  vertical-align: top OU middle OU bottom OU baseline OU sub OU super OU -10px;
+    - display: inline-table OU table-cell; permitem o alinhamento vertical do texto no <div>;
+  white-space: nowrap;
+  word-spacing: 4px OU -1.5px OU normal;
+  word-wrap: 
+
+
+  p {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+  }
+  --------------------
+  Fontes
+  - https://www.w3schools.com/css/css_font.asp
+
+  - Fontes Externas
+
+  - Google Fonts - https://fonts.google.com/
+  - Escolhe a fonte e copia a URL;
+
+---------------------
+Links 
+
+  The target attribute specifies where to open the linked document.
+
+  The target attribute can have one of the following values:
+
+  _self - Default. Opens the document in the same window/tab as it was clicked
+  _blank - Opens the document in a new window or tab
+  _parent - Opens the document in the parent frame
+  _top - Opens the document in the full body of the window
+
+  a {
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
+  }
+
+  a:link {
+    color: #265301;
+  }
+
+  a:visited {
+    color: #437A16;
+  }
+
+  a:focus {
+    border-bottom: 1px solid;
+    background: #BAE498;
+  }
+
+  a:hover {
+    border-bottom: 1px solid;
+    background: #CDFEAA;
+    text-decoration: underline;
+  }
+
+  a:active {
+    background: #265301;
+    color: #CDFEAA;
+  }
+
+--------------------------------
+Links como botões
+
+  <ul>
+    <li><a href="#">Home</a></li><li><a href="#">Pizza</a></li><li><a href="#">Music</a></li><li><a href="#">Wombats</a></li><li><a href="#">Finland</a></li>
+  </ul>
+
+  body,html {
+    margin: 0;
+    font-family: sans-serif;
+  }
+
+  ul {
+    padding: 0;
+    width: 100%;
+  }
+
+  li {
+    display: inline;
+  }
+
+  a {
+    outline: none;
+    text-decoration: none;
+    display: inline-block;
+    width: 19.5%;
+    margin-right: 0.625%;
+    text-align: center;
+    line-height: 3;
+    color: black;
+  }
+
+  li:last-child a {
+    margin-right: 0;
+  }
+
+  a:link, a:visited, a:focus {
+    background: yellow;
+  }
+
+  a:hover {
+    background: orange;
+  }
+
+  a:active {
+    background: red;
+    color: white;
+  }
+
+---------------------------
+Lista
+
+  Para <ul>, use <li>:
+  - list-style-type para estilizar o bullet da lista;
+
+-------------------------------
+Tabelas
+
+  Linhas alternadas:
+
+  tbody tr:nth-child(even){
+    background-color: #ddd;
+  }
+
+--------------------------------
+Box Model
+
+-------------------------------
+Funções:
+
+  background: linear-gradient(lightCyan, skyBlue, deepSkyBlue);
+  background: linear-gradient(90deg, yellow, lightGreen);
+  filter: blur(10px);
+  filter: brightness(50%);
+  filter: contrast(50%);
+  filter: grayscale(50%);
+  filter: opacity(100%);
+  filter: saturate(50%);
+  transform: rotate(-10deg);
+
+-------------------------------------
+Span
+
+  <span class="xpto"></span>
+
+------------------------------------
+Estilizando Grupos de Elementos
+
+<div>
+
+-------------------------------------
+Classes e ids
+
+
+-------------------------------------
+Combinando Múltiplas Classes
+
+<div class="bold italic"></div>
+
+-------------------------------------
+Agrupando Seletores
+
+p, .class, #id {}
+
+-------------------------------------
+Exibindo Elementos
+
+  Inline: a, em, li, strong - não começa em uma nova linha - ocupa apenas a largura necessária.
+  - não possui margem superior e inferior - não pode conter um elemento de nível de bloco - 
+
+  Block: p, h1..h6, div - começa em uma nova linha - ocupa toda largura disponível - possui margem inferior e superior
+
+  Inline-block: button, img
+
+-------------------------------------
+Imagens Flutuantes
+
+  img {
+  width: 30%;
+  float: right;
+  }
+
+  .second {
+  clear: right;
+  }
+
+----------------------------------
+Relative Position
+
+  - Muda a posição dos elementos em relação às suas posições originais;
+  - Respeita o fluxo normal;
+
+  em {
+  background-color: #ffecd2;
+  position: relative;
+  left: 30px;
+  }
+
+----------------------------------
+Absolute Position
+
+  - Posiciona os elementos com base nas bordas da página;
+  - Não respeita o fluxo normal;
+  - Elementos flutuando;
+
+ - position: fixed; --fixa em um ponto da tela
+----------------------------------
+Z-index
+
+  - Define qual elemento vai ficar na frente ou atrás de outro;
+
+----------------------------------
+Prefixo de Fornecedor CSS
+
+  -webkit: Safari e Chrome;
+  - 
+
+----------------------------------
+Flexbox (display: flex)
+  - Usado para criar páginas web responsivas;
+  - Adapta o tamanho dos elementos para serem exibidos em diferentes telas;
+  - Se tivermso 2 itens com 100px, mas seu contêiner tiver apenas 150px, os itens serão redimensionados para caberem no contêiner;
+  - Flexbox faz os elementos aninhados (flex items) adaptarem seus tamanhos para se ajustarem ao tamanho do elemento pai (flex container);
+  - a largura de um flex item depende da largura dos seu conteúdo;
+
+  - display: flex:
+  --- Declarado no flex container;
+  --- Primeiro passo para trabalhar com o Flexbox;
+  --- Afeta elementos inline, block, inline-block;
+
+  - flex-direction:
+  --- Declarado no flex container;
+  --- Direção dos flex items em relação ao flex container;
+  --- Valores: row (valor padrão), column, row-reverse, column-reverse;
+  --- Início e Eixos:
+      row (left) e row-reverse (right)
+      - Eixo principal: horizontal
+      - Eixo transversal: vertical
+
+      column (top) e column-reverse (down)
+      - Eixo principal: vertical
+      - Eixo transversal: horizontal
+
+  - justify-content: 
+  --- Declarado no flex container;
+  --- Define como os elementos serão agrupados e espaçados no eixo principal;
+  --- Valores: 
+  ------ flex-start (valor padrão): itens agrupados juntos no começo do contêiner;
+  ------ flex-end: itens agrupados juntos no final do contêiner;
+  ------ center: centraliza os itens dentro do contêiner;
+  ------ space-around: itens bem espaçados no contêiner;
+  ------ space-between: espaço entre os itens e o primeiro e o último item tocando as bordas do contêiner;
+
+  - align-items:
+  --- Declarado no flex container;
+  --- Alinha os itens em relação ao eixo transversal;
+  --- Valores:
+  ------ stretch (valor padrão): Preenche o eixo transversal inteiro;
+  ------ flex-start: Os itens se adaptam ao tamanho do seu conteúdo e ficam no começo do eixo transversal;
+  ------ flex-end: Os itens se adaptam ao tamanho do seu conteúdo e ficam no fim do eixo transversal;
+  ------ center: Centraliza os itens no contêiner;
+
+  - flex-wrap: 
+  --- Declarado no flex container;
+  --- Controla o comportamento quando os flex items não cabem dentro do flex container;
+  --- Pode ser útil para os itens não ultrapassarem as bordas do contêiner;
+  --- Valores:
+  ------ nowrap (valor padrão): permite o transbordo dos itens para fora do contêiner;
+  ------ wrap: os itens vão para uma nova linha quando não cabem mais na mesma;
+  ------ wrap-reverse: os itens vão para uma linha acima quando não cabem mais na mesma linha;
+
+  - align-content:
+  --- Declarado no flex container;
+  --- Controla o espaço entre as linhas quebradas (gera das com o flex-wrap);
+  --- Afeta todo o grupo de conteúdos ou itens;
+  --- Afeta as linhas ao longo do eixo principal;
+  --- Valores:
+  ------ stretch (valor padrão): As linhas de flex items se estendem no eixo transversal;
+  ------ flex-start: As linhas começam no topo do contêiner;
+  ------ flex-end: As linhas são puxadas para o fim do contêiner;
+  ------ center: As linhas são agrupadas no centro do eixo principal;
+  ------ space-around: Adiciona espaço entre as linhas ao longo do eixo principal;
+  ------ space-between: Adiciona espaço entre as linhas, mas remove o espaço perto das bordas;
+
+  - flex-basis:
+  --- Declarado no flex item;
+  --- Muda o tamanho dos flex items ao longo do eixo principal;
+  --- Valores:
+  ------ auto (valor padrão): os flex items são apenas tão amplos quanto seus conteúdos;
+  ------ XXXpx: define a largura dos flex items em pixels;
+  ------ XXX%: define a largura dos flex items em porcentagem;
+  ------ mix: 
+
+  - flex-grow:
+  --- Declarado no flex item;
+  --- Controla como um flex item cresce ao longo do eixo principal;
+  --- Valores:
+  ------ 0 (valor padrão): Indica que o elemento não cresce; 
+  ------ 1: Indica que o elemento cresce mais que àqueles que forem definidos com 0;
+  ------ 100, 20, etc.
+
+  -flex-shrink:
+  --- Declarado no flex item;
+  --- Controla como um flex item encolhe ao longo do eixo principal
+  --- Valores:
+  ------ 1 (valor padrão): Indica que o elemento irá encolher mais que os itens definidos como 0;
+  ------ 0: Indica que o elemento não irá encolher;
+  ------ 10, 20, etc.
+
+  - O align-self, que é definido no item, tem prioridade sobre o align-items do contêiner;
+  -flex: 1;
+  -order:-1; /* Ordena primeiro pela numeração, depois pela ordem que foi definido no HTML */
+
+  Shorthands
+  flex: 0 1 auto; /* grow | shrink | basis */
+  flex-flow: row nowrap; /* flex-direction | flex-wrap */
+
+################################################
+CSS Grid 
+
+  <div class="grid-container-ex0">
+    <div class="grid-item-ex0 item-1-ex0">Item 1</div>
+    <div class="grid-item-ex0 item-2-ex0">Item 2</div>
+    <div class="grid-item-ex0 item-3-ex0">Item 3</div>
+  </div>
+
+  .grid-container-ex0{
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 50px 100px 50px;
+    grid-template-rows: repeat(3, 20px);
+  }
+
+  .grid-item-ex0{
+    text-align: center;
+  }
+
+  .item-1-ex0{
+    grid-column: span 2;
+    grid-row: span 3;
+  }
+
+  .item-2-ex0{
+    grid-column: span 2;
+    grid-row: span 3;
+  }
+
+  .item-3-ex0{
+    grid-column: span 2;
+    grid-row: span 3;
+  }
+
+  >>>>>>>
+  <div class="grid-container-ex1">
+    <div class="grid-item-ex1 item-header-ex1">Area 1</div>
+    <div class="grid-item-ex1 item-2-ex1">Area 2</div>
+    <div class="grid-item-ex1 item-3-ex1">Area 3</div>
+  </div>
+
+  .grid-container-ex1{
+    display: grid;
+    gap: 5px;
+    grid-template-areas: 
+      "header header header header"
+      "aside main main main"
+      "aside main main main"
+      ". footer footer .";
+  }
+
+  .grid-item-ex1{
+    text-align: center;
+  }
+
+  .item-header-ex1{
+    grid-area: header;
+  }
+
+  .item-main-ex1{
+    grid-area: main;  
+  }
+
+  .item-aside-ex1{
+    grid-area: aside;
+  }
+
+  .item-footer-ex1{
+    grid-area: footer;
+  }
+
+---------------------------------
+.container {
+ border: solid 2px #806868;
+ display: flex;
+ flex-direction: column-reverse;
+ justify-content: center;
+ align-items: flex-start;
+ height: 300px;
+}
+
+.item {
+ border: 2px solid #457081;
+ margin: 10px;
+ width: 150px;
+}
+
+
+___________
+
+
+<!doctype html>
+<html>
+ <head>
+  <style>
+   body {
+    font-family: "Helvetica Neue";
+    text-align: center;
+   }
+
+   h1 {
+    color:darkBlue;
+   }
+
+   img {
+    border-radius: 10px;
+    margin-top: 8px;
+    margin-left: 2px;
+    margin-right: 2px;
+   }
+  </style>
+ </head>
+ <body>
+  <img src="https://mimo.app/r/insta.svg">
+  <br> 
+  <img src="https://mimo.app/r/helen.png">
+  <h1>hotrod-helen</h1>
+  <p><em>verified account</em></p>
+  <p>Cars so hot you can fry an egg on them.</p>
+  <img src="https://mimo.app/r/lada.png">
+  <img src="https://mimo.app/r/buggy.png">
+  <img src="https://mimo.app/r/coupe.png">
+  <br>
+  <img src="https://mimo.app/r/ford.png">
+  <img src="https://mimo.app/r/truck.png">
+  <img src="https://mimo.app/r/van.png">
+ </body>
+</html>
+
+.caution {
+ border: solid 10px red;
+}
+
+img {
+ height: 100px;
+ width: 100px;
+ border-radius: 50px;
+ border: solid 5px;
+}
+
+----------
+exemplo de botão
+button{
+    margin: 30px;
+    padding: 3px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+    border: 0px solid;
+    outline: none;
+    background-color: blue;
+    color: white;
+}
+
+------------------------
+Pesquisar mais sobre Pseudo classes e pseudo-elementos
+
+-------------------------
+Shorthands
+
+  border: 10px solid red;
+  background: red url(bg-graphic.png) 10px 10px repeat-x fixed; /* color | image | position | repeat | scroll */
+  border-radius: 0 20px 0 20px; /*widht e height com 75px*/
+  border-radius: 0 150px 0 150px; /*widht com 250px e height com 150px*/
+  box-shadow: 10px 5px 5px black; /* offset-x | offset-y | blur-radius | color */
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); /* offset-x | offset-y | blur-radius | spread-radius | color */
+  filter: saturate(300%) brightness(150%) contrast(125%);
+  flex: 0 1 auto; /* grow | shrink | basis */
+  flex-flow: row nowrap; /* flex-direction | flex-wrap */
+  font: italic small-caps bold 12px/30px Georgia, serif;
+  gap: 8px 10px;
+  gap: 10px;
+  grid-template: 25px 25px / 50px 50px;
+  list-style: lower-roman url("_logos/logo-archevo-bullet.png") inside; /* type | image | position */
+  list-style: '\2705' outside; /* type | position */
+  margin: 0 40px 0 40px;
+  padding: 10px 15px 15px 5px;
+  outline: #f66 dashed; /* color | style */
+  outline: inset thick; /* style | width */
+  outline: green solid 3px; /* color | style | width */
+  text-shadow: 5px 2px 4px grey; /* X-coordinate | Y-coordinate | blur radius | color */ttt
+  text-shadow: -1px -2px 0.5em rgba(0,0,255,1); /* X-coordinate | Y-coordinate | blur radius | color */ttt
+  transition: 
+  transition: property duration timing-function delay|initial|inherit;
+
+
+Tabelas
+  table {
+    border-spacing: 30px;
+  }
+  --
+  tr:nth-child(even) {
+    background-color: #D6EEEE;
+  }
+  --
+  tr:nth-child(odd) {
+    background-color: #D6EEEE;
+  }
+  --
+  td:nth-child(even), th:nth-child(even) {
+    background-color: #D6EEEE;
+  }
+  --
+  tr:nth-child(even) {
+    background-color: rgba(150, 212, 212, 0.4);
+  }
+
+  th:nth-child(even),td:nth-child(even) {
+    background-color: rgba(150, 212, 212, 0.4);
+  }
+  --
+  tr:hover {background-color: #D6EEEE;}
+
+##########################
+PADRÕES
+
+  Short CSS rules can be written compressed, like this:
+
+  p.intro {font-family:Verdana;font-size:16em;}
+  Long CSS rules should be written over multiple lines:
+
+  body {
+    background-color: lightgrey;
+    font-family: "Arial Black", Helvetica, sans-serif;
+    font-size: 16em;
+    color: black;
+  }
+
+  - Coloque o colchete de abertura na mesma linha do seletor
+  - Use um espaço antes do colchete de abertura
+  - Use dois espaços de identificação
+  - Use ponto-e-vírgula após cada par de propriedade-valor, incluindo o último
+  - Só use aspas entre os valores se o valor contiver espaços
+  - Coloque o colchete de fechamento em uma nova linha, sem espaços à esquerda
+
+  Note: The class name is case sensitive!
+
+  Note: The id name is case sensitive!
+
+  Note: The id name must contain at least one character, cannot start with a number, and must not contain whitespaces (spaces, tabs, etc.).
+
+#######################
+Normalize.css
+
+  - Alternativa moderna para o CSS Reset;
+  - github.com/necolas/normalize.css
+
+###################
+gradient
+
+  background: linear-gradient(-90deg, white, blue)
+
+####################
+Animações
+
+####################
+Transições
+
+  - Definir as propriedades 
+
+  transition: property duration timing-function delay|initial|inherit;
+  transition: all 2s linear;
+
+#####################
+word-wrap: break-word;
+
+################
+Meta Social Sharing
+
+  Tamanho padrão de imagem: 1200x630
+
+  https://developers.facebook.com/docs/sharing/webmasters/
+
+  https://developers.facebook.com/tools/debug/
+  <meta property="og:url" content="../css3/css-resumo-e-padroes.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="HTML5 - Resumo e Padrões">
+  <meta property="og:description" content="A 'HTML5 - Resumo & Padrões' é uma página para consultas rápidas e aprendizado, que centraliza diversos conteúdos resumidos, links úteis, padrões, recomendações e boas práticas.">
+  <meta property="og:image" content="C:\_PROJETOS\archevo\medias\examples\title.png">
+
+##################
+PADRÕES
+
+  - inline, internal, external css
+  Dica: Um estilo embutido perde muitas das vantagens de uma folha de estilo (ao misturar conteúdo com apresentação). Use este método com moderação.
+
+  - background-image:  Ao usar uma imagem de plano de fundo, use uma imagem que não perturbe o texto.
+
+  - id, class:
+  Note: An id name cannot start with a number!
+  Note: A class name cannot start with a number!
+
+  - opacity:
+  Nota: Ao usar a propriedade opacity para adicionar transparência ao plano de fundo de um elemento, todos os seus elementos filho herdam a mesma transparência. Isso pode tornar o texto dentro de um elemento totalmente transparente difícil de ler.
+
+  - border-style:
+  Nota: Nenhuma das OUTRAS propriedades CSS border (sobre as quais você aprenderá mais nos próximos capítulos) terá QUALQUER efeito, a menos que a propriedade border-style seja definida!
+
+  - outline-style:
+  Note: None of the other outline properties (which you will learn more about in the next chapters) will have ANY effect unless the outline-style property is set!
+
+  - color:
+  Importante: o alto contraste é muito importante para pessoas com problemas de visão. Portanto, sempre certifique-se de que o contraste entre a cor do texto e a cor de fundo (ou imagem de fundo) seja bom!
+
+  - text-decoration:
+  Nota: Não é recomendável sublinhar um texto que não seja um link, pois isso costuma confundir o leitor.
+
+  - font-family
+  Nota: Em telas de computador, as fontes sans-serif são consideradas mais fáceis de ler do que as fontes serif.
+  Nota: Se o nome da fonte for mais de uma palavra, deve estar entre aspas, tipo: "Times New Roman".
+  - Sempre especificar mais de uma fonte para que, se não for possível usar a primeira, hajam outras alternativas. Sempre termine a lista com um nome de família de fonte genérico;
+  Observação: antes de publicar seu site, sempre verifique como suas fontes aparecem em diferentes navegadores e dispositivos e sempre use fontes substitutas!
+  -Nota: a solicitação de várias fontes pode tornar suas páginas da web lentas! Portanto, tome cuidado com isso.
+
+
+  Arial (sans-serif)
+  - Mais usada para a Web e impressões;
+  - Fonte padrão do Google docs
+
+  CSS Font Fallbacks
+  Serif
+  Sans-serif
+  Monospace
+  Cursive
+  Fantasy
+
+  Saiba mais:
+  https://www.w3schools.com/css/css_font_pairings.asp
+
+  -font-size
+  Note: If you do not specify a font size, the default size for normal text, like paragraphs, is 16px (16px=1em).
+  - ver sobre responsividade
+  - Dica: Se você usar pixels, ainda poderá usar a ferramenta de zoom para redimensionar a página inteira.
+  A janela de visualização é o tamanho da janela do navegador. 1vw = 1% da largura da janela de visualização. Se a janela de visualização tiver 50 cm de largura, 1vw é 0,5 cm.
+
+################
+Responsividade
+
+  - Mobile First antes e hoje
+  
+  - Responsivo se adapta conforme o tamanho]
+  - Adaptativo se adapta aos tamanhos pré-definidos
+
+  - viewport; meta viewport  = para permititr a responsividade
+
+  - Imagens:
+    - 1 img para cada tamanho com picture
+    
+    - object-fit para img:
+      - fill: Distorce a imagem;
+      - contain: Não distorce a imagem
+      - scale-down: Diminui a qualidade e o tamanho da imagem para caber no seu elemento pai;
+      - cover: Não distorce a imagem, mas a corta as bordas da imagem para caber no elemento pai. Primeiro redimensiona, depois corta;
+      - none: Não redimensiona, simplesmente corta. 
+
+ - font com vw
+
+ - @media (all, only print, only screen, orientation: landscape, orientation: portrait, etc.)
+  - para sites adaptativos 
+      @media (max-width: 450px)
+  - para configurações para impressão
+      @media only print; 
+
+  - Com as media queries, você pode definir estilos completamente diferentes para diferentes tamanhos de navegador.
+
+  https://www.w3schools.com/html/tryit.asp?filename=tryhtml_responsive_media_query
+
+  @media (min-width: 1000px) {
+      body{
+          background-color: darkblue;
+      }
+  }
+
+  @media (min-width: 700px) and (max-width: 999px) {
+      body{
+          background-color: darkgreen;
+      }
+  }
+
+  @media only screen{
+      body{
+          background-color: black;
+          color: #eee;
+      }
+  }
+
+  @media only print{
+      body{
+          background-color: #eee;
+          color: black;
+      }
+  }
+
+  .box-item{
+      border: 2px solid blue;
+      height: 200px;
+      width: 200px;
+  }
+
+  .box-container{
+      display: flex;
+  }
+
+  ------------
+  @media orientation:
+  - não trabalha com a altura real do celular, e sim com a largura e altura da tela;
+  - lembrar sempre que a abertura do teclado no celular poderá diminuir a tela o suficiente para mudar a orientação;
+
+  @media (orientation: landscape){
+      .box-container{
+          flex-direction: row;
+      }
+  }
+
+  @media (orientation: portrait){
+      .box-container{
+          flex-direction: column  ;
+      }
+  }
+
+  -------------
+  @media aspect-ratio
+
+    @media (aspect-ratio: 3/2){
+      body{
+        background-color: blue;
+      }
+    }
+
+    @media (min-aspect-ratio: 2/1){
+      body{
+        background-color: green;
+      }
+    }
+
+    @media (max-aspect-ratio: 1/2){
+      body{
+        background-color: green;
+      }
+    }
+
+  ##############
+  var
+
+    :root{
+        --bg-black: black;
+        --bg-main: #222;
+        --font-yellow: #ffec00;
+        --font-light-gray: #eee;
+        --font-black: black;
+    }
+
+    body{
+      background-color: var(--bg-main, #222);
+    }
+        
+    --SOBRESCREVENDO VARIÁVEL NO MEDIA querySelector
+      @media (max-width: 450px){
+        :root{
+          --font-size: 15px;
+        }
+      }
+
+    ALTURA RELATIVA À LARGURA
+
+      file:///C:/_PROJETOS/archevo/contents/html5/html5-responsividade-alt-x-lar.html
+
+    ##########################
+    FUNÇÕES min E max
+
+    - PARA QUE serve?
+      - Ajudam a manter a responsividade
+      - max: 
+        - Considera o maior valor para a largura;
+        - No exemplo, mantém em 50% a largura da imagem, enquanto esse for o maior valor. Quando 50% for menor que 300px, passa a considerar o valor fixo de 300px.
+      - min:
+        - Considera o menor valor para a largura;
+        - No exemplo, mantém em 300px a largura da imagem, enquanto esse for o menor valor. Quando a tela for reduzida para um valor menor que 600px, 50% disso será menor que 300px, então são esses 50% que passam a ser considrados.
+
+      img1{
+        width: max(50%, 300px);
+      }
+
+      img2{
+        width: min(50%, 300px);
+      }
+
+    ##########################
+    FUNÇÃO calc()
+
+      .container{
+        width: calc(100% - 20px);
+      }
+
+############
+SELECIONANDO ELEMENTOS
+
+  - Exemplo 1 - pelo atributo e seu valor
+
+    HTML5
+      <input type="text" name="usuario" required">
+
+    CSS3
+      [required]{
+        background-color: lightgrey;
+      }
+      input[type=text]{ /* Sem aspas porque não é um valor especificado pelo dev */
+        font-weight: bold;
+      }
+      input[name="usuario"]{ /* Com aspas porque é um valor especificado pelo dev */
+        font-weight: bold;
+      }
+
+  - Exemplo 2 - pelo atributo e seu valor
+
+    CSS3
+      a[href*="futebol"]{ /* Seleciona todos os links que tenham "futebol" */
+        background-color="lightgrey";
+      }
+
+      a[href^="futebol"]{ /* Seleciona todos os links que tenham "futebol" no começo*/
+        background-color="lightgrey";
+      }
+
+      a[href$="futebol"]{ /* Seleciona todos os links que tenham "futebol" no final*/
+        background-color="lightgrey";
+      }
+
+  - Exemplo 3 - Elementos vazios
+
+    CSS3
+      div:empty{
+        background-color="lightgrey"; 
+      }
+
+  - Exemplo 4 - Pelo conteúdo do elemento - "::"
+
+    CSS3
+      p::first-letter{}
+      p::first-line{}
+      
+    - Diferença entre : e ::
+      - Um " : " trata da manipulação de estilo do elemento e o dois " :: " trata da alteração do conteúdo no elemento.
+
+  - Exemplo 5 - Pela característica do elemento em si - ":"
+
+    CSS3
+      div:first-child{}
+      div:last-child{}
+
+  - Exemplo 6 - Seletor Negativo
+
+    CSS3 
+      body :not[p]{} - Aplica o efeito em todos elementos com exceção do <p>
+
+  - Exemplo 7 - Selecionar item específico - Seletor nth
+    - Começa a contar do 1
+
+    CSS3
+      div:nth-child(2){} Seleciona a segunda div
+      div:nth-last-child(2){} Seleciona a segunda div , contando do final para o começo
+
+  - Exemplo 8 - before / after - Selecionar ou criar elementos antes e depois do elemento principal:
+    CSS3
+      div::after{content:"->"}
+      div::before{content:"<-"}
+
+############
+Selecionando e alterando o placeholder
+  CSS3
+    input::placeholder{
+      color: darkgreen;
+    }
+
+    input::-webkit-input-placeholder{}
+    input:-moz-placeholde{}
+    input::-moz-placeholde{}
+    input:-ms-input-placeholder{}
+    input::-ms-input-placeholder{}
+
+###########
+Transform
+
+  transform: scale(0.2);
+  transform: scale(2, 1);
+  transform: scaleX(2);
+  transform: scaleY(2);
+  transform: rotate(-30deg);
+  transform: skew(-30deg);

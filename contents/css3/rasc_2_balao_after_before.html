@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>After e Before</title>
+        <style>
+            .balao{
+                background-color: #0000ff;
+                border-radius: 20px;
+                color: white;
+                display: inline-block;
+                padding: 20px;  
+            }
+
+            .balao::after{
+                content: '';
+                display: block;
+                position: absolute;
+                margin: 20px;
+
+                border: 20px solid;
+                border-color: #0000ff transparent transparent transparent;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="balao">Olá, tudo bem?</div>
+    </body>
+</html>

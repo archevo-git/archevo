@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>JavaScript - Resumos & Padrões | ArchEvo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+
+        <meta name="author" content="William Cardoso">
+        <meta name="description" content="">
+
+        <meta property="og:url" content="../js/js-resumos-e-padroes.html">
+        <meta property="og:type" content="article">
+        <meta property="og:title" content="JavaScript - Resumos e Padrões">
+        <meta property="og:description" content="">
+        <meta property="og:image" content="C:\_TI-PROJETOS\_dev\archevo\medias\examples\title.png">
+
+        <base href="C:/_TI-PROJETOS/_dev/archevo/">
+        <link rel="icon" href="medias/_logos/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="styles/contents.css">
+        <link rel="stylesheet" href="styles/contents-aside-icons.css">
+        <link rel="stylesheet" href="styles/contents-js-resumos-e-padroes.css">
+        <link rel="stylesheet" href="styles/code-box.css">
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+    </head>
+
+    <body class="body-grid-container">
+        <nav class="body-grid-items item-nav nav-flex-container">
+            <section class="nav-flex-items item-home-link">
+                <a href="index.html"
+                    target="_self">
+                    <img id="img-logo-home"
+                        src="medias/_logos/logo-archevo.png"
+                        alt="Logo da ArchEvo"
+                        title="Página Inicial da ArchEvo">
+                </a>
+            </section>
+            <section class="nav-flex-items item-top-menu">
+                <a href="padroes-corporativo/padroes-corporativo-home.html" 
+                    target="_self">
+                    Padrões Corporativo
+                </a>
+                <a href="evo/evolucao-continua-home.html" 
+                    target="_self">
+                    Evolução Contínua
+                </a>
+                <a href="auth/login.html" 
+                    target="_self">
+                    Login
+                </a>
+            </section>
+        </nav>
+
+        <header class="body-grid-items item-header header-grid-container">
+            <hgroup class="header-grid-items item-titulos-centro">
+                <h1>JavaScript</h1>
+                <h2>RESUMOS & PADRÕES</h2>
+            </hgroup>
+            <div class="header-grid-items item-logo-direita">
+                <img id="img-logo"
+                    src="medias/_logos/logo-js.png"
+                    alt="Logo do HTML5"
+                    title="HTML5">
+            </div>
+        </header>
+
+        <aside class="body-grid-items item-aside aside-flex-container">
+            <details class="aside-flex-items item-frontend aside-details-flex-container">
+                <summary id="icon-frontend" class="aside-details-flex-items"                     
+                    alt="Logo do Frontend"
+                    height="20px"
+                    href="index.html"
+                    target="_self"
+                    title="Front-End">
+                </summary>
+                <a id="icon-html5" class="aside-details-flex-items"
+                    href="contents/html5/html5-resumos-e-padroes.html"
+                    alt="Logo do HTML5"
+                    target="_self"
+                    title="HTML5">
+                </a>
+                <a id="icon-css3" class="aside-details-flex-items"
+                    alt="Logo do CSS3"
+                    href="contents/css3/css3-basico.html"
+                    target="_self"
+                    title="CSS3">
+                </a>
+                <a id="icon-bootstrap" class="aside-details-flex-items"
+                    alt="Logo do Bootstrap"
+                    href="index.html"
+                    target="_self"
+                    title="Bootstrap">
+                </a>
+                <a id="icon-js" class="aside-details-flex-items"
+                    alt="Logo do JavaScript"
+                    href="contents/javascript/js-resumos-e-padroes.html"
+                    target="_self"
+                    title="JavaScript">
+                </a>
+                <a id="icon-ts" class="aside-details-flex-items"
+                    alt="Logo do TypeScript"
+                    href="index.html"
+                    target="_self"
+                    title="TypeScript">
+                </a>
+                <a id="icon-jquery" class="aside-details-flex-items"
+                    alt="Logo do jQuery"
+                    href="index.html"
+                    target="_self"
+                    title="jQuery">
+                </a>
+                <a id="icon-angular" class="aside-details-flex-items"
+                    alt="Logo do Angular"
+                    href="index.html"
+                    target="_self"
+                    title="Angular">
+                </a>
+            </details>
+
+            <details class="aside-flex-items item-programation aside-details-flex-container">
+                <summary id="icon-programation" class="aside-details-flex-items"
+                    alt="Logo do Programação.js"
+                    href="index.html"
+                    target="_self"
+                    title="Programação">
+                </summary>
+                <a id="icon-nodejs" class="aside-details-flex-items"
+                    alt="Logo do Node.js"
+                    href="index.html"
+                    target="_self"
+                    title="Node.js">
+                </a>
+                <a id="icon-python" class="aside-details-flex-items"
+                    alt="Logo do Python"
+                    href="index.html"
+                    target="_self"
+                    title="Python">
+                </a>
+                <a id="icon-java" class="aside-details-flex-items"
+                    alt="Logo do Java"
+                    href="index.html"
+                    target="_self"
+                    title="Java">
+                </a>
+                <a id="icon-php" class="aside-details-flex-items"
+                    alt="Logo do PHP"
+                    href="index.html"
+                    target="_self"
+                    title="PHP">
+                </a>
+                <a id="icon-c" class="aside-details-flex-items"
+                    alt="Logo do C".
+                    href="index.html"
+                    target="_self"
+                    title="C">
+                </a>
+                <a id="icon-cpp" class="aside-details-flex-items"
+                    alt="Logo do C++"
+                    href="index.html"
+                    target="_self"
+                    title="C++">
+                </a>
+                <a id="icon-cs" class="aside-details-flex-items"
+                    alt="Logo do C#"
+                    href="index.html"
+                    target="_self"
+                    title="C#">
+                </a>
+            </details>
+
+            <details class="aside-flex-items item-mobile aside-details-flex-container">
+                <summary id="icon-mobile" class="aside-details-flex-items"
+                    alt="Logo do Mobile"
+                    href="index.html"
+                    title="Mobile">
+                </summary>
+                <a id="icon-flutter" class="aside-details-flex-items"
+                    alt="Logo do Flutter"
+                    href="index.html"
+                    target="_self"
+                    title="Flutter">
+                </a>
+            </details>
+
+            <details class="aside-flex-items item-datascience aside-details-flex-container">
+                <summary id="icon-datascience" class="aside-details-flex-items"
+                    alt="Logo da Ciência de Dados"
+                    href="index.html"
+                    target="_self"
+                    title="Ciência de Dados">
+                </summary>
+                <a id="icon-sqlserver" class="aside-details-flex-items"
+                    href="index.html"
+                    alt="Logo do SQL Server"
+                    target="_self"
+                    title="SQL Server">                        
+                </a>
+                <a id="icon-plsql" class="aside-details-flex-items"
+                    href="index.html"
+                    alt="Logo do PL/SQL"
+                    target="_self"
+                    title="PL/SQL">
+                </a>
+                <a id="icon-mongodb" class="aside-details-flex-items"
+                    alt="Logo do MongoDB"
+                    href="index.html"
+                    target="_self"
+                    title="MongoDB">
+                </a>
+            </details>
+
+            <details class="aside-flex-items item-containers aside-details-flex-container">
+                <summary id="icon-containers" class="aside-details-flex-items"
+                    alt="Logo dos Contêineres"
+                    href="index.html"
+                    target="_self"
+                    title="Contêineres">
+                </summary>
+                <a id="icon-docker" class="aside-details-flex-items"
+                    alt="Logo do Docker"
+                    href="index.html"
+                    target="_self"
+                    title="Docker">
+                </a>
+                <a id="icon-k8" class="aside-details-flex-items"
+                    alt="Logo do Kubernetes"
+                    href="index.html"
+                    target="_self"
+                    title="Kubernetes">
+                </a>
+            </details>
+
+            <details class="aside-flex-items item-cloud aside-details-flex-container">
+                <summary id="icon-cloud" class="aside-details-flex-items"
+                    alt="Logo da Cloud"
+                    target="_self"
+                    title="Cloud">
+                </summary>
+                <a id="icon-aws" class="aside-details-flex-items"
+                    alt="Logo da AWS"
+                    target="_self"
+                    href="index.html"
+                    title="AWS">
+                </a>
+                <a id="icon-azure" class="aside-details-flex-items"
+                    alt="Logo da Azure"
+                    href="index.html"
+                    target="_self"
+                    title="Azure">
+                </a>
+                <a id="icon-gcloud" class="aside-details-flex-items item-gcloud"
+                    alt="Logo da Google Cloud"0
+                    href="index.html"
+                    target="_self"
+                    title="Google Cloud">
+                </a>
+            </details>
+        </aside>
+
+        <main class="body-grid-items item-main main-flex-container">
+            <section class="main-flex-items item-principal">
+                <p>
+                    <strong>JavaScript:</strong> Linguagem de programação interpretada, estruturada, de script em alto nível com tipagem dinâmica fraca, multiparadigma (funcional, imperativa, orientada a objetos) e amplamente usada em páginas web, jogos, etc.
+                </p>
+                <p>
+                    <strong>Descrição:</strong> Juntamente com HTML e CSS, o JavaScript é uma das três principais tecnologias da World Wide Web. Tornou-se um padrão ECMA em 1997. ECMA-262 é o nome oficial do padrão. ECMAScript é o nome oficial da linguagem.
+                </p>
+                <p>
+                    <strong>Criação:</strong> 1995, por Brendan Eich
+                </p>
+                <p>
+                    <strong>Extensão do Arquivo:</strong> .js, .mjs
+                </p>
+                <p>
+                    <strong>MIME:</strong> text/javascript
+                </p>
+                <p>
+                    <strong>Padrões, Recomendações e Boas Práticas:</strong>  
+                </p>
+            </section>
+            <section class="main-flex-items item-links">
+                <details>
+                    <summary><h3><span>Saiba mais...</span></h3></summary>
+                    <ul>
+                        <li>
+                            <a alt="Padrões HTML5"
+                                href="https://html.spec.whatwg.org/"
+                                target="_blank">
+                                Padrões HTML5- W3C e WHATWG
+                            </a>
+                        </li>
+                       
+                    </ul>
+                </details>
+            </section>    
+        </main>
+
+        <section id="selecionando-e-manipulando-elementos" class="body-grid-items item-section-1 section-flex-container">
+            <section class="section-flex-items item-principal">
+                <details>
+                    <summary><h3>DOM - Selecionando e Manipulando Elementos</h3></summary>
+                    <ul id="ligando-a-luz">
+                        <li>Ligando e Desligando a luz:
+                            <div class="bg" width="500px">
+                                <button onclick="document.getElementById('lampada-0').src='medias/js/lampada-acesa.png'">Ligar a luz</button>
+                                <img id="lampada-0" 
+                                    alt="Lâmpada"
+                                    height="80px"
+                                    src="medias/js/lampada-apagada.png"
+                                    title="Lâmpada que se acende quando clicamos.">                            
+                                <button onclick="document.getElementById('lampada-0').src='medias/js/lampada-apagada.png'">Desligar a luz</button>
+                            </div>
+                        </li>
+                        <li id="add-classes">Adicionando e removendo classes:
+                            <div class="bg grid-btns-colors">
+                                <button class="btn-color-red" onclick="vermelho()">Vermelho</button>
+                                <button class="btn-color-green" onclick="verde()">Verde</button>
+                                <button class="btn-color-blue" onclick="azul()">Azul</button>
+                                <img class="img-btn-color-0">
+                                <img class="img-btn-color-1">
+                                <img class="img-btn-color-2">
+                            </div>
+                        </li>
+                    </ul>
+                </details>
+            </section>
+            <section class="section-flex-items item-links">
+                <details>
+                    <summary><h3><span>Saiba mais...</span></h3></summary>
+                    <ul>
+                        <li>
+                            <a href="https://www.alura.com.br/artigos/as-engines-de-renderizacao-dos-browsers?gclid=CjwKCAjwtfqKBhBoEiwAZuesiHXyy5PxvJhsLR3PeLGCjblAXvun27vd69-LtYYfeX1l8QvfsCgGnRoC_zsQAvD_BwE" 
+                                target="_blank">
+                                As Engines de Renderização dos Browsers - Alura
+                            </a>
+                        </li>
+                    </ul>
+                </details>  
+            </section>
+        </section>
+       
+        <section id="dimensoes" class="body-grid-items item-section-2 section-flex-container">
+            <section class="section-flex-items item-principal">
+                <details>
+                    <summary><h3>Dimensões</h3></summary>
+                    <ul>
+                        <li>:
+                            <div class="texto-0 bg">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </details>
+            </section>
+            <section class="section-flex-items item-links">
+                <details>
+                    <summary><h3><span>Saiba mais...</span></h3></summary>
+                    <ul>
+                        <li>
+                            <a href="https://www.alura.com.br/artigos/as-engines-de-renderizacao-dos-browsers?gclid=CjwKCAjwtfqKBhBoEiwAZuesiHXyy5PxvJhsLR3PeLGCjblAXvun27vd69-LtYYfeX1l8QvfsCgGnRoC_zsQAvD_BwE" 
+                                target="_blank">
+                                As Engines de Renderização dos Browsers - Alura
+                            </a>
+                        </li>
+                    </ul>
+                </details>  
+            </section>
+        </section>
+        
+        <section id="for" class="body-grid-items item-section-3 section-flex-container">
+            <section class="section-flex-items item-principal">
+                <details>
+                    <summary><h3>Loop for</h3></summary>
+                    <ul>
+                        <li>Loop for em um array:
+                            <button id="btn-for-0" onclick="for_listandoCarros()">Listar carros:</button>
+                            
+                            <div class="for-0 bg" style="margin:0"></div>
+                        </li>
+                    </ul>
+                </details>
+            </section>
+            <section class="section-flex-items item-links">
+                <details>
+                    <summary><h3><span>Saiba mais...</span></h3></summary>
+                    <ul>
+                        <li>
+                            <a href="https://www.alura.com.br/artigos/as-engines-de-renderizacao-dos-browsers?gclid=CjwKCAjwtfqKBhBoEiwAZuesiHXyy5PxvJhsLR3PeLGCjblAXvun27vd69-LtYYfeX1l8QvfsCgGnRoC_zsQAvD_BwE" 
+                                target="_blank">
+                                As Engines de Renderização dos Browsers - Alura
+                            </a>
+                        </li>
+                    </ul>
+                </details>  
+            </section>
+        </section>
+
+        <section id="while" class="body-grid-items item-section-4 section-flex-container">
+            <section class="section-flex-items item-principal">
+                <details>
+                    <summary><h3>Loop while</h3></summary>
+                    <ul>
+                        <li>Loop while em um array:
+                            <button id="btn-while-0" onclick="while_listandoCidades()">Listar cidades:</button>
+                            
+                            <div class="while-0 bg"></div>
+                        </li>
+                    </ul>
+                </details>
+            </section>
+            <section class="section-flex-items item-links">
+                <details>
+                    <summary><h3><span>Saiba mais...</span></h3></summary>
+                    <ul>
+                        <li>
+                            <a href="https://www.alura.com.br/artigos/as-engines-de-renderizacao-dos-browsers?gclid=CjwKCAjwtfqKBhBoEiwAZuesiHXyy5PxvJhsLR3PeLGCjblAXvun27vd69-LtYYfeX1l8QvfsCgGnRoC_zsQAvD_BwE" 
+                                target="_blank">
+                                As Engines de Renderização dos Browsers - Alura
+                            </a>
+                        </li>
+                    </ul>
+                </details>  
+            </section>
+        </section>
+        
+        <section id="datas" class="body-grid-items item-section-5 section-flex-container">
+            <section class="section-flex-items item-principal">
+                <details>
+                    <summary><h3>Datas</h3></summary>
+                    <ul>
+                        <li>Data e hora atuais com <strong>getDate()</strong>:
+                            <p id="relogio"></p>
+                        </li>
+                        <li>Alterando a data atual para 2/5/1987 com <strong>setDate()</strong>:
+                            <p id="setDate" class="bg"></p>
+                        </li>
+                        <li>Adicionando e subtraindo dias de uma data:
+                            <div class="flex-container">
+                                <div class="bg-add-date">
+                                    <input id="data-0" type="date"></input> + 
+                                    <input id="nro-dias-0" type="number" min="1" max="9999" value="1"> dia(s) = 
+                                    <label id="data-alterada-0"></label><br>
+                                    <button id="btn-add-date" onclick="addDate()">Calcular</button>
+                                </div>
+                                <div class="bg-sub-date">
+                                    <input id="data-1" type="date"></input> - 
+                                    <input id="nro-dias-1" type="number" min="1" max="9999" value="1"> dia(s) = 
+                                    <label id="data-alterada-1"></label><br>
+                                    <button id="btn-sub-date" onclick="subDate()">Calcular</button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </details>  
+            </section>
+            <section class="section-flex-items item-links">
+                <details>
+                    <summary><h3><span>Saiba mais...</span></h3></summary>
+                    <ul>
+                        <li>
+                            <a href="https://www.w3schools.com/jsref/jsref_obj_date.asp" 
+                                target="_blank">
+                                Referência de Datas em JavaScript - W3Schools
+                            </a>
+                        </li>
+                    </ul>
+                </details>  
+            </section>
+        </section>
+
+        <section id="matematica" class="body-grid-items item-section-6 section-flex-container">
+            <section class="section-flex-items item-principal">
+                <details>
+                    <summary><h3>Matemárica</h3></summary>
+                    <ul>
+                        <li> <strong>getDate()</strong>:
+                            <p id="relogio"></p>
+                        </li>
+                       
+                    </ul>
+                </details>  
+            </section>
+            <section class="section-flex-items item-links">
+                <details>
+                    <summary><h3><span>Saiba mais...</span></h3></summary>
+                    <ul>
+                        <li>
+                            <a href="https://www.w3schools.com/jsref/jsref_obj_date.asp" 
+                                target="_blank">
+                                Referência de Datas em JavaScript - W3Schools
+                            </a>
+                        </li>
+                    </ul>
+                </details>  
+            </section>
+        </section>
+
+        <section id="intervalos" class="body-grid-items item-section-7 section-flex-container">
+            <section class="section-flex-items item-principal">
+                <details>
+                    <summary><h3>Intervalos</h3></summary>
+                    <ul>
+                        <li>Timer 1 com <strong>setInterval()</strong>:
+                            <div class="bg">
+                                <button id="start" class="btn-std" onclick="comecar()">Começar</button>
+                                <button id="stop" class="btn-std" onclick="parar()">Parar</button>
+                                <label id="lbl-timer-0"></label>                       
+                            </div>
+                        </li>
+                        <li>Timer 2 com <strong>setTimeout()</strong>:
+                            <div class="bg">
+                                <button id="run" class="btn-std" onclick="rodar()">Rodar em 10s</button>
+                                <button id="stop-2" class="btn-std" onclick="parar()">Parar</button>
+                                <button id="reload" class="btn-std" onclick="recarregar()">Recarregar</button>
+                                <label id="lbl-timer-1"></label>
+                            </div>
+                        </li>
+                    </ul>
+                </details>  
+            </section>
+            <section class="section-flex-items item-links">
+                <details>
+                    <summary><h3><span>Saiba mais...</span></h3></summary>
+                    <ul>
+                        <li>
+                            <a href="https://www.w3schools.com/jsref/jsref_obj_date.asp" 
+                                target="_blank">
+                                Referência de Datas em JavaScript - W3Schools
+                            </a>
+                        </li>
+                    </ul>
+                </details>  
+            </section>
+        </section>
+        
+        <section id="desconstruindo-objetos" class="body-grid-items item-section-8 section-flex-container">
+            <section class="section-flex-items item-principal">
+                <details>
+                    <summary><h3>Atribuição através de Desestruturação: Desestruturando Objetos</h3></summary>
+                    <ul>
+                        <li>Exibir dados baseados em um objeto desscontruído:</strong>:
+                            <div class="bg">
+                                <button onclick="showNameAndAge()">Mostrar Dados</button>
+                            </div>
+                        </li>
+                        <li>Exibir dados usando desestruturação de objetos:</strong>:
+                            <div class="bg">
+                                <button onclick="showSocialNetwork()">Mostrar Redes Sociais</button>
+                            </div>
+                        </li>
+                    </ul>
+                </details>  
+            </section>
+            <section class="section-flex-items item-links">
+                <details>
+                    <summary><h3><span>Saiba mais...</span></h3></summary>
+                    <ul>
+                        <li>
+                            <a href="https://www.w3schools.com/jsref/jsref_obj_date.asp" 
+                                target="_blank">
+                                Referência de Datas em JavaScript - W3Schools
+                            </a>
+                        </li>
+                    </ul>
+                </details>  
+            </section>
+        </section>
+
+        <section id="desconstruindo-Arrays" class="body-grid-items item-section-9 section-flex-container">
+            <section class="section-flex-items item-principal">
+                <details>
+                    <summary><h3>Atribuição através de Desestruturação: Desestruturando Arrays</h3></summary>
+                    <ul>
+                        <li>Exibir dados baseados em um objeto desscontruído:</strong>:
+                            <div class="bg">
+                                <button onclick="confirmProfile()">Criar Perfil</button>
+                            </div>
+                        </li>
+                    </ul>
+                </details>  
+            </section>
+            <section class="section-flex-items item-links">
+                <details>
+                    <summary><h3><span>Saiba mais...</span></h3></summary>
+                    <ul>
+                        <li>
+                            <a href="https://www.w3schools.com/jsref/jsref_obj_date.asp" 
+                                target="_blank">
+                                Referência de Datas em JavaScript - W3Schools
+                            </a>
+                        </li>
+                    </ul>
+                </details>  
+            </section>
+        </section>
+
+        <section id="fetch" class="body-grid-items item-section-10 section-flex-container">
+            <section class="section-flex-items item-principal">
+                <details>
+                    <summary><h3>Fetch</h3></summary>
+                    <ul>
+                        <li>Contar o número de posts e mostrá-los abaixo:
+                            <div class="bg">
+                                <button onclick="loadNumberOfPosts()">Posts</button>
+                                <div class="posts"></div>
+                                <div class="make-blog"></div>
+                            </div>
+                        </li>
+                        <li>Adicionar um novo post:
+                            <div class="bg">
+                                <button onclick="insertPost()">Add Post</button>
+                                <div class="insert-post"></div>
+                                <button onclick="getPost()">Get First Post</button>
+                                <div class="get-post"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </details>  
+            </section>
+            <section class="section-flex-items item-links">
+                <details>
+                    <summary><h3><span>Saiba mais...</span></h3></summary>
+                    <ul>
+                        <li>
+                            <a href="" 
+                                target="_blank">
+                                
+                            </a>
+                        </li>
+                    </ul>
+                </details>  
+            </section>
+        </section>
+
+        <section id="async-await" class="body-grid-items item-section-11 section-flex-container">
+            <section class="section-flex-items item-principal">
+                <details>
+                    <summary><h3>async/await</h3></summary>
+                    <ul>
+                        <li>Carregando os posts com async/await:</strong>:
+                            <div class="bg">
+                                <button onclick="loadNumberOfPostsWithAsyncAndAwait()">Carregar Posts</button>
+                                <div class="make-blog-1"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </details>
+            </section>
+            <section class="section-flex-items item-links">
+                <details>
+                    <summary><h3><span>Saiba mais...</span></h3></summary>
+                    <ul>
+                        <li>
+                            <a href="" 
+                                target="_blank">
+                                
+                            </a>
+                        </li>
+                    </ul>
+                </details>  
+            </section>
+        </section>
+
+        <section id="upload-de-arquivos" class="body-grid-items item-section-12 section-flex-container">
+            <section class="section-flex-items item-principal">
+                <details>
+                    <summary><h3>Upload de Arquivos</h3></summary>
+                    <ul>
+                        <li>Subindo um único arquivo:</strong>:
+                            <div class="bg">
+                                <input id="file-0" type="file"> <!--multiple permite pegar vários-->
+                                <button onclick="sendFile()">Enviar Arquivo</button>
+                                <div class="file-content"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </details>
+            </section>
+            <section class="section-flex-items item-links">
+                <details>
+                    <summary><h3><span>Saiba mais...</span></h3></summary>
+                    <ul>
+                        <li>
+                            <a href="" 
+                                target="_blank">
+                                
+                            </a>
+                        </li>
+                    </ul>
+                </details>  
+            </section>
+        </section>
+
+        <section id="thumbnails" class="body-grid-items item-section-13 section-flex-container">
+            <section class="section-flex-items item-principal">
+                <details>
+                    <summary><h3>Thumbnails</h3></summary>
+                    <ul>
+                        <li>Criar e exibir um thumbnail:</strong>:
+                            <div class="bg">
+                                <input id="file-1" type="file"> <!--multiple permite pegar vários-->
+                                <button onclick="showThumbnail()">Show Thumbnail</button>
+                                <br>
+                                <div id="thumbnails-0"></div>
+                            </div>
+                        </li>
+                        <li>Criar e exibir um thumbnail com FileReader:</strong>:
+                            <div class="bg">
+                                <input id="file-2" type="file"> <!--multiple permite pegar vários-->
+                                <button onclick="showThumbnailFileReader()">Show Thumbnail</button>
+                                <br>
+                                <div id="thumbnails-1"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </details>
+            </section>
+            <section class="section-flex-items item-links">
+                <details>
+                    <summary><h3><span>Saiba mais...</span></h3></summary>
+                    <ul>
+                        <li>
+                            <a href="" 
+                                target="_blank">
+                                
+                            </a>
+                        </li>
+                    </ul>
+                </details>  
+            </section>
+        </section>
+
+        <footer class="body-grid-items item-footer footer-flex-container">
+            <p>
+                &copy; Copyright 2021-2022 ArchEvo. Todos os Direitos Reservados.
+            </p>
+        </footer>
+
+        <script src="scripts/js-resumos-e-padroes.js"></script>
+        <script src="scripts/js-resumos-e-padroes-2.js"></script>
+    </body>
+</html>

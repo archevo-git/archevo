@@ -1,0 +1,252 @@
+PYTHON
+
+Python
+
+- Variáveis criadas dentro de funções tem um escopo local;
+- Todas as outras possuem escopo global e podem ser acessads de qualquer lugar do código;
+
+Formataçao
+
+stock = 74
+item = "webcams"
+orders = 18
+
+print(f"{stock} {item} in stock")
+print(f"{orders} customer orders")
+print(f"{stock - orders} available")
+
+Functions
+
+def is_age_ok(age):
+    if age >= 18:
+        return True
+    return False
+
+is_age_ok(18)
+
+#---
+def set_initials(names, initial):
+    names[0] = initial
+    return(names)
+
+author_names = ["Francis", "Scott", "Fitzgerald"]
+author_names = set_initials(author_names, "F.")
+print(author_names)
+
+#---
+def onboard_passengers(bookings):   
+    counter = 1
+    while counter <= bookings:
+    print(f"Passenger {counter} on board")
+    counter += 1
+
+onboard_passengers(4)
+
+#---
+def show_next_track(playlist):
+    for track in playlist:
+        print(f"Next up: {track}")
+
+ramones = ["Animal Boy", "The KKK took my baby away", "I believe in miracles"]
+show_next_track(ramones)
+
+########
+Tuplas:
+  - Agrupam peças relacionadas de dados;
+  - Quando possuem um único dado, terminam com vírgula (",");
+  - Não é possível alterar, adicionar ou deletar valores de tuplas;
+  - Permitem retornar múltiplos valores de uma função;
+
+  scores = ("mia",))
+
+  #---
+  scores = [("mia", 75, "Japan"), ("lee", 90, "China")]
+  print(len(scores))
+  tuple2 = scores[1]
+
+  #---
+
+
+  def get_scores_data(scores_list):
+    highest_score = max(scores_list)
+    lowest_score = min(scores_list)
+    return highest_score, lowest_score
+  scores = [31, 17, 80]
+
+  data = get_scores_data(scores)
+  highest = data[0]
+  smallest = data[1]
+  print(f"smallest score: {smallest}")
+  print(f"highest score: {highest}")
+
+  #---
+
+  def check_age(age):
+    can_drive = age >= 18
+    return age, can_drive
+  driving_age = check_age(17)
+  print(driving_age)
+
+  #---
+
+
+  def analyze_profit(gains, expenses):
+    profit = gains - expenses
+    after_taxes = 0.85 * profit
+    above_mean = profit > 1000
+    return profit, after_taxes, above_mean
+
+  insights = analyze_profit(3000, 1200)
+  print(f"profit: {insights[0]}")
+  print(f"above mean: {insights[2]}")
+
+  #######
+
+
+Dicionários
+
+  - Estruturas de dados usadas para associar um significado para cada valor em uma coleção de dados;
+  - Formados por pares de chave e valor;
+  - As chaves são únicas e contém apenas um valor, podendo ser listas ou tuplas também;
+  - Os pares de chave-valor são separados com vírgula;
+  - O acesso aos valores dos dicionários é feito através de suas chaves;
+  - Os valores podem ser alterados.
+
+  members_count = {
+    ("Sai", "Chloe", "Yumi"): 3
+  }
+
+  print(members_count)
+
+  #---
+  car_data = {
+    "brand": "Cadillac",
+    "year": 1960,
+    "restoration": ["1990", "2018"],
+    "rented": False
+  }
+  print(car_data)
+
+#---
+
+
+actor_bio = {
+
+
+"name": "Bill Murray",
+
+
+"known for": ["Lost in Translation", "Rushmore"]
+
+
+}
+
+actor_name = actor_bio["name"]
+
+
+print(actor_name
+
+)
+
+#---
+
+
+player_scores = {
+
+
+"ann": 13,
+
+
+"michael": 20,
+
+
+"ava": 34
+
+
+}
+
+for player in player_scores:
+
+
+  print(player_scores[player]
+
+)
+
+#---
+
+
+toppings = {
+
+
+  "olives": True,
+
+
+  "anchovies": False,
+
+
+  "extra cheese": False
+
+
+}
+
+toppings["extra cheese"] = Tru
+
+e
+
+for topping in toppings:
+
+
+  toppings[topping] = True
+
+#---
+
+
+contents = {
+
+
+  "ch. 1": "A long-expected party",
+
+
+  "ch. 2": "The shadow of the past",
+
+
+  "ch. 3": "Three is company"
+
+
+}
+
+contents["ch. 4"] = "A Short Cut to Mushrooms"
+
+print(contents
+
+)
+
+#---
+
+
+stock = {
+
+
+  "S": 17,
+
+
+  "M": 30,
+
+
+  "L": 20
+
+
+}
+
+has_XS = "XS" in stock
+
+
+print(has_XS
+
+)
+
+#---
+
+
+
+

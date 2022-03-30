@@ -1,0 +1,2048 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>HTML5 - Resumos & Padrões | ArchEvo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+
+        <meta name="author" content="William Cardoso">
+        <meta name="description" content="A 'HTML5 - Resumos & Padrões' é uma base de conhecimento objetiva, centralizando diversos conteúdos: conceitos, exemplos, links úteis, padrões, recomendações e boas práticas.">
+
+        <meta property="og:url" content="contents/html5/html5-resumos-e-padroes.html">
+        <meta property="og:type" content="article">
+        <meta property="og:title" content="HTML5 - Resumos e Padrões">
+        <meta property="og:description" content="A 'HTML5 - Resumos & Padrões' é uma base de conhecimento objetiva, centralizando diversos conteúdos: conceitos, exemplos, links úteis, padrões, recomendações e boas práticas.">
+        <meta property="og:image" content="medias/examples/title.png">
+
+        <base href="C:/_TI-PROJETOS/_dev/archevo/">
+        <link rel="icon" href="medias/_logos/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="styles/contents.css">
+        <link rel="stylesheet" href="styles/contents-aside-icons.css">
+        <link rel="stylesheet" href="styles/code-box.css">
+        <style>
+            table{ 
+                border: 1px solid white;
+                border-collapse: collapse;
+            }
+
+            thead{
+                background-color: #000;
+                color: #fff;
+            }
+
+            th, td{
+                padding: 10px;
+            }
+
+            tbody tr{
+                background-color: #444;
+            }
+
+            tbody tr:nth-child(even){
+                background-color: #333;
+            }
+
+            tbody tr:hover{
+                background-color:darkblue;
+                color: white;
+            }
+
+            input[type="image"]:hover{
+                filter: saturate(150%);
+            }
+        </style>
+    </head>
+
+    <body class="body-grid-container">
+        <nav class="body-grid-items item-nav nav-flex-container">
+            <section class="nav-flex-items item-home-link">
+                <a href="index.html"
+                    target="_self">
+                    <img id="img-logo-home"
+                        src="medias/_logos/logo-archevo.png"
+                        alt="Logo da ArchEvo"
+                        title="Página Inicial da ArchEvo">
+                </a>
+            </section>
+            <section class="nav-flex-items item-top-menu">
+                <a href="padroes-corporativo/padroes-corporativo-home.html" 
+                    target="_self">
+                    Padrões Corporativo
+                </a>
+                <a href="evo/evolucao-continua-home.html" 
+                    target="_self">
+                    Evolução Contínua
+                </a>
+                <a href="auth/login.html" 
+                    target="_self">
+                    Login
+                </a>
+            </section>
+        </nav>
+
+        <header class="body-grid-items item-header header-grid-container">
+            <hgroup class="header-grid-items item-titulos-centro">
+                <h1>HTML</h1>
+                <h2>RESUMOS & PADRÕES</h2>
+            </hgroup>
+            <div class="header-grid-items item-logo-direita">
+                <img id="img-logo"
+                    src="medias/_logos/logo-html5.png"
+                    alt="Logo do HTML5"
+                    title="HTML5">
+            </div>
+        </header>
+
+        <aside class="body-grid-items item-aside aside-flex-container">
+            <details class="aside-flex-items item-frontend aside-details-flex-container">
+                <summary id="icon-frontend" class="aside-details-flex-items"                     
+                    alt="Logo do Frontend"
+                    height="20px"
+                    href="index.html"
+                    target="_self"
+                    title="Front-End">
+                </summary>
+                <a id="icon-html5" class="aside-details-flex-items"
+                    href="contents/html5/html5-resumos-e-padroes.html"
+                    alt="Logo do HTML5"
+                    target="_self"
+                    title="HTML5">
+                </a>
+                <a id="icon-css3" class="aside-details-flex-items"
+                    alt="Logo do CSS3"
+                    href="contents/css3/css3-basico.html"
+                    target="_self"
+                    title="CSS3">
+                </a>
+                <a id="icon-bootstrap" class="aside-details-flex-items"
+                    alt="Logo do Bootstrap"
+                    href="index.html"
+                    target="_self"
+                    title="Bootstrap">
+                </a>
+                <a id="icon-js" class="aside-details-flex-items"
+                    alt="Logo do JavaScript"
+                    href="contents/javascript/js-resumos-e-padroes.html"
+                    target="_self"
+                    title="JavaScript">
+                </a>
+                <a id="icon-ts" class="aside-details-flex-items"
+                    alt="Logo do TypeScript"
+                    href="index.html"
+                    target="_self"
+                    title="TypeScript">
+                </a>
+                <a id="icon-jquery" class="aside-details-flex-items"
+                    alt="Logo do jQuery"
+                    href="index.html"
+                    target="_self"
+                    title="jQuery">
+                </a>
+                <a id="icon-angular" class="aside-details-flex-items"
+                    alt="Logo do Angular"
+                    href="index.html"
+                    target="_self"
+                    title="Angular">
+                </a>
+            </details>
+
+            <details class="aside-flex-items item-programation aside-details-flex-container">
+                <summary id="icon-programation" class="aside-details-flex-items"
+                    alt="Logo do Programação.js"
+                    href="index.html"
+                    target="_self"
+                    title="Programação">
+                </summary>
+                <a id="icon-nodejs" class="aside-details-flex-items"
+                    alt="Logo do Node.js"
+                    href="index.html"
+                    target="_self"
+                    title="Node.js">
+                </a>
+                <a id="icon-python" class="aside-details-flex-items"
+                    alt="Logo do Python"
+                    href="index.html"
+                    target="_self"
+                    title="Python">
+                </a>
+                <a id="icon-java" class="aside-details-flex-items"
+                    alt="Logo do Java"
+                    href="index.html"
+                    target="_self"
+                    title="Java">
+                </a>
+                <a id="icon-php" class="aside-details-flex-items"
+                    alt="Logo do PHP"
+                    href="index.html"
+                    target="_self"
+                    title="PHP">
+                </a>
+                <a id="icon-c" class="aside-details-flex-items"
+                    alt="Logo do C".
+                    href="index.html"
+                    target="_self"
+                    title="C">
+                </a>
+                <a id="icon-cpp" class="aside-details-flex-items"
+                    alt="Logo do C++"
+                    href="index.html"
+                    target="_self"
+                    title="C++">
+                </a>
+                <a id="icon-cs" class="aside-details-flex-items"
+                    alt="Logo do C#"
+                    href="index.html"
+                    target="_self"
+                    title="C#">
+                </a>
+            </details>
+
+            <details class="aside-flex-items item-mobile aside-details-flex-container">
+                <summary id="icon-mobile" class="aside-details-flex-items"
+                    alt="Logo do Mobile"
+                    href="index.html"
+                    title="Mobile">
+                </summary>
+                <a id="icon-flutter" class="aside-details-flex-items"
+                    alt="Logo do Flutter"
+                    href="index.html"
+                    target="_self"
+                    title="Flutter">
+                </a>
+            </details>
+
+            <details class="aside-flex-items item-datascience aside-details-flex-container">
+                <summary id="icon-datascience" class="aside-details-flex-items"
+                    alt="Logo da Ciência de Dados"
+                    href="index.html"
+                    target="_self"
+                    title="Ciência de Dados">
+                </summary>
+                <a id="icon-sqlserver" class="aside-details-flex-items"
+                    href="index.html"
+                    alt="Logo do SQL Server"
+                    target="_self"
+                    title="SQL Server">                        
+                </a>
+                <a id="icon-plsql" class="aside-details-flex-items"
+                    href="index.html"
+                    alt="Logo do PL/SQL"
+                    target="_self"
+                    title="PL/SQL">
+                </a>
+                <a id="icon-mongodb" class="aside-details-flex-items"
+                    alt="Logo do MongoDB"
+                    href="index.html"
+                    target="_self"
+                    title="MongoDB">
+                </a>
+            </details>
+
+            <details class="aside-flex-items item-containers aside-details-flex-container">
+                <summary id="icon-containers" class="aside-details-flex-items"
+                    alt="Logo dos Contêineres"
+                    href="index.html"
+                    target="_self"
+                    title="Contêineres">
+                </summary>
+                <a id="icon-docker" class="aside-details-flex-items"
+                    alt="Logo do Docker"
+                    href="index.html"
+                    target="_self"
+                    title="Docker">
+                </a>
+                <a id="icon-k8" class="aside-details-flex-items"
+                    alt="Logo do Kubernetes"
+                    href="index.html"
+                    target="_self"
+                    title="Kubernetes">
+                </a>
+            </details>
+
+            <details class="aside-flex-items item-cloud aside-details-flex-container">
+                <summary id="icon-cloud" class="aside-details-flex-items"
+                    alt="Logo da Cloud"
+                    target="_self"
+                    title="Cloud">
+                </summary>
+                <a id="icon-aws" class="aside-details-flex-items"
+                    alt="Logo da AWS"
+                    target="_self"
+                    href="index.html"
+                    title="AWS">
+                </a>
+                <a id="icon-azure" class="aside-details-flex-items"
+                    alt="Logo da Azure"
+                    href="index.html"
+                    target="_self"
+                    title="Azure">
+                </a>
+                <a id="icon-gcloud" class="aside-details-flex-items item-gcloud"
+                    alt="Logo da Google Cloud"0
+                    href="index.html"
+                    target="_self"
+                    title="Google Cloud">
+                </a>
+            </details>
+        </aside>
+
+        <main class="body-grid-items item-main main-flex-container">
+            <section class="main-flex-items item-principal">
+                <p>
+                    <strong>HTML5:</strong> Abreviação de <strong>HyperText Martkup Language</strong> ou <strong>Linguagem de Marcação de Hipertexto</strong>.
+                </p>
+                <p>
+                    <strong>Descrição:</strong> Linguagem padrão para estruturar a publicação de conteúdos (áudios, vídeos, imagens, textos, etc.) em páginas Web, através do uso de <strong>tags</strong>. Foi criado para ser independente de plataformas (ou <b>Cross Platform</b>), browsers e outros meios de acesso, já que <b>interoperabilidade</b> significa menos custo: um único código <b>HTML</b> pode ser lido em diversos dispositivos.
+                </p>
+                <p>
+                    <strong>Criação:</strong> 1991, por Tim Berners-Lee
+                </p>
+                <p>
+                    <strong>Extensão do Arquivo:</strong> .html, .htm
+                </p>
+                <p>
+                    <strong>MIME:</strong> text/html
+                </p>
+                <p>
+                    <strong>Tipo de Formato:</strong> Linguagem de marcação
+                </p>
+                <p>
+                    <strong>Padrões, Recomendações e Boas Práticas:</strong> World Wide Web Consortium (W3C) e WHATWG
+                </p>
+            </section>
+            <section class="main-flex-items item-links">
+                <details>
+                    <summary><h3><span>Saiba mais...</span></h3></summary>
+                    <ul>
+                        <li>
+                            <a alt="Padrões HTML5"
+                                href="https://html.spec.whatwg.org/"
+                                target="_blank">
+                                Padrões HTML5- W3C e WHATWG
+                            </a>
+                        </li>
+                        <li>
+                            <a alt="Padrões HTML5 DOM"
+                                href="https://dom.spec.whatwg.org/"
+                                target="_blank">
+                                Padrões HTML5 DOM - W3C e WHATWG
+                            </a>
+                        </li>
+                        <li>
+                            <a alt="Todos os Padrões HTML5"
+                                href="https://www.w3.org/TR/?tag=html"
+                                target="_blank">
+                                Todos os Padrões HTML5 - W3C e WHATWG
+                        </a>
+                        </li>
+                        <li>
+                            <a alt="HTML5"
+                                href="https://www.w3schools.com/html/default.asp"
+                                target="_blank">
+                                HTML5 - W3Schools
+                            </a>
+                        </li>
+                        <li>
+                            <a alt="Exemplos HTML5"
+                                href="https://www.w3schools.com/html/html_examples.asp"
+                                target="_blank">
+                                Exemplos HTML5 - W3Schools
+                            </a>
+                        </li>
+                        <li>
+                            <a alt="Link para Roadmap de Estudos da Archevo"
+                                href="evo/evolucao-continua.html"
+                                target="_self">
+                                Roadmap de Estudos - ArchEvo
+                            </a>
+                        </li>
+                        <li>
+                            <a alt="Quiz HTML da W3Schools"
+                                href="https://www.w3schools.com/html/html_quiz.asp " 
+                                target="_blank">
+                                Quiz - W3Schools
+                            </a>
+                        </li>
+                        <li>
+                            <a alt="Validador de código HTML da W3C"
+                                href="https://whatwg.org/validator/" 
+                                target="_blank">
+                                Validador HTML - W3C
+                            </a>
+                        </li>
+                    </ul>
+                </details>
+            </section>    
+        </main>
+
+        <section id="motores-de-reinderizacao" class="body-grid-items item-section-1 section-flex-container">
+            <section class="section-flex-items item-principal">
+                <details>
+                    <summary><h3>Motores de Reinderização</h3></summary>
+                    <img id="img-html5-motores-de-reinderizacao" 
+                        alt="Motores de Reinderização dos Principais Navegadores"
+                        height="300px"
+                        src="medias/html5/html5-motores-de-reinderizacao.png"
+                        title="Motores de Reinderização dos Principais Navegadores">
+                    <ul>
+                        <li>
+                            Os <strong>motores de renderização</strong> são responsáveis por transformar os documentos HTML e os outros recursos da página ou app (como o CSS, por exemplo) em representações visuais e interativas;
+                        </li>
+                        <li>
+                            A tendência é que cada vez mais os navegadores tenham um padrão para que um documento HTML seja visualizado da mesma forma em qualquer navegador;
+                        </li>
+                        <li>
+                            Para definirmos alguns estilos CSS específicos de cada navegador, fazemos uso de <strong>prefixos</strong> antes dos atributos (veja os exemplos na imagem acima).
+                        </li>
+                    </ul>
+                </details>
+            </section>
+            <section class="section-flex-items item-links">
+                <details>
+                    <summary><h3><span>Saiba mais...</span></h3></summary>
+                    <ul>
+                        <li>
+                            <a href="https://www.alura.com.br/artigos/as-engines-de-renderizacao-dos-browsers?gclid=CjwKCAjwtfqKBhBoEiwAZuesiHXyy5PxvJhsLR3PeLGCjblAXvun27vd69-LtYYfeX1l8QvfsCgGnRoC_zsQAvD_BwE" 
+                                target="_blank">
+                                As Engines de Renderização dos Browsers - Alura
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://pt.wikipedia.org/wiki/Lista_de_motores_de_renderiza%C3%A7%C3%A3o"              
+                                target="_blank">
+                                Lista de Motores de Reinderização - Wikipedia
+                            </a>
+                        </li>
+                    </ul>
+                </details>  
+            </section>
+        </section>
+
+        <section id="sintaxe-elementos-e-atributos" class="body-grid-items item-section-2 section-flex-container">
+            <section class="section-flex-items item-principal">
+                <details>
+                    <summary><h3>Sintaxe: Elementos e Atributos</h3></summary>
+                    <ul>
+                        <li>
+                            Página HTML = <strong>elementos</strong> + <strong>atributos</strong>; 
+                        </li>
+                        <li>
+                            Abaixo, temos o elemento <span class="html-element">&lt;a></span> e seu atributo <span class="css-attribute">href</span>:
+                        </li>
+                    </ul>
+                    <img id="img-html5-sintaxe-elementos-e-atributos" class="img-com-borda"
+                        alt="Exemplo prático de um elemento com seus atributos"
+                        src="medias\html5\html5-elementos-e-atributos.PNG"
+                        title="Elementos e Atributos">
+                    <ul>
+                        <li>
+                            <strong>Elementos:</strong>
+                            <ul>
+                                <li>
+                                    Definidos por uma tag inicial, algum conteúdo e uma tag final;
+                                </li>
+                                <li>
+                                    Alguns elementos não possuem a tag final, como <span class="html-element">&lt;br></span>, <span class="html-element">&lt;hr></span> e <span class="html-element">&lt;img></span>;
+                                </li>
+                                <li>
+                                    Podem ser aninhados (elementos podem conter outros elementos).
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Atributos:</strong>
+                            <ul>
+                                <li>Fornecem informações adicionais sobre os elementos;</li>
+                                <li>São sempre especificados na tag inicial;</li>
+                                <li>Geralmente são definidos como <strong>nome-do-atributo = "valor"</strong>.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="padroes-grid-container">
+                        <div class="padroes-grid-item item-title">
+                            <img alt="Logo da Archevo"
+                                src="medias/_logos/logo-archevo-2.png">
+                            <p>Padrões, Recomendações & Boas Práticas</p>
+                        </div>
+                        <div class="padroes-grid-item item-content">
+                            <ul>
+                                <li>
+                                    O padrão HTML não requer tags em minúsculas, mas o W3C recomenda minúsculas em HTML e exige minúsculas para tipos de documentos mais restritos, como XHTML;
+                                </li>
+                                <li>
+                                    O padrão HTML não requer nomes de atributos em letras minúsculas, mas o W3C recomenda atributos em minúsculas em HTML e exige atributos em minúsculas para tipos de documentos mais restritos, como XHTML;
+                                </li>
+                                <li>
+                                    O W3C recomenda o uso de aspas ("") em torno dos valores dos atributos HTML e exige seu uso para tipos de documentos mais restritos, como XHTML;
+                                </li>
+                                <li>
+                                    HTML permite espaços em torno de sinais de igual. Mas menos espaço é mais fácil de ler e agrupa melhor as entidades;
+                                </li>
+                                <li>
+                                    Se usar um editor como o <strong>VSCode</strong>, vá na opção "Ver" e ative a opção "Quebra De Texto" para que não seja necessário rolar para a esquerda e direita para visualizar a linha de código;
+                                </li>
+                                <li>
+                                    Não adicione linhas em branco, espaços ou recuos sem um motivo;
+                                </li>
+                                <li>
+                                    Para facilitar a leitura, adicione linhas em branco para separar blocos de código grandes ou lógicos;
+                                </li>
+                                <li>
+                                    Para facilitar a leitura, adicione dois espaços de recuo. Não use a tecla tab.
+                                </li>
+                                <li>
+                                    No HTML não é obrigatório fechar elementos que não tem a tag final, como o <span class="html-element">&lt;br></span>. Agora, se você espera que um software XML ou XHTML acesse sua página, mantenha a barra de fechamento ("/"), porque ela é necessária em XML e XHTML.
+                                </li>
+                                <li>
+                                    Para nomes de arquivos, além de não deixar espaços, é recomendado sempre usar letras minúsculas para evitar erros em alguns web servers, como os Apache e Unix, ou após uma eventual migração para eles.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </details>
+            </section>
+            <section class="section-flex-items item-links">
+                <details>
+                    <summary><h3><span>Saiba mais...</span></h3></summary>
+                    <ul>
+                        <li>
+                            <a href="https://developer.mozilla.org/pt-BR/docs/Learn/Getting_started_with_the_Web/HTML_basics#anatomia_de_um_elemento_html"
+                                target="_blank">
+                                Anatomia de um Elemento HTML - MDN
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.w3schools.com/html/html_elements.asp" target="_blank">
+                                Elementos HTML5 - W3Schools
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.w3schools.com/html/html_attributes.asp" target="_blank">
+                                Atributos HTML5 - W3Schools
+                            </a>
+                        </li>
+                    </ul>
+                </details>  
+            </section>
+        </section>
+
+        <section id="estrutura-basica-de-uma-pagina-html" class="body-grid-items item-section-3 section-flex-container">
+            <section class="section-flex-items item-principal">
+                <details>
+                    <summary><h3>Estrutura Básica de uma Página HTML</h3></summary>
+                    <img id="img-html5-estrutura-basica-de-uma-pagina-html" class="img-com-borda" 
+                        alt="Exemplo da Estrutura Básica de uma Página HTML"
+                        src="medias/html5/html5-primeira-pagina.PNG"
+                        title="Exemplo da Estrutura Básica de uma Página HTML">
+                    <ul>
+                        <li>
+                            <span class="html-element">&lt;html></span>: Define a raiz de um documento HTML;
+                        </li>
+                        <li>
+                            <span class="html-element">&lt;head></span>: É um contêiner para metadados (dados sobre dados);
+                        </li>
+                        <li>
+                            <span class="html-element">&lt;body></span>: Define o corpo do documento HTML.
+                        </li>
+                    </ul>
+                </details>
+            </section>
+            <section class="section-flex-items item-links">
+                <details>
+                    <summary><h3><span>Saiba mais...</span></h3></summary>
+                    <ul>
+                        <li>
+                            <a href="https://www.w3schools.com/html/html_intro.asp" target="_blank">
+                                Introdução ao HTML - W3Schools
+                            </a>
+                        </li>
+                    </ul>
+                </details>  
+            </section>
+        </section>
+
+        <section id="estrutura-semantica" class="body-grid-items item-section-4 section-flex-container">
+            <section class="section-flex-items item-principal">
+                <details>
+                    <summary><h3>Estrutura Semântica</h3></summary>
+                    <ul>
+                        <li>
+                            Uma Web semântica permite que os dados sejam compartilhados e reutilizados em aplicativos, empresas e comunidades;
+                        </li>
+                        <li>
+                            A <strong>Estrutura Semântica</strong> auxilia também para as questões de Acessibilidade e tem um importante papel em relação aos motores de busca (SEOs). Abaixo, alguns desses principais elementos semânticos:
+                        </li>
+                    </ul>
+                    <img id="img-html5-estrutura-semantica" 
+                        alt="Imagem de uma Estrutura Semântica"
+                        height="550px"
+                        src="medias/html5/html5-estrutura-semantica.PNG"
+                        title="Estrutura Semântica">
+                    <ul>
+                        <li>
+                            Alguns outros exemplos de elementos semânticos são:
+                            <ul>
+                                <li>
+                                    <span class="html-element">&lt;details></span>;
+                                </li>
+                                <li>
+                                    <span class="html-element">&lt;summary></span>;
+                                </li>
+                                <li>
+                                    <span class="html-element">&lt;figure></span>;
+                                </li>
+                                <li>
+                                    <span class="html-element">&lt;figcaption></span>;
+                                </li>
+                                <li>
+                                    <span class="html-element">&lt;mark></span>;
+                                </li>
+                                <li>
+                                    <span class="html-element">&lt;time></span>;
+                                </li>
+                                <li>
+                                    <span class="html-element">&lt;dl></span>, <span class="html-element">&lt;dt></span> e <span class="html-element">&lt;dd></span>;
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="padroes-grid-container">
+                        <div class="padroes-grid-item item-title">
+                            <img alt="Logo da Archevo"
+                                src="medias/_logos/logo-archevo-2.png">
+                            <p>Padrões, Recomendações & Boas Práticas</p>
+                        </div>
+                        <div class="padroes-grid-item item-content">
+                            <ul>
+                                <li><span class="html-element">&lt;header></span>:
+                                    <ul>
+                                        <li>
+                                            Pode conter ou não um <span class="html-element">&lt;hgroup></span>;
+                                        </li>
+                                        <li>
+                                            Não é dividido por <span class="html-element">&lt;section></span>;
+                                        </li>
+                                        <li>
+                                            Podem ezistir vários elementos <span class="html-element">&lt;header></span> em um documento HTML. No entanto, <span class="html-element">&lt;header></span> não pode ser colocado em um <span class="html-element">&lt;footer></span>, <span class="html-element">&lt;address></span> ou outro elemento <span class="html-element">&lt;header></span>.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><span class="html-element">&lt;nav></span>:
+                                    <ul>
+                                        <li>
+                                            Pode estar dentro ou fora do <span class="html-element">&lt;header></span>;
+                                        </li>
+                                        <li>
+                                            Nem todos os grupos de links em uma página precisam estar em um elemento dele, já que se destina principalmente a seções que consistem em blocos de navegação principais;
+                                        </li>
+                                        <li>
+                                            Links para várias páginas de um site, como os termos de serviço, a página inicial e uma página de direitos autorais, podem estar contidos no <span class="html-element">&lt;footer></span>;
+                                        </li>
+                                        <li>
+                                            Dentro de um mesmo documento, podem existir um <span class="html-element">&lt;nav></span> para a navegação primária e outro(s) para as navegações secundário(s);
+                                        </li>
+                                        <li>
+                                            Navegadores, como leitores de tela para usuários com deficiência, podem usar esse elemento para determinar se a renderização inicial desse conteúdo deve ser omitida.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><span class="html-element">&lt;main></span>:
+                                    <ul>
+                                        <li>Representa o conteúdo dominante da página;</li>
+                                        <li>
+                                            Um documento não deve ter mais de um elemento <span class="html-element">&lt;main></span> que não tenha o atributo <span class="html-element">hidden</span>especificado.
+                                        </li>
+                                        <li>
+                                            Não pode ser descente das tags <span class="html-element">&lt;header></span>, <span class="html-element">&lt;nav></span>, <span class="html-element">&lt;aside></span>, <span class="html-element">&lt;article></span> ou <span class="html-element">&lt;footer></span>, mas pode ser descendente das tags <span class="html-element">&lt;section></span>;
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><span class="html-element">&lt;article></span>:
+                                    <ul>
+                                        <li>
+                                            Deve fazer sentido por si só e deve ser possível distribuí-lo independentemente do resto do site;
+                                        </li>
+                                        <li>
+                                            Pode ser dividido em uma ou mais <span class="html-element">&lt;section></span> que, por sua vez, pode(m) conter outros <span class="html-element">&lt;article></span>;
+                                        </li>
+                                        <li>
+                                            Pode estar aninhado dentro de outro <span class="html-element">&lt;article></span>, porém, as informações do autor (<span class="html-element">&lt;address></span>) não se aplicam a elementos do <span class="html-element">&lt;article></span> aninhado;
+                                        </li>
+                                        <li>
+                                            Pode conter seus próprios <span class="html-element">&lt;header></span> e <span class="html-element">&lt;footer></span>.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><span class="html-element">&lt;section></span>:
+                                    <ul>
+                                        <li>
+                                            Não precisa necessariamente estar dentro de um <span class="html-element">&lt;article></span>, na verdade pode até existir sem ele;
+                                        </li>
+                                        <li>
+                                            Geralmente tem seu próprio título (<span class="html-element">&lt;h1>..&lt;h6></span>);
+                                        </li>
+                                        <li>
+                                            Pode conter <span class="html-element">&lt;article></span>;
+                                        </li>
+                                        <li>
+                                            Os autores são encorajados a usar o elemento <span class="html-element">&lt;article></span> em vez do elemento <span class="html-element">&lt;section></span> quando faz sentido organizar o conteúdo do elemento;
+                                        </li>
+                                        <li>
+                                            Não é um elemento de contêiner genérico. Quando um elemento é necessário apenas para fins de estilo ou como uma conveniência para scripts, os autores são incentivados a usar o elemento <span class="html-element">&lt;div></span>. Uma regra geral é que o elemento <span class="html-element">&lt;section></span> é apropriado apenas se o conteúdo do elemento for listado explicitamente no esboço do documento.
+                                        </li>
+                                        <li>
+                                            Pode ter outra <span class="html-element">&lt;section></span> aninhada.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><span class="html-element">&lt;aside></span>:
+                                    <ul>
+                                        <li>
+                                            Representa uma seção de uma página que consiste em um conteúdo tangencialmente relacionado ao conteúdo principal, mas que pode ser considerado separado desse conteúdo;
+                                        </li>
+                                        <li>
+                                            Pode ter seu(s) próprio(s) <span class="html-element">&lt;nav></span>;
+                                        </li>
+                                        <li>
+                                            Um documento pode conter mais de um <span class="html-element">&lt;aside>.</span>
+                                        </li>
+                                    </ul>
+                                </li>   
+                                <li><span class="html-element">&lt;footer></span>:
+                                    <ul>
+                                        <li>
+                                            Pode ser o rodapé da página inteira ou de alguma seção dela, como um <span class="html-element">&lt;article></span> ou uma <span class="html-element">&lt;section>;</span>
+                                        </li>
+                                        <li>
+                                            Pode conter ou não um <span class="html-element">&lt;address></span>;
+                                        </li>
+                                        <li>
+                                            Um documento pode conter mais de um <span class="html-element">&lt;footer></span>;
+                                        </li>
+                                        <li>
+                                            Pode estar logo no começo do <span class="html-element">&lt;body></span>.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><span class="html-element">&lt;address></span>:
+                                    <ul>
+                                        <li>
+                                            Pode estar dentro ou fora do <span class="html-element">&lt;header></span>;
+                                        </li>
+                                        <li>
+                                            Não deve ser usado para representar endereços arbitrários (por exemplo, endereços postais), a menos que esses endereços sejam de fato as informações de contato relevantes. O elemento <span class="html-element">&lt;p></span> é o elemento apropriado para marcar endereços postais em geral;
+                                        </li>
+                                        <li>
+                                            Não deve conter outras informações além de informações de contato;
+                                        </li>
+                                        <li>
+                                            Geralmente faz parte do <span class="html-element">&lt;footer></span>.
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>    
+                </details>
+            </section>
+            <section class="section-flex-items item-links">
+                <details>
+                    <summary><h3><span>Saiba mais...</span></h3></summary>
+                    <ul>
+                        <li>
+                            <a href="https://html.spec.whatwg.org/#section-or-section"
+                                target="_blank">
+                                Article ou Section? - WHATWG/W3C
+                            </a>
+                        </li>
+                    </ul>
+                </details>
+            </section>
+        </section>
+
+        <section id="modelos-de-conteudo" class="body-grid-items item-section-5 section-flex-container">
+            <section class="section-flex-items item-principal">
+                <details>
+                    <summary><h3>Modelos de Conteúdo</h3></summary>
+                    <img id="" 
+                        alt=""
+                        height=""
+                        src="medias/html5/html5-content-models.jpg"
+                        title="">
+                    <ul>
+                        <li>
+                            https://www.sololearn.com/learning/1014/2191/4338/1
+                        </li>
+                    </ul>
+    
+                    <div class="padroes-grid-container">
+                        <div class="padroes-grid-item item-title">
+                            <img alt="Logo da Archevo"
+                                src="medias/_logos/logo-archevo-2.png">
+                            <p>Padrões, Recomendações & Boas Práticas</p>
+                        </div>
+                        <div class="padroes-grid-item item-content">
+                            <ul>
+                                <li>
+    
+                                </li>
+                            </ul>    
+                </details>
+            </section>
+            <section class="section-flex-items item-links">
+                <details>
+                    <summary><h3><span>Saiba mais...</span></h3></summary>
+                    <ul>
+                        <li>
+                            <a href="https://html.spec.whatwg.org/#section-or-section"
+                                target="_blank">
+                                Article ou Section? - WHATWG/W3C
+                            </a>
+                        </li>
+                    </ul>
+                </details>
+            </section>
+        </section>
+
+        <section id="principais-elementos-e-atributos-do-cabecalho" class="body-grid-items item-section-6 section-flex-container">
+            <section class="section-flex-items item-principal">
+                <details>
+                    <summary><h3>Principais Elementos e Atributos do Cabeçalho</h3></summary>
+                    <img id="img-html5-principais-elementos-e-atributos-do-cabecalho" class="img-com-borda" 
+                        alt="Exemplo dos Principais Elementos e Atributos do Cabeçalho"
+                        src="medias/html5/html5-head.PNG"
+                        title="Exemplo dos Principais Elementos e Atributos do Cabeçalho">
+                    <ul>
+                        <li>
+                            <span class="html-element">&lt;!DOCTYPE <span class="css-attribute">html</span>></span>: Primeiro elemento, definido na primeira linha, antes do <span class="html-element">&lt;head></span> e que declara que o documento está escrito em <strong>HTML5</strong>;
+                        </li>
+                        <li>
+                            <span class="css-attribute">lang</span>: Atributo da tag <span class="html-element">&lt;html></span>, definida antes do <span class="html-element">&lt;head></span> e que especifica o idioma que o documento irá usar;
+                        </li>
+                        <li>
+                            <span class="html-element">&lt;meta></span>: Contém meta informações sobre o documento;
+                        </li>
+                        <li>
+                            <span class="html-element">&lt;base></span>: Especifica a URL base e/ou destino para todas as URLs relativos em um documento;
+                        </li>
+                        <li>
+                            <span class="css-attribute">charset</span>: Atributo de <span class="html-element">&lt;meta></span> que define o conjunto de caracteres usado no documento;
+                        </li>
+                        <li>
+                            <span class="html-element">&lt;title></span>: Especifica um título para o documento;
+                        </li>
+                        <li>
+                            <span class="html-element">&lt;style></span>: Define estilos CSS usados no documento;
+                        </li>
+                        <li>
+                            <span class="html-element">&lt;link></span>: Permite que os autores vinculem seus documentos a outros recursos, 
+                            como um ".css" com a especificação dos estilos CSS;
+                        </li>
+                        <li>
+                            <span class="html-element">&lt;script></span>: Define um script para executar funções na página, a partir de comandos <b>embutidos</b> ou <b>definidos em um arquivo ".js" remoto</b>, por exemplo.
+                        </li>
+                    </ul>
+                    <div class="padroes-grid-container">
+                        <div class="padroes-grid-item item-title">
+                            <img alt="Logo da Archevo"
+                                src="medias/_logos/logo-archevo-2.png">
+                            <p>Padrões, Recomendações & Boas Práticas</p>
+                        </div>
+                        <div class="padroes-grid-item item-content">
+                            <ul>
+                                <li>
+                                    Sempre declare o tipo de documento (com )<span class="html-element">&lt;!DOCTYPE <span class="css-attribute">html</span>>)</span>;
+                                </li>
+                                <li>
+                                    Sempre inclua o atributo <span class="css-attribute">lang</span> dentro da tag <span class="html-element">&lt;html></span>, para declarar o idioma da página. Isso serve para auxiliar os mecanismos de pesquisa e navegadores;
+                                </li>
+                                <li>
+                                    Para garantir a interpretação adequada e a indexação correta do mecanismo de pesquisa, o idioma e a codificação de caracteres, através do atributo <span class="css-attribute">charset</span>, devem ser definidos o mais cedo possível em um documento HTML;
+                                </li>
+                                <li>
+                                    Inclua o seguinte elemento <span class="html-element">&lt;meta></span> em todas as suas páginas para fornecer ao navegador instruções sobre como controlar as dimensões e a escala da página, garantindo maior <strong>responsividade</strong>:<br>
+                                    <img id="img-html5-viewport" class="img-com-borda"
+                                        alt="Imagem do elemento meta com viewport"                                    src="medias/html5/html5-meta-viewport.png"                                    title="Elemento meta com viewport">
+                                </li>
+                                <li>
+                                    O <span class="html-element">&lt;title></span> é muito importante para a <strong>otimização do mecanismo de pesquisa (SEO)</strong>. O título da página é usado pelos algoritmos do mecanismo de pesquisa para decidir a ordem ao listar as páginas nos resultados da pesquisa. Portanto, tente tornar o título o mais preciso e significativo possível;
+                                </li>
+                                <li>
+                                    Use uma sintaxe simples no <span class="html-element">&lt;link></span> para vincular o CSS (o atributo <span class="css-attribute">type</span> não é necessário);
+                                </li>
+                                <li>
+                                    Use uma sintaxe simples para carregar scripts externos com o elemento <span class="html-element">&lt;script></span>(o atributo <span class="css-attribute">type</span> não é necessário);
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                </details>
+            </section>
+            <section class="section-flex-items item-links">
+                <details>
+                    <summary><h3><span>Saiba mais...</span></h3></summary>
+                    <ul>
+                        <li>
+                            <a href="https://www.w3schools.com/tags/default.asp" target="_blank">
+                                Referência dos Elementos HTML5 - W3Schools
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.w3schools.com/tags/ref_attributes.asp" target="_blank">
+                                Referência dos Atributos HTML5 - W3Schools
+                            </a>
+                        </li>
+                    </ul>
+                </details> 
+            </section>
+        </section>
+
+        <section id="principais-elementos-do-corpo" class="body-grid-items item-section-7 section-flex-container">
+            <section class="section-flex-items item-principal">
+                <details>
+                    <summary><h3>Principais Elementos do Corpo</h3></summary>
+                    <ul>
+                        <li>
+                            <span class="html-element">&lt;h1>..&lt;h6></span>: Definem diferentes níveis de importância de títulos;
+                        </li>
+                        <li><span class="html-element">&lt;p1></span>: Define um parágrafo;</li>
+                        <li><span class="html-element">&lt;!-- --></span>: Define um comentário;</li>
+                        <li><span class="html-element">&lt;hr></span>: Define uma linha horizontal;</li>
+                        <li><span class="html-element">&lt;br></span>: Pula uma linha;</li>
+                        <li><span class="html-element">&lt;a></span>: Define um link;</li>
+                        <li><span class="html-element">&lt;img></span>: Define uma imagem;</li>
+                        <li><span class="html-element">&lt;table></span>: Cria uma tabela;</li>
+                        <li><span class="html-element">&lt;form></span>: Cria um formulário;</li>
+                        <li><span class="html-element">&lt;video></span>: Define um espaço para a exibição de um vídeo.</li>
+                    </ul>
+                    <div class="padroes-grid-container">
+                        <div class="padroes-grid-item item-title">
+                            <img alt="Logo da Archevo"
+                                src="medias/_logos/logo-archevo-2.png">
+                            <p>Padrões, Recomendações & Boas Práticas</p>
+                        </div>
+                        <div class="padroes-grid-item item-content">
+                            <ul>
+                                <li>
+                                    Não use <span class="html-element">&lt;h1>..&lt;h6></span> simplesmente para tornar o texto <b>GRANDE</b> ou em <b>negrito</b>.
+                                </li>
+                                <li>
+                                    Comentários longos são mais fáceis de observar se forem recuados com dois espaços e aqueles que se estendem por mais de uma linha, devem ser escrito assim:<br>
+                                    <img id="img-html5-long-comments" class="img-com-borda" 
+                                        alt="Exemplo de comentários grandes"
+                                        src="medias/html5/html5-long-comments.png"
+                                        style="height: 100%;"
+                                        title="Comentários Grandes">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </details>
+            </section>
+            <section class="section-flex-items item-links">
+                <details>
+                    <summary><h3><span>Saiba &nbsp; mais...</span></h3></summary>
+                    <ul>
+                        <li>
+                            <a href="https://www.w3schools.com/tags/default.asp" target="_blank">
+                                Referência dos Elementos HTML5 - W3Schools
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.w3schools.com/tags/ref_attributes.asp" target="_blank">
+                                Referência dos Atributos HTML5 - W3Schools
+                            </a>
+                        </li>
+                    </ul>
+                </details>
+            </section>
+        </section>
+
+        <section id="links-e-imagens" class="body-grid-items item-section-8 section-flex-container">
+            <section class="section-flex-items item-principal">
+                <details>
+                    <summary><h3>Links e Imagens</h3></summary>
+                    <ul>
+                        <li>
+                            Imagem como um link:<br>
+                            <img id="img-html5-links-e-imagens" class="img-com-borda" 
+                                alt="Exemplo de código de uma imagem com link"
+                                src="medias/html5/html5-links-e-imagens.PNG"
+                                title="Exemplo de código de uma imagem com link">
+                            <br>  
+                            <a href="index.html"
+                                target="_self">
+                                <img id="img-html5-links-e-imagens-2" class="img-com-borda"
+                                    alt="Logo da ArchEvo"
+                                    height="60px"
+                                    src="medias/_logos/logo-archevo.png"
+                                    title="ArchEvo | Home">
+                            </a>
+                        </li>
+                        <li>
+                            Botão com um link para enviar um e-mail:<br>
+                            <img id="img-html5-email-button" class="img-com-borda" 
+                                alt="Exemplo de código de um botão com um link para enviar e-mail"
+                                src="medias/html5/html5-email-button.PNG"
+                                title="Exemplo de código de um botão com um link para enviar e-mail">
+                            <br>
+                            <button onclick="document.location='mailto:williamcardoso.ti@gmail.com'">
+                                Enviar um e-mail
+                            </button>
+                        </li>
+                        <li>
+                            <span class="html-element">&lt;picture></span>:<br>
+                            <picture>
+                                <source media="(min-width: 960px)" srcset="medias/examples/sea.jpg">
+                                <source media="(min-width: 760px)" srcset="medias/examples/river.jpg">
+                                <img src="medias/examples/mountains.jpg" alt="Paisagem">
+                            </picture>
+                        </li>
+                        <li>
+                            <span class="html-element">&lt;figure></span>:<br>
+                            <ul>
+                                <li>
+                                    Exemplo com código:
+                                    <figure>
+                                        <pre style="background-color: black; width: fit-content;">
+        function NavigatorExample(){
+            var txt;
+            txt = "Browser CodeName: " + navigator.appCodeName;
+            txt+= "Browser Name: " + navigator.appName;
+            txt+= "Browser Version: " + navigator.appVersion ;
+            txt+= "Cookies Enabled: " + navigator.cookieEnabled;
+            txt+= "Platform: " + navigator.platform;
+            txt+= "User-agent header: " + navigator.userAgent;
+        }
+                                        </pre>
+                                        <figcaption>
+                                            Obtenha os detalhes do browser usando navigator
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    Exemplo com imagem:
+                                    <figure style="width: 30%;">
+                                        <img alt="Enzo no pula-pula"
+                                            src="medias/examples/enzo-jumping.JPG" 
+                                            style="width:100%">
+                                        <figcaption style="text-align: center;">Fig.1 - Enzo no Pula-pula</figcaption>
+                                    </figure>
+                                </li>
+                            </ul>                        
+                        </li>
+                        <li>
+                            <span class="css-value">object-fit</span>:<br>
+                            <ul>
+                                <li>
+    
+                                </li>
+                            </ul>
+                    </ul>
+                    <br>
+                    <ul>
+                        <li>
+                            <strong>URL Absoluta:</strong> 
+                            <ul>
+                                <li>
+                                    "Link completo" para um conteúdo externo, hospedado em outro site:<br>
+                                    src="https://www.w3schools.com/images/img_girl.jpg"
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>URL Relativa:</strong> 
+                            <ul>
+                                <li>
+                                    "Link parcial" (sem o domínio) para um conteúdo hospedado localmente;
+                                </li>
+                                <li>
+                                    Se a URL começar sem a barra, ela será relativa à página atual:<br>
+                                    src="img_girl.jpg".
+                                </li>
+                                <li>
+                                    Se a URL começar com uma barra, ela será relativa ao domínio:<br>
+                                    src="/images/img_girl.jpg".
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="padroes-grid-container">
+                        <div class="padroes-grid-item item-title">
+                            <img alt="Logo da Archevo"
+                                src="medias/_logos/logo-archevo-2.png">
+                            <p>Padrões, Recomendações & Boas Práticas</p>
+                        </div>
+                        <div class="padroes-grid-item item-content">
+                            <ul>
+                                <li>
+                                    Utilize <strong>URLs Relativas</strong> para os conteúdos e recursos da sua página. Assim, caso o diretório do domínio seja alterado, não ocasionará em links quebrados;
+                                </li>
+                                <li>
+                                    A tag <span class="html-element">&lt;base></span> especifica a URL base e/ou destino para todos as <strong>URL Relativas</strong> em um documento;
+                                </li>
+                                <li>
+                                    Imagens externas podem estar protegidas por <strong>direitos autorais</strong>. Se você não obtiver permissão para usá-las, pode estar violando as leis de direitos autorais. Além disso, você não pode controlar imagens externas; elas podem ser removidas ou repentinamente. Assim, a <strong>recomendação é para priorizar imagens locais</strong>;
+                                </li>
+                                <li>
+                                    Sempre forneça o atributo <span class="css-attribute">alt</span> para as imagens. Assim, quando as imagens não puderem ser carregadas na página, um <strong>leitor de tela</strong> poderá "ler" seu conteúdo para pessoas com deficiência visual ou com dificuldades de aprendizagem. Um leitor de tela é um programa de software que lê o código HTML e permite ao usuário "ouvir" o conteúdo exibido na tela;
+                                </li>
+                                <li>
+                                    Sempre especifique o tamanho de uma imagem. Se largura e altura não forem especificadas, a página da web pode piscar enquanto a imagem carrega;
+                                </li>
+                                <li>
+                                    Quando o <span class="css-attribute">width</span> for definido como 100%, a imagem se tornará <strong>responsiva</strong> e será dimensionada para cima e para baixo ao redimensionar a janela do navegador;
+                                </li>
+                                <li>
+                                    Se a propriedade <span class="css-attribute">max-width</span> for definida como 100%, a imagem será reduzida se necessário, mas nunca aumentará para ser maior do que seu tamanho original;
+                                </li>
+                                <li>
+                                    Usar o atributo <span class="css-attribute">style</span>, ao invés de <span class="css-attribute">height</span> e <span class="css-attribute">width</span> para definir o tamanho das imagens, impede que as folhas de estilo alterem o tamanho delas;
+                                </li>
+                                <li>
+                                    Carregar imagens grandes leva tempo e pode tornar sua página da Web lenta. Prefira imagens menores ou com formatos mais leves.
+                                </li>
+                                <li>
+                                    Sempre especifique um elemento <span class="html-element">&lt;img></span> como o último elemento filho do elemento <span class="html-element">&lt;picture></span>. O elemento <span class="html-element">&lt;img></span> é usado por navegadores que não suportam o elemento <span class="html-element">&lt;picture></span> ou se nenhuma das tags <span class="html-element">&lt;source></span> corresponder.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </details>
+            </section>
+            <section class="section-flex-items item-links">
+                <details>
+                    <summary><h3><span>Saiba mais...</span></h3></summary>
+                    <ul>
+                        <li>
+                            <a href="https://www.w3schools.com/html/html_links.asp" target="_blank">
+                                HTML Links - W3Schools
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.w3schools.com/tags/tag_base.asp">
+                                Tag <span class="html-element">&lt;base></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.w3schools.com/html/html_images.asp">
+                                Imagens - W3Schools
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.w3schools.com/html/html_favicon.asp">
+                                favicon - W3Schools
+                            </a>
+                        </li>
+                    </ul>
+                </details>
+            </section>
+        </section>
+
+        <section id="listas-e-estilos" class="body-grid-items item-section-9 section-flex-container">
+            <section class="section-flex-items item-principal">
+                <details>
+                    <summary><h3>Listas e Estilos</h3></summary>
+                    <section style="display: flex;
+                        justify-content: space-between;
+                        padding-bottom: 20px;
+                        padding-left: 32px">
+                        <div id="lista-ordenada" 
+                            style="display: flex;
+                                background-color: black;
+                                border: 1px solid white;
+                                flex-direction: column;
+                                inline-size: 32%;">
+                            <div style="height: 260px;">
+                                <a href="medias/html5/html5-lista-ordenada-2.png"
+                                    target="_blank">
+                                    <img alt="Exemplo de Código de uma Lista Ordenada"
+                                        src="medias/html5/html5-lista-ordenada.png"
+                                        style="inline-size: 100%; padding:0; margin:0"
+                                        title="Exemplo de Código de uma Lista Ordenada">
+                                </a>   
+                            </div>
+                            <div style="color: greenyellow;
+                                    font-family: cursive;
+                                    inline-size: 100%;
+                                    padding: 10px 10px 20px 10px">
+                                <p>
+                                    Ordenada 
+                                    <span class="html-element">&lt;ol></span>:
+                                </p>
+                                <br>
+                                <ol start="4" 
+                                        style="padding-left: 50px;" 
+                                        type="A">
+                                    <li>Planejamento</li>
+                                    <li>Requisitos</li>
+                                    <li>Desenho</li>
+                                    <li>Desenvolvimento</li>
+                                    <li>Implantação</li>
+                                    <li>Operação</li>
+                                    <li>EOL</li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div id="lista-desordenada" style="display: flex;
+                            background-color: black;
+                            border: 1px solid white;
+                            flex-direction: column;
+                            inline-size: 32%;">
+                            <div style="height: 260px;">
+                                <a href="medias/html5/html5-lista-desordenada.png"
+                                    target="_blank">
+                                    <img alt="Exemplo de Código de uma Lista Desordenada"
+                                        src="medias/html5/html5-lista-desordenada.png"
+                                        style="inline-size: 100%; padding:0; margin:0"
+                                        title="Exemplo de Código de uma Lista Desordenada">
+                                </a>   
+                            </div>
+                            <div style="color:rgba(255, 255, 0, 0.877);
+                                font-family: monospace;
+                                font-size: 19px;
+                                inline-size: 100%;
+                                padding: 10px 10px 0 10px;">
+                                <p>
+                                    Desordenada 
+                                    <span class="html-element">&lt;ul></span>:
+                                </p>
+                                <br>
+                                <ul style="list-style-type:square; 
+                                        padding-left: 20px;">
+                                    <li>
+                                        Front-End:
+                                        <ul>
+                                            <li>Angular</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        Back-End:
+                                        <ul>
+                                            <li>Node.js</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        Banco de Dados:
+                                        <ul>
+                                            <li>MongoDB</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        Nuvem:
+                                        <ul>
+                                            <li>AWS</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="lista-descritiva" style="display: flex;
+                                background-color: black;
+                                border: 1px solid white;
+                                flex-direction: column;
+                                inline-size: 32%;">
+                            <div style="height: 260px;">
+                                <a href="medias/html5/html5-lista-descritiva-2.png"
+                                    target="_blank">
+                                    <img alt="Exemplo de Código de uma Lista Descritiva"
+                                        src="medias/html5/html5-lista-descritiva.png"
+                                        style="inline-size: 100%; padding:0; margin:0"
+                                        title="Exemplo de Código de uma Lista Descritiva">
+                                </a>   
+                            </div>
+                            <div style="color: #FF00FF;
+                                    font-family: Cambria, 'Times New Roman', serif;
+                                    font-size: 19px;
+                                    font-weight: bold;
+                                    inline-size: 100%;
+                                    padding: 10px 0;">
+                                <p>
+                                    Descritiva <span class="html-element">&lt;dl></span>:
+                                </p>
+                                <br>
+                                <dl style="padding-left: 1px">
+                                    <dt>HTML</dt>
+                                        <dd style="padding-bottom: 10px;">&nbsp;&nbsp;&nbsp;>> Estrutura</dd>
+                                    <dt>CSS</dt>
+                                        <dd style="padding-bottom: 10px;">&nbsp;&nbsp;&nbsp;>> Aparência</dd>
+                                    <dt>JavaScript</dt>
+                                        <dd style="padding-bottom: 10px;">&nbsp;&nbsp;&nbsp;>> Comportamento</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </section>
+                </details>
+            </section>
+            <section class="section-flex-items item-links">
+                <details>
+                    <summary><h3><span>Saiba mais...</span></h3></summary>
+                    <ul>
+                        <li>
+                            <a href="https://www.w3schools.com/html/html_lists.asp" target="_blank">
+                                Listas - W3Schools
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.w3schools.com/html/html_lists_ordered.asp" target="_blank">
+                                Listas Ordenadas - W3Schools
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.w3schools.com/html/html_lists_unordered.asp" target="_blank">
+                                Listas Desordenadas - W3Schools
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.w3schools.com/html/html_lists_other.asp" target="_blank">
+                                Listas de Descrição - W3Schools
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.w3schools.com/html/html_styles.asp" target="_blank">
+                                Estilos - W3Schools
+                            </a>
+                        </li>
+                    </ul>
+                </details>
+            </section>
+        </section>
+
+        <section id="tabelas-e-formatacao-de-texto" class="body-grid-items item-section-10 section-flex-container">
+            <section class="section-flex-items item-principal">
+                <details>
+                    <summary><h3>Tabelas e Formatação de Texto</h3></summary>
+                    <table>
+                        <caption align="bottom"><em><small><b>Fontes:</b> W3Schools e outras</small></em></caption>
+                        <thead>
+                            <tr>
+                                <th>Tag</th>
+                                <th>Uso</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="caption-side:bottom">-</td>
+                                <td>Esse é um texto sem formatação.</td>
+                            </tr>
+                            <tr>
+                                <td><span class="html-element">&lt;b></span></td>
+                                <td><b>Texto em negrito.</b></td>
+                            </tr>
+                            <tr>
+                                <td><span class="html-element">&lt;strong></span></td>
+                                <td><strong>Texto em negrito.</strong></td>   
+                            </tr>
+                            <tr>
+                                <td><span class="html-element">&lt;i></span></td>
+                                <td><i>Texto em itálico.</i></td>
+                            </tr>
+                            <tr>
+                                <td><span class="html-element">&lt;em></span></td>
+                                <td><em>Texto em itálico.</em></td>   
+                            </tr>                        
+                            <tr>
+                                <td><span class="html-element">&lt;mark></span></td>
+                                <td><mark style="background-color: lime;">Texto marcado.</mark></td>   
+                            </tr>
+                            <tr>
+                                <td><span class="html-element">&lt;abbr></span></td>
+                                <td><abbr title="HyperText Markup Language">HTML</abbr></td>
+                            </tr>
+                            <tr>
+                                <td><span class="html-element">&lt;bdo></span></td>
+                                <td>
+                                    <bdo dir="rtl">Esse texto será escrito da esquerda pra direita.</bdo>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><span class="html-element">&lt;bdi></span></td>
+                                <td>
+                                    <ul>
+                                        <li>User <bdi>hrefs</bdi>: 60 points</li>
+                                        <li>User <bdi>jdoe</bdi>: 80 points</li>
+                                        <li>User <bdi>إيان</bdi>: 90 points</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><span class="html-element">&lt;cite></span></td>
+                                <td><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</td>
+                            </tr>
+                            <tr>
+                                <td><span class="html-element">&lt;del></span></td>
+                                <td><del>Texto deletado.</del></td>   
+                            </tr>
+                            <tr>
+                                <td><span class="html-element">&lt;ins></span></td>
+                                <td><ins>Texto inserido.</ins></td>   
+                            </tr>
+                            <tr>
+                                <td><span class="html-element">&lt;code></span></td>
+                                <td>Pequeno fragmento de código, como a função <code>alert()</code>.</td>   
+                            </tr>
+                            <tr>
+                                <td><span class="html-element">&lt;pre></span></td>
+                                <td>
+                                    Preserva a formatação original:
+                                    <br><br>
+                                    <pre>
+        "A solidão é um câncer que me tortura,
+            Sinto me feio sem saber o porquê
+                Os espelhos deixam minha mente confusa,
+                    Seus reflexos só me fazem sofrer"
+                                    </pre>
+                                </td>   
+                            </tr>
+                            <tr>
+                                <td><span class="html-element">&lt;dfn></span></td>
+                                <td>
+                                    <dfn title="HyperText Markup Language">HTML</dfn> é a linguagem de marcação padrão para a criação de páginas web.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><span class="html-element">&lt;kbd></span></td>
+                                <td>Pressione <kbd>Ctrl</kbd> + <kbd>C</kbd> para Copiar.</td>
+                            </tr>
+                            <tr>
+                                <td><span class="html-element">&lt;s></span></td>
+                                <td><s>Texto que não é mais correto, preciso ou relevante.</s></td>
+                            </tr>
+                            <tr>
+                                <td><span class="html-element">&lt;samp></span></td>
+                                <td>
+                                    <p>Mensagem do meu computador:</p>
+                                    <p><samp>File not found.<br>Press F1 to continue</samp></p>
+                                </td>
+                            </tr>           
+                            <tr>
+                                <td><span class="html-element">&lt;small></span></td>
+                                <td>Texto normal. <small>Texto reduzido.</small></td>
+                            </tr> 
+                            <tr>
+                                <td><span class="html-element">&lt;sub></span></td>
+                                <td>Texto normal. <sub>Texto subscrito.</sub></td>
+                            </tr> 
+                            <tr>
+                                <td><span class="html-element">&lt;sup></span></td>
+                                <td>Texto normal. <sup>Texto sobrescrito.</sup></td>
+                            </tr>
+                            <tr>
+                                <td><span class="html-element">&lt;u></span></td>
+                                <td>Texto não articulado, diferente do normal ou com <u>errruz</u> ortográficos.</td>
+                            </tr>
+                            <tr>
+                                <td><span class="html-element">&lt;var></span></td>
+                                <td>
+                                    <p>The area of a triangle is: 1/2 x <var>b</var> x <var>h</var>, where <var>b</var> is the base, and <var>h</var> is the vertical height.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>& nbsp ;</td>
+                                <td>word1 &nbsp; word2</td>
+                            </tr>
+                            <tr>
+                                <td>& ensp ;</td>
+                                <td>word1 &ensp; word2</td>
+                            </tr> 
+                            <tr>
+                                <td>& emsp ;</td>
+                                <td>word1 &emsp; word2</td>
+                            </tr> 
+                        </tbody>
+                    </table>
+                    <br>
+                    <div class="padroes-grid-container">
+                        <div class="padroes-grid-item item-title">
+                            <img alt="Logo da Archevo"
+                                src="medias/_logos/logo-archevo-2.png">
+                            <p>Padrões, Recomendações & Boas Práticas</p>
+                        </div>
+                        <div class="padroes-grid-item item-content">
+                            <ul>
+                                <li>
+                                    Use <span class="html-element">&lt;b></span> para textos em negrito sem nenhuma importância adicional. É uma tag <strong>não semântica</strong> e, de acordo com a especificação HTML5, <strong>deve ser usada como o último recurso</strong>, quando nenhuma outra tag é mais apropriada;
+                                </li>
+                                <li>
+                                    Use <span class="html-element">&lt;strong></span> para textos em negrito com grande importância adicional. É uma tag <strong>semântica</strong>, muito útil para garantir Acessibilidade;
+                                </li>
+                                <li>
+                                    Use <span class="html-element">&lt;i></span> para textos em itálico que deverão ser pronunciados com uma voz ou humor alternativo. Frequentemente usado para indicar um termo técnico, uma frase de outro idioma, um pensamento, um nome de navio, etc. É uma tag <strong>não semântica</strong>, <strong>usada apenas quando nenhuma outra tag semântica atender a necessidade</strong>;
+                                </li>
+                                <li>
+                                    Use <span class="html-element">&lt;em></span> para textos em itálico e enfatizados. Um leitor de tela pronunciará as palavras com ênfase, usando ênfase verbal. É uma tag <strong>semântica</strong>, muito útil para garantir Acessibilidade;
+                                </li>
+                                <li>
+                                    Não use <span class="html-element">&lt;s></span> para definir um  texto que foi deletado de um documento;
+                                </li>
+                                <li>
+                                    Evite usar o elemento <span class="html-element">&lt;u></span> onde pode ser confundido com um hiperlink.
+                                </li>
+                                <li>
+                                    A tag <span class="html-element">&lt;caption></span> deve ser inserida logo após a tag <span class="html-element">&lt;table></span>.
+                                </li>
+                                <li>
+                                    A tag <span class="html-element">&lt;colgroup></span> deve ser filha de um elemento <span class="html-element">&lt;table></span> e deve ser colocada antes de quaisquer outros elementos da tabela, como <span class="html-element">&lt;thead></span>, <span class="html-element">&lt;tr></span>, <span class="html-element">&lt;td></span> etc., mas após o elemento <span class="html-element">&lt;caption></span>, se presente.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </details>
+            </section>
+            <section class="section-flex-items item-links">
+                <details>
+                    <summary><h3><span>Saiba mais...</span></h3></summary>
+                    <ul>
+                        <li>
+                            <a href="https://www.w3schools.com/html/html_tables.asp" target="_blank">
+                                Tabelas - W3Schools
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.w3schools.com/tags/default.asp" target="_blank">
+                                Referência dos Elementos HTML5 - W3Schools
+                            </a>
+                        </li>
+                    </ul>
+                </details>
+    
+            </section>
+        </section>
+
+        <section id="citacao-e-elementos-de-citacao" class="body-grid-items item-section-11 section-flex-container">
+            <section class="section-flex-items item-principal">
+                <details>
+                    <summary><h3>Citação e Elementos de Citação</h3></summary>
+                    <ul>
+                        <li>
+                            <span class="html-element">&lt;blockquote></span> para citações grandes:
+                            <blockquote cite="http://www.worldwildlife.org>/who/index.html">
+                                For 50 years, WWF has been protecting the future of nature.
+                                The world's leading conservation organization,
+                                WWF works in 100 countries and is supported by
+                                1.2 million members in the United States and
+                                close to 5 million globally.
+                            </blockquote>
+                        </li>
+                        <li>
+                            <span class="html-element">&lt;q></span> para citações curtas:
+                            <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+                        </li>
+                    </ul>
+                </details>
+            </section>
+            <section class="section-flex-items item-links">
+                <details>
+                    <summary><h3><span>Saiba mais...</span></h3></summary>
+                    <ul>
+                        <li>
+                            <a href="https://www.w3schools.com/html/html_quotation_elements.asp" target="_blank">
+                                Elementos de Citação - W3Schools
+                            </a>
+                        </li>
+                    </ul>
+                </details>
+            </section>
+        </section>
+
+        <section id="formularios-e-entrada-de-dados" class="body-grid-items item-section-12 section-flex-container">
+            <section class="section-flex-items item-principal">
+                <details>
+                    <summary><h3>Formulários e Entradas de Dados</h3></summary>
+                    <form action="contents/html5/html5-basico.html" 
+                        autocomplete="on" 
+                        method="get" 
+                        novalidate>
+                        <ul>
+                            <li id="input-text">
+                                <label for="usuario">text:</label><br>
+                                <!--
+                                    autocomplete="on/off"
+                                    autofocus
+                                    maxlength
+                                    size
+                                -->
+                                <input id="usuario"
+                                    autocomplete="on"
+                                    maxlength="50"
+                                    minlength="3"
+                                    name="usuario" 
+                                    required
+                                    size="40"
+                                    type="text" 
+                                    value="William Cardoso">
+                            </li>
+                            <br>
+                            <li id="input-email">
+                                <label for="email">email:</label><br>
+                                <input id="email" 
+                                    name="email"
+                                    pattern="(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)"
+                                    placeholder="email@server.com"
+                                    size="40"
+                                    title="Endereço de E-mail"
+                                    type="email">
+                                <br>
+                                <br>
+                                <label for="emails">Digite os endereços de e-mail:</label><br>
+                                <input id="emails" 
+                                    name="emails" 
+                                    placeholder="email1; email2" 
+                                    multiple
+                                    size="40"
+                                    type="email">
+                            </li>
+                            <br>
+                            <li id="input-password">
+                                <label for="pwd">password:</label><br>
+                                <input id="pwd"
+                                    maxlength="20" 
+                                    name="pwd" 
+                                    placeholder="Ab@123"
+                                    size="40"
+                                    type="password">
+                            </li>
+                            <br>
+                            <li id="input-phone">
+                                <label for="phone">tel:</label><br>
+                                <input id="phone" 
+                                    name="" 
+                                    pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}" 
+                                    placeholder="11-95889-9126" 
+                                    type="tel">
+                            </li>
+                            <br>
+                            <li id="input-search">
+                                <label for="gsearch">search:</label><br>
+                                <input id="gsearch" 
+                                    name="gsearch" 
+                                    placeholder="O q vc está procurando?" 
+                                    type="search">
+                            </li>
+                            <br>
+                            <li id="input-url">
+                                <label for="url">url:</label><br>
+                                <input id="url" 
+                                    name="url" 
+                                    placeholder="abc.com.br" 
+                                    type="url">
+                            </li>
+                            <br>
+                            <li id="input-checkbox">
+                                <label>checkbox:</label><br>
+                                <input id="hobby1" name="guitar" type="checkbox" value="guitar">
+                                <label for="hobby1">Eu gosto de tocar guitarra.</label><br>
+                                <input id="hobby2" name="fight" type="checkbox" value="fight">
+                                <label for="hobby2">Eu gosto de lutas.</label><br>
+                                <input id="hobby3" name="travel" type="checkbox" value="travel">
+                                <label for="hobby3">Eu gosto de viajar pelo mundo.</label>
+                            </li>
+                            <br>
+                            <li id="input-radio">
+                                <label>radio:</label><br>
+                                <input id="age1" name="age" type="radio" value="30">
+                                <label for="age1">0 - 30 anos</label><br>
+                                <input id="age2" name="age" type="radio" value="60">
+                                <label for="age2">31 - 60 anos</label><br>  
+                                <input id="age3" name="age" type="radio" value="100">
+                                <label for="age3">61 - 100 anos</label>
+                            </li>
+                            <br>
+                            <li id="input-button">
+                                <label>button:</label><br>
+                                <input onclick="msg()" 
+                                    type="button" 
+                                    value="Clique e ative um JS">
+                            </li>
+                            <br>
+                            <li id="input-submit">
+                                <label>submit:</label><br>
+                                <input type="submit">
+                                <input type="submit" value="Salvar">
+                            </li>
+                            <br>
+                            <li id="input-reset">
+                                <label>reset:</label><br>
+                                <input type="reset">
+                                <input type="reset" value="Reset">
+                            </li>
+                            <br>
+                            <li id="input-color">
+                                <label for="favcolor">color:</label><br>
+                                <input id="favcolor" 
+                                    name="favcolor" 
+                                    type="color" 
+                                    value="#ff0000">
+                            </li>
+                            <br>
+                            <li id="input-date">
+                                <label for="date">date:</label><br>
+                                <input id="date"
+                                    min="1900-01-01"
+                                    name="date" 
+                                    type="date">
+                            </li>
+                            <br>
+                            <li id="input-datetime-local">
+                                <label for="birthday-time">datetime-local:</label><br>
+                                <input id="birthday-time" 
+                                    name="birthday-time" 
+                                    type="datetime-local">
+                            </li>
+                            <br>
+                            <li id="input-file"> <!--Add o enctype="multipart/form-data" no form. // accept="application/pdf"-->
+                                <label for="myfile">file:</label><br>
+                                <input accept="image/*" 
+                                    id="myfile" 
+                                    name="myfile" 
+                                    type="file">
+                            </li>
+                            <br>
+                            <li id="input-hidden"><!--O user não preenche, já vem preenchido. Geralmente no comço do form-->
+                                <label for="fname">hidden:</label>
+                                <input id="custId" 
+                                    name="custId"
+                                    type="hidden" 
+                                    value="3487">
+                            </li>
+                            <br>
+                            <li id="input-image">
+                                <label>image:</label><br>
+                                <input id="green-submit"
+                                    alt="Submit"
+                                    height="100px"
+                                    src="medias/html5/html5-green-submit.gif"
+                                    type="image">
+                                <input id="red-submit"
+                                    alt="Submit"
+                                    height="100px"
+                                    src="medias/html5/html5-red-submit.gif"
+                                    type="image">
+                                <input id="blue-submit"
+                                    alt="Submit"
+                                    height="100px"
+                                    src="medias/html5/html5-blue-submit.gif"
+                                    type="image">
+                            </li>
+                            <br>
+                            <li id="input-month">
+                                <label for="bdaymonth">month:</label><br>
+                                <input id="bdaymonth" name="bdaymonth" type="month">
+                            </li>
+                            <br>
+                            <li id="input-number">
+                                <label for="quantity">number:</label><br>
+                                <input id="quantity"
+                                    max="5" 
+                                    min="1" 
+                                    name="quantity"
+                                    step="2"
+                                    type="number">
+                            </li>
+                            <br>
+                            <li id="input-range">
+                                <label for="vol">range:</label><br>
+                                <input  id="vol"
+                                    max="10"
+                                    min="0" 
+                                    name="vol"
+                                    type="range">
+                            </li>
+                            <br>
+                            <li id="input-time">
+                                <label for="appt">time:</label><br>
+                                <input id="appt" 
+                                    name="appt" 
+                                    type="time">
+                            </li>
+                            <br>
+                            <li id="input-week">
+                                <label for="week">week:</label><br>
+                                <input id="week" 
+                                    name="week" 
+                                    type="week">
+                            </li>
+                        </ul>
+                        <br>
+                        <div class="padroes-grid-container">
+                            <div class="padroes-grid-item item-title">
+                                <img alt="Logo da Archevo"
+                                    src="medias/_logos/logo-archevo-2.png">
+                                <p>Padrões, Recomendações & Boas Práticas</p>
+                            </div>
+                            <div class="padroes-grid-item item-content">
+                                <ul>
+                                    <li>
+                                        Não use o atributo <span class="css-attribute">placeholder</span> no lugar de um elemento <span class="html-element">&lt;label</span>. Os propósitos de cada um são diferentes: <span class="html-element">&lt;label</span> descreve o papel do elemento do formulário, isto é, ele indica que tipo de informação é esperada. Já o atributo <span class="css-attribute">placeholder</span> é uma dica sobre o formato que o conteúdo deveria ter. Há casos em que o atributo <span class="css-attribute">placeholder</span> nunca é exibido para o usuário, portanto o formulário deve ser inteligível sem ele;
+                                    </li>
+                                    <li>
+                                        A largura padrão de um <span class="html-element">&lt;input</span> é de 20 caracteres. É recomendado atentar-se à essa largura para que os dados fiquem visíveis durante sua inserção.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </form>
+                </details>
+            </section>
+            <section class="section-flex-items item-links">
+                <details>
+                    <summary><h3><span>Saiba mais...</span></h3></summary>
+                    <ul>
+                        <li>
+                            <a href="https://www.w3schools.com/html/html_forms.asp" target="_blank">
+                                Formulário - W3Schools
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.w3schools.com/tags/tag_input.asp" target="_blank">
+                                Entrada de Dados - W3Schools
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.w3schools.com/tags/att_input_type.asp" target="_blank">
+                                Tipos de Entradas de Dados - W3Schools
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.w3schools.com/html/html_form_attributes.asp" target="_blank">
+                                Atributos de Entrada de Dados - W3Schools
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.w3schools.com/html/html_form_attributes_form.asp" target="_blank">
+                                Atributos form* de Entrada de Dados
+                            </a>
+                        </li>
+                    </ul>
+                </details>
+            </section>
+        </section>
+<!--
+        <section id="atributos-do-formulario" class="body-grid-items item-section-13 section-flex-container">
+            <section class="section-flex-items item-principal">
+                <details>
+                    <summary><h3>Atributos do Formulário</h3></summary>
+                    <ul>
+                        
+                    </ul>
+                    
+                </details>
+            </section>
+            <section class="section-flex-items item-links">
+            <details>
+                <summary><h3><span>Saiba mais...</span></h3></summary>
+                <ul>
+                    <li>
+                        <a href="https://www.w3schools.com/html/html_forms_attributes.asp" target="_blank">
+                            Atributos do Formulário - W3Schools
+                        </a>
+                    </li>
+                </ul>
+            </details>
+           </section>
+        </section>
+
+        <section id="elementos-do-formulario" class="body-grid-items item-section-14 section-flex-container">
+            <section class="section-flex-items item-principal">
+                <details>
+                    <summary><h3>Elementos do Formulário</h3></summary>
+                    <ul>
+                        <li>
+                            <span class="html-element">&lt;label></span> - 
+                            <label>
+                                Nome Completo:
+                                <input>
+                            </label name="full-name" type=text>
+                        </li>
+                        <li>
+                            <button>
+                                Click me
+                            </button>
+                            Always specify the type attribute for the button element. Different browsers may use different default types for the button element.
+                        </li>
+                        <li><span class="html-element">&lt;select></span> - Escolha Única:
+                            <select name="filter">
+                                <option value="none">---</option>
+                                <option value="cheaper">Mais baratos</option>
+                                <option value="more-expensives">Mais caros</option>
+                                <option value="faster-delivery">Entrega mais rápida</option>
+                                <option value="free shipping">Frete grátis</option>
+                            </select>
+                        </li>
+                        <li><span class="html-element">&lt;select></span> - Múltipla Escolha (segure o 'Ctrl'):<br>
+                            <select multiple name="filter" size="5">
+                                <option value="none">---</option>
+                                <option value="cheaper">Mais baratos</option>
+                                <option value="more-expensives">Mais caros</option>
+                                <option value="faster-delivery">Entrega mais rápida</option>
+                                <option value="free shipping">Frete grátis</option>
+                            </select>
+                        </li>
+                        <li><span class="html-element">&lt;select></span> - Com agrupamento de opções:
+                            <label for="cars">Escolha um carro:</label><br>
+                            <select id="cars" name="cars">
+                                <optgroup label="Carros Suecos">
+                                    <option value="volvo">Volvo</option>
+                                    <option value="saab">Saab</option>
+                                </optgroup>
+                                <optgroup label="Carros Alemães">
+                                    <option value="mercedes">Mercedes</option>
+                                    <option value="audi">Audi</option>
+                                </optgroup>
+                            </select>
+                        </li>
+                        <li>
+                            <span class="html-element">&lt;textarea></span>:<br>
+                            <textarea placeholder="Digite seu comentário aqui"></textarea>
+                        </li>
+                        <li>Fieldset e Legend: Para dados relacionados em um formulário
+                            <fieldset>
+                                <legend>Personalia:</legend>
+                                <label for="fname">First name:</label><br>
+                                <input type="text" id="fname" name="fname" value="John"><br>
+                                <label for="lname">Last name:</label><br>
+                                <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                                <input type="submit" value="Submit">
+                              </fieldset>
+                        </li>
+                        <li>
+                            <input list="browsers" name="browser">
+                            <datalist id="browsers">
+                                <option value="Internet Explorer">
+                                <option value="Firefox">
+                                <option value="Chrome">
+                                <option value="Opera">
+                                <option value="Safari">
+                            </datalist>
+                            <input type="submit" value="Submit">  
+                        </li>
+                        <li>Para resultados de cálculos:
+                            <form action="/action_page.php"
+                                oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+                                0
+                                <input type="range"  id="a" name="a" value="50">
+                                100 +
+                                <input type="number" id="b" name="b" value="50">
+                                =
+                                <output name="x" for="a b"></output>
+                                <br><br>
+                                <input type="submit">
+                            </form>
+                        </li>
+                        <li>
+                            <option></option>
+                            <optgroup></optgroup>
+                        </li>
+                    </ul>
+                </details>
+            </section>
+            <section class="section-flex-items item-links">
+                <details>
+                    <summary><h3><span>Saiba mais...</span></h3></summary>
+                    <ul>
+                        <li>
+                            <a href="https://www.w3schools.com/html/html_form_elements.asp" target="_blank">
+                                Elementos do Formulário - W3Schools
+                            </a>
+                        </li>
+                    </ul>
+                </details>
+            </section>
+        </section>
+
+        <section id="exibindo-elementos-block-e-inline" class="body-grid-items item-section-15 section-flex-container">
+            <details class="section-flex-items item-principal">
+                <summary><h3>Exibindo Elementos: Block e Inline</h3></summary>
+                <ul>
+                    <li>
+                        <strong>Block</strong>:
+                        <ul>
+                            <li>
+
+                            </li>
+                            <li>
+                                
+                            </li>
+                            <img id="" 
+                                alt=""
+                                height=""
+                                src="medias/html5/XXX"
+                                title="">
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Inline</strong>:
+                        <ul>
+                            <li>
+
+                            </li>
+                            <li>
+                                
+                            </li>
+                            <img id="" 
+                                alt=""
+                                height=""
+                                src="medias/html5/XXX"
+                                title="">
+                        </ul>
+                    </li>
+                </ul>
+            </details>
+            <details class="section-flex-items item-links">
+                <summary><h3><span>Saiba mais...</span></h3></summary>
+                <ul>
+                    <li>
+                        <a href="https://www.w3schools.com/html/html_form_elements.asp" target="_blank">
+                            Elementos do Formulário - W3Schools
+                        </a>
+                    </li>
+                </ul>
+            </details>
+        </section>
+
+        <section id="classes-e-ids" class="body-grid-items item-section-16 section-flex-container">
+            <details class="section-flex-items item-principal">
+                <summary><h3>Classes e IDs</h3></summary>
+                <ul>
+                    <li></li>
+                </ul>
+            </details>
+            <details class="section-flex-items item-links">
+                <summary><h3><span>Saiba mais...</span></h3></summary>
+                <ul>
+                    <li>
+
+                    </li>
+                </ul>
+            </details>
+        </section>
+
+        <section id="iframe" class="body-grid-items item-section-17 section-flex-container">
+            <details class="section-flex-items item-principal">
+                <summary><h3>Iframe</h3></summary>
+                <ul>
+                    <li></li>
+                </ul>
+            </details>
+            <details class="section-flex-items item-links">
+                <summary><h3><span>Saiba mais...</span></h3></summary>
+                <ul>
+                    <li>
+
+                    </li>
+                </ul>
+            </details>
+        </section>
+-->
+        <footer class="body-grid-items item-footer footer-flex-container">
+            <p>
+                &copy; Copyright 2021-2022 ArchEvo. Todos os Direitos Reservados.
+            </p>
+        </footer>
+
+        <script>
+            function msg() {
+              alert("Hello world!");
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,8 @@
+Conhecimentos:
+- Como funciona a Internet
+
+- HTTP / HTTPS
+--- HTTP: 80
+--- HTTPS: 443 -> Secure, informações criptografadas, certificado SSL
+--- FTP: 21
+

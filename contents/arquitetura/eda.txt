@@ -1,0 +1,75 @@
+EDA
+    https://www.redhat.com/pt-br/topics/integration/what-is-event-driven-architecture#vis%C3%A3o-geral
+
+Estrutura Básica
+    Captura
+    Comunicação
+    Processamento
+    Persistência
+
+O QUE é?
+    Aplicação que reage a um evento
+
+    Usada em microsserviços ou monolíticos
+
+    Quantidade mínima de acoplamentos: Esse tipo de arquitetura é levemente acoplado porque os produtores de eventos não sabem que os consumidores estão detectando um evento. Além disso, esse evento não sabe as consequências da sua ocorrência.
+
+O QUE é um evento?
+    Um evento é qualquer ocorrência ou mudança de estado significativa no software ou hardware de um sistema. Uma notificação de evento é uma mensagem enviada pelo sistema para avisar outra parte do mesmo sistema que algo ocorreu. Ela não é o evento em si.
+
+    A origem de um evento pode ser interna ou externa. Os eventos podem ser gerados por um usuário que, por exemplo, clica no botão do mouse ou pressiona uma tecla no teclado, por uma fonte externa, como uma saída de sensor, ou por um componente interno do sistema, como o carregamento de um programa.
+
+    Composição:
+        chave
+        valor
+        timestamp
+        
+COMO funciona?
+
+
+PARA QUE Serve?
+    Frameworks de mecanismo do cliente, que devem utilizar dados do cliente em tempo real;
+
+    Arquiteturas de aplicações distribuídas modernas;
+
+Vantagens
+    Serviços desacoplados
+
+    Mensagens armazenadas em Bancos
+
+    Fácil escalabilidade
+
+    Plataformas de mensageria com alta disponibilidade
+
+    Produtores de eventos podem ser implantados em diversas linguagens e tecnologias diferentes
+
+    Auditoria
+
+    Histórico de Eventos
+
+    Opção de rollback para mudar um caminho seguido
+
+Desvantagens
+    Alta complexidade operacional
+
+    Requer conhecimento avançado em plataformas de mensageria
+
+    Grande desafio para corrigir falhas parciais
+
+Pub/Sub
+
+
+Event Notification
+    Informar algumas mudanças de estado
+
+    Envia a notificação sem esperar uma resposta de volta
+
+Event Sourcing
+    Todos os eventos são registrados
+
+    Estados passados podem ser recriados a qualquer momento
+
+    A base de registro é a única fonte de confiança dos estados da aplicação
+
+    Exemplo Git
+        Estado atual criado após receber todos os commits já feitos

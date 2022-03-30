@@ -1,0 +1,13 @@
+GIT 
+
+O que é o Git?
+
+ - Git é um software de controle de versão que salva a trajetória das mudanças do seu projeto e, em casos de erros, 
+ você pode voltar para versão funcional;
+ - Esse controle de versão também possibilita que vários desenvolvedores trabalhem juntos em um mesmo projeto;
+ - 
+
+Pré-requisitos e Configuração do Ambiente
+
+    Instale o git (https://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Instalando-o-Git) e faça a configuração inicial 
+    (https://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Configura%C3%A7%C3%A3o-Inicial-do-Git).

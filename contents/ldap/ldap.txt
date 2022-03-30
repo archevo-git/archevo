@@ -1,0 +1,5 @@
+LDAP
+
+O QUE é?
+    Lightweight Directory Access Protocol, mais conhecido como LDAP, é um protocolo de aplicação aberto, livre de fornecedor e padrão de indústria para acessar e manter serviços de informação de diretório distribuído sobre uma rede de Protocolo da Internet.
+

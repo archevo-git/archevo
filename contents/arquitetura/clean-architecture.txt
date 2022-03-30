@@ -1,0 +1,33 @@
+CLEAN ARCHITECTURE
+
+    https://www.youtube.com/watch?v=ow8UUjS5vzU
+        A partir do 7m30s, fala do código baseado em Clean Architecture
+
+O QUE é?
+
+
+PARA QUE serve?
+
+
+COMO funciona?
+    Devemos pensar em:
+        Independência de frameworks
+            Não depende de frameworks ou bibliotecas
+        Independência de interface de usuário
+            Deve poder ser substituída sem impactar nos demais componentes da arquitetura
+        Independência de banco de dados
+            Pode trocar de BD quando precisar
+        Independência de qualquer de qualquer elemento externo
+        Testabilidade
+            Pode testar as regras de usuários
+
+    As dependências devem sempre apontar para os níveis mais altas da aplicação, ou seja, para as camadas mais internas. Uma mudança no Controller, por exemplo, não pode impactar na camada de User Cases ou de Entities.
+
+    O código deve ser criado de dentro para fora, começando pela camada de Entities.
+
+    Seguir a PSR-15, do HTTP Handler
+    
+Vantagens
+
+
+Desvantagens

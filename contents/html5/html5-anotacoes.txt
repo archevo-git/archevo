@@ -1,0 +1,600 @@
+<details>
+    <summary>Leonardo da Vinci</summary>
+    <p>bla-bla-bla</p>
+</details>
+
+-------------
+
+Integrated API (Application Programming Interfaces)
+- Drag and Drop
+- Audio and Video
+- Offline Web Applications
+- History
+- Local Storage
+- Geolocation
+- Web Messaging
+
+
+--------
+B7Web - HTML e CSS - Resumo
+
+Tags, Atributos, Valores e Conteúdo
+Tags Básicas // h1-h6 ajudam no SEO (Search Engine Optimization)
+----------
+PADRÃO BÁSICO
+
+  -- É preferível que haja um h1 por página
+
+  ------------
+  Padrões de Formatação de texto
+
+
+    <strong>    - Usada para definir texto com grande importância;
+                - <strong>Semântica</strong>, muito útil para garantir Acessibilidade;
+
+    <i>         - ;
+    <em>        - Usada para ;
+
+    Não suportado em HTML5:
+
+    <acronym>   - É recomendado o uso da tag <abbr> para textos abreviações;
+    <strike>    - É recomendado o uso da tag <del> para textos deletados;
+
+    --------------
+  Por padrão, os links aparecerão da seguinte forma em todos os navegadores:
+
+    Um link não visitado está sublinhado e em azul
+    Um link visitado está sublinhado e roxo
+
+--------------
+Navegar para seções dentro da mesma página
+
+  - Definir IDs e referenciá-los em uma tag <a>
+
+--------------
+Formulário e Entrada de Dados
+
+  - <form action="pagina-destino.html" method="POST">
+  - POST não exibe os dados na URL, GET sim;
+
+  <input type="text">
+
+-----------------
+Tabelas
+
+    <table>
+      <tr>
+        <th colspan="2">Name</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>43</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>57</td>
+      </tr>
+    </table>
+    --
+    <table>
+      <tr>
+        <th>Name</th>
+        <td>Jill</td>
+      </tr>
+      <tr>
+        <th rowspan="2">Phone</th>
+        <td>555-1234</td>
+      </tr>
+      <tr>
+        <td>555-8745</td>
+    </tr>
+    </table>
+    --
+    <table style="width: 100%;">
+    <colgroup>
+      <col span="2" style="background-color: #D6EEEE">
+    </colgroup>
+    <tr>
+    <th>MON</th>
+    <th>TUE</th>
+    <th>WED</th>
+    <th>THU</th>
+    <th>FRI</th>
+    <th>SAT</th>
+    <th>SUN</th>
+    </tr>
+    <tr>
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+    <td>4</td>
+    <td>5</td>
+    <td>6</td>
+    <td>7</td>
+    </tr>
+    <tr>
+    <td>8</td>
+    <td>9</td>
+    <td>10</td>
+    <td>11</td>
+    <td>12</td>
+    <td>13</td>
+    <td>14</td>
+    </tr>
+    <tr>
+    <td>15</td>
+    <td>16</td>
+    <td>17</td>
+    <td>18</td>
+    <td>19</td>
+    <td>20</td>
+    <td>21</td>
+    </tr>
+    <tr>
+    <td>22</td>
+    <td>23</td>
+    <td>24</td>
+    <td>25</td>
+    <td>26</td>
+    <td>27</td>
+    <td>28</td>
+    </tr>
+    </table>
+
+-----------
+
+        <article id="atributos-do-formulario" class="body-grid-items item-article-XX article-grid-container">
+            <details class="article-grid-items item-principal">
+                <summary>XXXXXX</summary>
+            </details>
+            <details class="article-grid-items item-links">
+                <summary><span>Saiba mais...</span></summary>
+                <ul>
+                    <li>
+                        <a href="XXXXX" target="_blank">
+                            XXXX
+                        </a>
+                    </li>
+                </ul>
+            </details>
+        </article>
+
+########################################################################
+-------------------------
+Responsividade:
+
+  - Layout Não-reponsivo: não muda conforme o tamanho da tela;
+  - Layout Responsivo: responde ao tamanho da tela;
+  - Layout Adaptativo: adapta o layout de acordo com os tamanhos pr-e-especificados;
+  - Layout Responsivo e Adaptativo: tem tamanhos fixos, como os adaptativos, ma também são responsivos.
+
+  Tamanhos Padrões de Tela:
+  320 - celular
+  480 - celular
+  760 - tablet
+  960 - monitores antigos
+  1200 - monitores normais
+  1600 - monitores maiores
+
+  ----------
+  - Mobile First: Desenvolver para computador, mas já pensando em como se comportaria no celular;
+
+  -----------
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  - Isso definirá a janela de visualização de sua página, que fornecerá ao navegador instruções sobre como controlar as dimensões e o dimensionamento da página dew acordo com o tamanho da tela do dispositivo em que ela está sendo exibida.
+
+  -----------
+  IMAGENS
+
+    - Quando o width for definido para 100%, a imagem se tornará responsiva e será dimensionada para cima e para baixo ao redimensionar a janela do navegador:
+    <img src="img_girl.jpg" style="width:100%;">
+
+    - Se a propriedade max-width for definida como 100%, a imagem será reduzida se necessário, mas nunca aumentará para ser maior do que seu tamanho original:
+
+    - Use o <picture> para ter diferentes opções de imagens para cada tipo de tamanho de tela:
+
+      <picture>
+          <!-- A partir de 650px, usa essa imagem: -->
+          <source media="(min-width: 960px)" srcset="medias/examples/sea.jpg">
+          <!-- A partir de 450px, usa essa imagem: -->
+          <source media="(min-width: 760px)" srcset="medias/examples/river.jpg">
+          <img src="medias/examples/mountains.jpg" alt="Paisagem">
+      </picture>
+
+      <picture>
+        <source media="(max-width: 600px)" srcset="img_smallflower.jpg">
+        <source media="(max-width: 1500px)" srcset="img_flowers.jpg">
+        <source srcset="flowers.jpg">
+        <img src="img_smallflower.jpg" alt="Flowers">
+      </picture>
+
+    ### CSS ###
+    - object-fit:
+    ---fill: Distorce a imagem;
+    ---contain: Não distorce a imagem
+    ---scale-down: Diminui a qualidade e o tamanho da imagem para caber no seu elemento pai;
+    ---cover: Não distorce a imagem, mas a corta as bordas da imagem para caber no elemento pai. Primeiro redimensiona, depois corta;
+    --none: Não redimensiona, simplesmente corta. 
+
+  ----------
+  @media  
+
+    - Com as media queries, você pode definir estilos completamente diferentes para diferentes tamanhos de navegador.
+
+    https://www.w3schools.com/html/tryit.asp?filename=tryhtml_responsive_media_query
+
+    @media (min-width: 1000px) {
+        body{
+            background-color: darkblue;
+        }
+    }
+
+    @media (min-width: 700px) and (max-width: 999px) {
+        body{
+            background-color: darkgreen;
+        }
+    }
+
+    @media only screen{
+        body{
+            background-color: black;
+            color: #eee;
+        }
+    }
+
+    @media only screen{
+        body{
+            background-color: #fff;
+            color: black;
+        }
+    }
+
+    @media only print{
+        body{
+            background-color: #eee;
+            color: black;
+        }
+    }
+
+    .box-item{
+        border: 2px solid blue;
+        height: 200px;
+        width: 200px;
+    }
+
+    .box-container{
+        display: flex;
+    }
+
+    ------------
+    @media orientation:
+    - não trabalha com a altura real do celular, e sim com a largura e altura da tela;
+    - lembrar sempre que a abertura do teclado no celular poderá diminuir a tela o suficiente para mudar a orientação;
+
+    @media (orientation: landscape){
+        .box-container{
+            flex-direction: row;
+        }
+    }
+
+    @media (orientation: portrait){
+        .box-container{
+            flex-direction: column  ;
+        }
+    }
+
+    -------------
+    @media aspect-ratio
+
+    @media (aspect-ratio: 3/2){
+      body{
+        background-color: blue;
+      }
+    }
+
+    @media (min-aspect-ratio: 2/1){
+      body{
+        background-color: green;
+      }
+    }
+
+    @media (max-aspect-ratio: 1/2){
+      body{
+        background-color: green;
+      }
+    }
+
+
+  ------
+  TEXTO
+
+    O tamanho do texto pode ser definido com uma unidade "vw", que significa a "largura da janela de visualização".
+
+    <h1 style="font-size:10vw">Hello World</h1>
+
+    A janela de visualização é o tamanho da janela do navegador. 1vw = 1% da largura da janela de visualização. Se a janela de visualização tiver 50 cm de largura, 1vw é 0,5 cm.
+  ------------------------
+
+#####################################################################
+Vídeo
+
+  Reiniciando a reprodução de mídia:
+  const mediaElem = document.getElementById("my-media-element");
+  mediaElem.load();
+
+  Detectando adição e remoção de faixas:
+  const mediaElem = document.querySelector("video");
+  mediaElem.audioTracks.onaddtrack = function(event) {
+    audioTrackAdded(event.track);
+  }
+
+
+
+body{
+    box-sizing: border-box
+}
+
+--------------------------------
+Examples of non-semantic elements: <div> and <span> - Tells nothing about its content.
+
+Examples of semantic elements: <form>, <table>, and <article> - Clearly defines its content.
+
+
+--- label
+
+dispalay padrão = inline
+
+------------
+https://www.w3schools.com/html/html_entities.asp
+
+The non-breaking hyphen (&#8209;) is used to define a hyphen character (‑) that does not break into a new line.
+
+https://www.w3schools.com/html/html_symbols.asp
+https://www.w3schools.com/charsets/ref_utf_math.asp
+https://www.w3schools.com/charsets/ref_utf_currency.asp
+https://www.w3schools.com/charsets/ref_utf_arrows.asp
+https://www.w3schools.com/charsets/ref_utf_symbols.asp
+
+https://www.w3schools.com/html/html_emojis.asp
+https://www.w3schools.com/charsets/ref_emoji.asp
+
+---------------
+GET:
+
+  - Acrescenta os dados do formulário ao URL, em pares nome / valor
+  - NUNCA use GET para enviar dados confidenciais! (os dados do formulário enviado são visíveis no URL!)
+  - O comprimento de um URL é limitado (2.048 caracteres)
+  - Útil para envios de formulários onde um usuário deseja marcar o resultado
+  - GET é usado para dados não seguros, como strings de consulta no Google
+
+-----------
+POST:
+
+  - Acrescenta os dados do formulário dentro do corpo da solicitação HTTP (os dados do formulário enviado não são mostrados no URL)
+  - O POST não tem limitações de tamanho e pode ser usado para enviar grandes quantidades de dados.
+  - Os envios de formulários com POST não podem ser marcados
+
+  Dica: Sempre use o POST se os dados do formulário contiverem informações confidenciais ou pessoais!
+
+-----------------------
+Input Restrictions
+Here is a list of some common input restrictions:
+
+Attribute	    Description
+checked	        Specifies that an input field should be pre-selected when the page loads (for type="checkbox" or type="radio")
+disabled	    Specifies that an input field should be disabled
+max	Specifies the maximum value for an input field
+maxlength	    Specifies the maximum number of character for an input field
+min	            Specifies the minimum value for an input field
+pattern	        Specifies a regular expression to check the input value against
+readonly	    Specifies that an input field is read only (cannot be changed)
+required	    Specifies that an input field is required (must be filled out)
+size	        Specifies the width (in characters) of an input field
+step	        Specifies the legal number intervals for an input field
+value	        Specifies the default value for an input field
+
+
+https://www.w3schools.com/html/html_form_attributes.asp
+
+
+---------------
+  <input list="browsers" name="browser">
+  <datalist id="browsers">
+    <option value="Internet Explorer">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+  <input type="submit" value="Submit">
+
+-----------------------------
+  https://www.w3schools.com/html/html_form_attributes_form.asp
+
+
+--------------------------------------------------------
+Canvas - https://www.w3schools.com/graphics/canvas_intro.asp
+
+- Elemento é usado para desenhar gráficos, em tempo real, por meio de JavaScript.
+- Contêiner para gráficos
+
+<canvas id="myCanvas" width="200" height="100"></canvas>
+
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+</canvas>
+
+--Linha
+<script>
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    ctx.moveTo(0, 0);
+    ctx.lineTo(200, 100);
+    ctx.stroke();
+</script>
+
+--Circulo
+<script>
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    ctx.beginPath();
+    ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+    ctx.stroke();
+</script>
+
+--Text
+<script>
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    ctx.font = "30px Arial";
+    ctx.fillText("Hello World", 10, 50);
+</script>
+
+--Text
+<script>
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    ctx.font = "30px Arial";
+    ctx.strokeText("Hello World", 10, 50);
+</script>
+
+--gradient
+<script>
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+
+    // Create gradient
+    var grd = ctx.createLinearGradient(0, 0, 200, 0);
+    grd.addColorStop(0, "red");
+    grd.addColorStop(1, "white");
+
+    // Fill with gradient
+    ctx.fillStyle = grd;
+    ctx.fillRect(10, 10, 150, 80);
+</script>
+
+--Circular gradient
+<script>
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+
+    // Create gradient
+    var grd = ctx.createRadialGradient(75, 50, 5, 90, 60, 100);
+    grd.addColorStop(0, "red");
+    grd.addColorStop(1, "white");
+
+    // Fill with gradient
+    ctx.fillStyle = grd;
+    ctx.fillRect(10, 10, 150, 80);
+</script>
+
+--Imagen
+<script>
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    var img = document.getElementById("scream");
+    ctx.drawImage(img, 10, 10);
+</script>
+
+----------------------------
+svg - https://www.w3schools.com/graphics/svg_intro.asp
+
+--Circle
+<!DOCTYPE html>
+<html>
+    <body>
+        <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+        </svg>
+    </body>
+</html>
+
+--Rectangle
+<svg width="400" height="100">
+  <rect width="400" height="100" style="fill:rgb(0,0,255);stroke-width:10;stroke:rgb(0,0,0)" />
+</svg>
+
+--Rounded Rectangle
+<svg width="400" height="180">
+  <rect x="50" y="20" rx="20" ry="20" width="150" height="150"
+  style="fill:red;stroke:black;stroke-width:5;opacity:0.5" />
+</svg>
+
+--SVG Star
+<svg width="300" height="200">
+  <polygon points="100,10 40,198 190,78 10,78 160,198"
+  style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;" />
+</svg>
+
+--Logo
+
+<svg height="130" width="500">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+  <text fill="#ffffff" font-size="45" font-family="Verdana" x="50" y="86">SVG</text>
+  Sorry, your browser does not support inline SVG.
+</svg>
+
+------------------------------------------------------------------------
+https://www.w3schools.com/tags/ref_av_dom.asp
+
+-------------------
+<object>
+
+-------------------
+<embed>
+
+-------------------
+Note: Geolocation is most accurate for devices with GPS, like smartphones.
+
+-------------------
+https://www.w3schools.com/html/html5_webstorage.asp
+
+--------------------
+https://www.w3schools.com/html/html5_webworkers.asp
+
+----------------------
+https://www.w3schools.com/html/html5_serversentevents.asp
+
+A server-sent event is when a web page automatically gets updates from a server.
+
+The EventSource object is used to receive server-sent event notifications:
+
+######################
+ESTRUTURA SEMÂNTICA
+
+- Os elementos semânticoas são úteis para que os motores de busca (SEO) diferencie cada parte do site e facilite para que os conteúdos buscados sejam encontrados.
+
+nav
+- Útil para leitores de tela;
+
+-------
+time
+
+<div>
+  <p>
+    Quero ver todos vocês no <time datetime="1987-05-02">dia do meu aniversário</time>.
+  </p>
+</div>
+
+##############
+Tags Não-Oficiais
+
+- Não funcionam no IE8;
+
+##################
+GRAVAR DADOS NO HTML5
+
+<div data-nome"William" data-sobrenome="Cardoso">
+  <p>Post 1</p>
+</div>
+
+##################

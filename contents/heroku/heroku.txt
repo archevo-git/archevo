@@ -1,0 +1,11 @@
+Tutorial Básico
+
+    - Create app com nome único
+    - Deployment Method = Github, buscando e conectando-se ao repo correto
+    - Enable Automatic Deploy
+    - Manual Deploy\Deploy Branch
+    - A porta gerada pelo Heroku é obtida através do "app.listen(process.env.PORT)"
+    - Config Vars permitem passar variáveis de ambiente
+
+Limitações
+    https://devcenter.heroku.com/articles/limits

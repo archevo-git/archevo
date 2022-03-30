@@ -1,0 +1,9 @@
+
+
+O QUE é?
+    ArchiMate é uma linguagem de modelagem de arquitetura corporativa aberta e independente para oferecer suporte à descrição, análise e visualização da arquitetura dentro e entre domínios de negócios de uma forma inequívoca.
+
+COMO funciona?
+    Amarelo - Camada de negócios
+    Azul - Camada de aplicação
+    Verde - Camada de tecnologia

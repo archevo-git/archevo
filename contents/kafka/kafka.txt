@@ -1,0 +1,44 @@
+KAFKA
+
+O QUE é?
+    Plataforma open source de streaming de eventos distribuída
+
+    Criada pelo LinkedIn
+
+    Arquitetura clusterizada, servers são chamados de brokers
+
+PARA QUE serve?
+    Publicar e observar streams de eventos
+
+    Armazenar streams de eventos de forma durável e tolerante a falhas 
+
+    Processar eventos de streaming
+
+    Usado para
+        Pipelines de dados de streaming em tempo real
+
+        Aplicações de streaming em tempo real que transformam ou reagem a eventos
+
+COMO funciona?
+    Mensagens armazenados em tópicos
+
+    Tópicos divididos em partições
+
+    Partições são imutáveis e ordenadas na sequência que as informações chegam
+
+    Os dados são entregues ao tópico e quem decide em qual partição serão armazenados é o Kafka
+
+    Podemos usar uma chave para sempre armazenar dados no mesmo tópico
+
+    Não se deve ter mais consumidores do que tópicos
+
+    Troca de mensagens ocorrem por protocolo TCP/IP simples
+
+APIs
+    Producer API
+    Consumer API
+    Streaming API
+    Connector API
+    Admin API
+
+    

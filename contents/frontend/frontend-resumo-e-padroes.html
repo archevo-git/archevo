@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Front-End - Conceitos | ArchEvo</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="William Cardoso">
+        <meta name="description" 
+            content="O 'HTML5 - Básico' é uma página para consultas rápidas e aprendizado, que centraliza diversos conteúdos resumidos, links úteis, padrões, recomendações e boas práticas.">
+        <base href="C:/_PROJETOS/archevo/">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="styles/contents-styles.css">
+        <link rel="stylesheet" href="styles/contents-styles-aside-icons.css">
+        <link rel="stylesheet" href="styles/code-box.css">
+    </head>
+
+    <body class="body-grid-container">
+        <nav class="body-grid-items item-nav nav-grid-container">
+            <div class="nav-grid-items item-home">
+                <a href="index.html"
+                    target="_self">
+                    <img id="icon-logo-home"
+                        src="imgs/_logos/logo-archevo.png"
+                        alt="Logo da ArchEvo"
+                        title="ArchEvo | Home">
+                </a>
+            </div>
+            <div class="nav-grid-items item-top-menu">
+                <a href="#" target="_self">Padrões Corporativo</a>
+                <a href="#" target="_self">Evolução Contínua</a>
+                <!-- <a href="#" target="_self">Sobre o ArchEvo</a> -->
+                <a href="login.html" target="_self">Login</a>
+            </div>
+        </nav>
+
+        <header class="body-grid-items item-header header-grid-container">
+            <hgroup class="header-grid-items item-titulos">
+                <h1>FRONT-END</h1>
+                <h2>RESUMO & PADRÕES</h2>
+            </hgroup>
+            <div class="header-grid-items item-logo">
+                <img id="img-logo"
+                    src="imgs/_logos/logo-frontend-0.png"
+                    alt="Logo do Front-End"
+                    title="Front-End">
+            </div>
+        </header>
+
+        <aside class="body-grid-items item-aside aside-flex-container">
+            <details class="aside-flex-items item-frontend aside-details-flex-container">
+                <summary id="icon-frontend" class="aside-details-flex-items"                     
+                    alt="Logo do Frontend"
+                    href="index.html"
+                    target="_self"
+                    title="Front-End">
+                </summary>
+                <a id="icon-html5" class="aside-details-flex-items"
+                    href="contents/html5/html5-basico.html"
+                    alt="Logo do HTML5"
+                    target="_self"
+                    title="HTML5">
+                </a>
+                <a id="icon-css3" class="aside-details-flex-items"
+                    alt="Logo do CSS3"
+                    href="contents/css3/css3-basico.html"
+                    target="_self"
+                    title="CSS3">
+                </a>
+                <a id="icon-bootstrap" class="aside-details-flex-items"
+                    alt="Logo do Bootstrap"
+                    href="index.html"
+                    target="_self"
+                    title="Bootstrap">
+                </a>
+                <a id="icon-js" class="aside-details-flex-items"
+                    alt="Logo do JavaScript"
+                    href="index.html"
+                    target="_self"
+                    title="JavaScript">
+                </a>
+                <a id="icon-ts" class="aside-details-flex-items"
+                    alt="Logo do TypeScript"
+                    href="index.html"
+                    target="_self"
+                    title="TypeScript">
+                </a>
+                <a id="icon-jquery" class="aside-details-flex-items"
+                    alt="Logo do jQuery"
+                    href="index.html"
+                    target="_self"
+                    title="jQuery">
+                </a>
+                <a id="icon-angular" class="aside-details-flex-items"
+                    alt="Logo do Angular"
+                    href="index.html"
+                    target="_self"
+                    title="Angular">
+                </a>
+            </details>
+
+            <details class="aside-flex-items item-programation aside-details-flex-container">
+                <summary id="icon-programation" class="aside-details-flex-items"
+                    alt="Logo do Programação.js"
+                    href="index.html"
+                    target="_self"
+                    title="Programação">
+                </summary>
+                <a id="icon-nodejs" class="aside-details-flex-items"
+                    alt="Logo do Node.js"
+                    href="index.html"
+                    target="_self"
+                    title="Node.js">
+                </a>
+                <a id="icon-python" class="aside-details-flex-items"
+                    alt="Logo do Python"
+                    href="index.html"
+                    target="_self"
+                    title="Python">
+                </a>
+                <a id="icon-java" class="aside-details-flex-items"
+                    alt="Logo do Java"
+                    href="index.html"
+                    target="_self"
+                    title="Java">
+                </a>
+                <a id="icon-php" class="aside-details-flex-items"
+                    alt="Logo do PHP"
+                    href="index.html"
+                    target="_self"
+                    title="PHP">
+                </a>
+                <a id="icon-c" class="aside-details-flex-items"
+                    alt="Logo do C".
+                    href="index.html"
+                    target="_self"
+                    title="C">
+                </a>
+                <a id="icon-cpp" class="aside-details-flex-items"
+                    alt="Logo do C++"
+                    href="index.html"
+                    target="_self"
+                    title="C++">
+                </a>
+                <a id="icon-cs" class="aside-details-flex-items"
+                    alt="Logo do C#"
+                    href="index.html"
+                    target="_self"
+                    title="C#">
+                </a>
+            </details>
+
+            <details class="aside-flex-items item-mobile aside-details-flex-container">
+                <summary id="icon-mobile" class="aside-details-flex-items"
+                    alt="Logo do Mobile"
+                    href="index.html"
+                    title="Mobile">
+                </summary>
+                <a id="icon-flutter" class="aside-details-flex-items"
+                    alt="Logo do Flutter"
+                    href="index.html"
+                    target="_self"
+                    title="Flutter">
+                </a>
+            </details>
+
+            <details class="aside-flex-items item-datascience aside-details-flex-container">
+                <summary id="icon-datascience" class="aside-details-flex-items"
+                    alt="Logo da Ciência de Dados"
+                    href="index.html"
+                    target="_self"
+                    title="Ciência de Dados">
+                </summary>
+                <a id="icon-sqlserver" class="aside-details-flex-items"
+                    href="index.html"
+                    alt="Logo do SQL Server"
+                    target="_self"
+                    title="SQL Server">                        
+                </a>
+                <a id="icon-plsql" class="aside-details-flex-items"
+                    href="index.html"
+                    alt="Logo do PL/SQL"
+                    target="_self"
+                    title="PL/SQL">
+                </a>
+                <a id="icon-mongodb" class="aside-details-flex-items"
+                    alt="Logo do MongoDB"
+                    href="index.html"
+                    target="_self"
+                    title="MongoDB">
+                </a>
+            </details>
+
+            <details class="aside-flex-items item-containers aside-details-flex-container">
+                <summary id="icon-containers" class="aside-details-flex-items"
+                    alt="Logo dos Contêineres"
+                    href="index.html"
+                    target="_self"
+                    title="Contêineres">
+                </summary>
+                <a id="icon-docker" class="aside-details-flex-items"
+                    alt="Logo do Docker"
+                    href="index.html"
+                    target="_self"
+                    title="Docker">
+                </a>
+                <a id="icon-k8" class="aside-details-flex-items"
+                    alt="Logo do Kubernetes"
+                    href="index.html"
+                    target="_self"
+                    title="Kubernetes">
+                </a>
+            </details>
+
+            <details class="aside-flex-items item-cloud aside-details-flex-container">
+                <summary id="icon-cloud" class="aside-details-flex-items"
+                    alt="Logo da Cloud"
+                    target="_self"
+                    title="Cloud">
+                </summary>
+                <a id="icon-aws" class="aside-details-flex-items"
+                    alt="Logo da AWS"
+                    target="_self"
+                    href="index.html"
+                    title="AWS">
+                </a>
+                <a id="icon-azure" class="aside-details-flex-items"
+                    alt="Logo da Azure"
+                    href="index.html"
+                    target="_self"
+                    title="Azure">
+                </a>
+                <a id="icon-gcloud" class="aside-details-flex-items item-gcloud"
+                    alt="Logo da Google Cloud"0
+                    href="index.html"
+                    target="_self"
+                    title="Google Cloud">
+                </a>
+            </details>
+        </aside>
+
+        <main class="body-grid-items item-main main-grid-container">
+            <section class="main-grid-items item-principal">
+                <p>
+                    <strong>Front-End</strong> é a interface gráfica e interativa das páginas Web, dos softwares desktop, das aplicações mobile, etc.
+                </p>
+                <p>
+                    Existem diversas ferramentas, tecnologias e frameworks que podem ser utilizadas no desenvolvimento de front-ends (Bootstrap, Angular, Vue, React, etc.). Contudo, as principais são:<br>
+                    <strong>HTML:</strong> Estrutura;<br>
+                    <strong>CSS:</strong> Aparência;<br>
+                    <strong>JavaScript:</strong> Comportamento.<br>
+                </p>
+                <p>
+                    <strong>Padrões, Recomendações e Boas Práticas:</strong> World Wide Web Consortium (W3C) e WHATWG
+                </p>
+            </section>
+            <details class="main-grid-items item-links">
+                <summary><span>Saiba mais...</span></summary>
+                <ul>
+                    <li>
+                        <a href="https://pt.wikipedia.org/wiki/Front-end_e_back-end" target="_blank">
+                            Front-End e Back-End - Wikipedia
+                        </a>
+                    </li>
+                    <li>
+                        
+                    </li>
+                </ul>
+                </ul>
+            </details>
+        </main>
+
+        <article id="w3c-whatwg-e-os-padroes-Web" class="body-grid-items item-article-1 article-grid-container">
+            <details class="article-grid-items item-principal">
+                <summary>W3C, WHATWG e os Padrões Web</summary>
+                <img height="100px" 
+                    src="imgs/_logos/logo-whatwg.svg"
+                    style="float:right"
+                    title="Logo WHATWG"
+                    width="100px">
+                <img height="100px" 
+                    src="imgs/_logos/logo-w3c.jpg"
+                    style="float:right"
+                    title="Logo W3C"
+                    width="100px">
+                <ul>
+                    <li>
+                        O <strong>World Wide Web Consortium (W3C)</strong> é uma comunidade internacional onde as organizações membros, uma equipe em tempo integral e o público trabalham juntos para desenvolver os <strong>Padrões da Web</strong>. Liderada pelo inventor e diretor da Web, Tim Berners-Lee e pelo CEO Jeffrey Jaffe, a missão do W3C é levar a Web a todo o seu potencial, garantindo sempre a abertura, acessibilidade e liberdade da <strong>World Wide Web</strong> de uma perspectiva técnica;
+                    </li>
+                    <li>
+                        Já o <strong>Web Hypertext Application Technology Working Group (WHATWG)</strong> é uma comunidade de pessoas interessadas na evolução da Web por meio de padrões e testes.
+                    </li>
+                    <li>
+                        As <strong>Recomendações W3C</strong> definem uma <strong>Open Web Platform</strong> para o desenvolvimento de aplicativos que tem o potencial sem precedentes para permitir que os desenvolvedores criem experiências interativas ricas, alimentadas por vastos armazenamentos de dados, que estão disponíveis em qualquer dispositivo. Embora os limites da plataforma continuem a evoluir, os líderes da indústria falam quase em uníssono sobre como o HTML5 será a base para esta plataforma. Mas a força total da plataforma depende de muito mais tecnologias que o W3C e seus parceiros estão criando, incluindo CSS, SVG, WOFF, a pilha da Web Semântica, XML e uma variedade de APIs.
+                    </li>
+                    <li>
+                        Além dos padrões para as tecnologias W3C citadas acima, o W3C possui <strong>guias e padrões para outras tecnologias Web</strong> também.
+                    </li>
+                    <li>
+                        Esses <strong>Padrões</strong>, <strong>Recomendações</strong>, <strong>Boas Práticas</strong>, <strong>Diretrizes</strong> ou <strong>Especificações Técnicas</strong> são muito importantes para garantir que a Web seja/esteja:
+                        <ul>
+                            <li>
+                                <b>Acessíveis</b> para pessoas com deficiência;
+                            </li>
+                            <li>
+                                <b>Disponível</b> em qualquer dispositivo, para qualquer tipo de informação, em qualquer idioma;
+                            </li>
+                            <li>
+                                <b>Disponível</b>Universal, internacional e verdadeiramente “World Wide”;
+                            </li>
+                            <li>
+                                <b>Livre</b> de royalties e baseado em padrões abertos;
+                            </li>
+                            <li>
+                                <b>Transformacional</b> para a forma como os negócios são feitos; melhorando a entrega, aumentando a satisfação do usuário e reduzindo custos;
+                            </li>
+                            <li>
+                                E cada vez mais <b>segura</b>.
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </details>
+            <details class="article-grid-items item-links">
+                <summary><span>Saiba mais...</span></summary>
+                <ul>
+                    <li>
+                        <a href="https://www.w3c.br/Padroes/">Padrões Web - W3C</a>
+                    </li>
+                    <li>
+                        <a href="https://spec.whatwg.org/">Padrões Web - WHATWG</a>
+                    </li>
+                    <li>
+                        <a href="https://www.w3.org/TR/wcag2ict/">Guias e padrões para outras tecnologias Web</a>
+                    </li>
+                </ul>
+            </details>
+        </article>
+
+        <article id="acessibilidade" class="body-grid-items item-article-2 article-grid-container">
+            <details class="article-grid-items item-principal">
+                <summary>Acessibilidade</summary>
+                <img height="450" 
+                    src="imgs\front-end\specs.png"
+                    style="float:right"
+                    width="450">
+                <ul>
+                    <li>
+                        Existem mais de 1 bilhão de pessoas com deficiência, ou seja, cerca de 15-20% da população;
+                    </li>
+                    <li>
+                        <strong>Acessibilidade na Web</strong> significa que pessoas com deficiência podem usar a Web 
+                        igualmente, acessando e interagindo com os conteúdos;
+                    </li>
+                    <li>
+                        As tecnologias da Web do W3C, como HTML, CSS e outras, fornecem suporte para muitos recursos de acessibilidade;
+                    </li>
+                    <li>Alguns exemplos de recursos de Acessibilidade na Web incluem:
+                        <ul>
+                            <li>
+                                <strong>Legendas</strong> em conteúdo de áudio e multimídia para pessoas com  eficiência auditiva;
+                            </li>
+                            <li>
+                                <strong>Layout claro e consistente</strong> para pessoas com deficiências cognitivas e de aprendizagem;
+                            </li>
+                            <li>
+                                <strong>Suporte de teclado</strong> para pessoas que não usam o mouse, por exemplo, pessoas com deficiência física;
+                            </li>
+                            <li>
+                                <strong>Alternativas de texto</strong> para pessoas com deficiência visual e que usam leitores de tela;
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        A <strong>Web Accessibility Initiative (WAI)</strong> provê estratégias, padrões e recursos para tornar a Web acessível a pessoas com deficiência e ela pode ser subdivida em:
+                        <ul>
+                            <li><strong>Diretrizes de Acessiblidade</strong>:
+                                <ul>
+                                    <li>
+                                        <strong>Web Content Accessibility Guidelines (WCAG)</strong>;
+                                    </li>
+                                    <li>
+                                        <strong>Authoring Tool Accessibility Guidelines (ATAG)</strong>;
+                                    </li>
+                                    <li>
+                                        <strong>User Agent Accessibility Guidelines (UAAG)</strong>.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><strong>Especificações Técnicas</strong>:
+                                <ul>
+                                    <li>
+                                        <strong>Accessible Rich Internet Applications (WAI-ARIA)</strong>;
+                                    </li>
+                                    <li>
+                                        <strong>Áudio e Vídeo</strong>;
+                                    </li>
+                                    <li>
+                                        <strong>Avaliação</strong>;
+                                    </li>
+                                    <li>
+                                        <strong>Personalização</strong>;
+                                    </li>
+                                    <li>
+                                        <strong>Pronunciação</strong>
+                                    </li>
+                                </ul>   
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </details>
+            <details class="main-grid-items item-links">
+                <summary><span>Saiba mais...</span></summary>
+            </details>
+        </article>
+
+        <article id="diretrizes-de-acessibilidade" class="body-grid-items item-article-3 article-grid-container">
+            <details class="article-grid-items item-principal">
+                <summary>Diretrizes de Acessibilidade</summary>
+                <ul>
+                    <li><strong>Web Content Accessibility Guidelines (WCAG):</strong>
+                        <ul>
+                            <li>
+                                Os documentos das <strong>Web Content Accessibility Guidelines (WCAG)</strong> 
+                                explicam como tornar o conteúdo da Web mais acessível para pessoas com deficiência;
+                            </li>
+                            <li>
+                                A versão 2.0 foi aprovada no padrão <strong>ISO/IEC 40500:2012</strong>;
+                            </li>
+                            <li>
+                                Baseados em <strong>4 princípios</strong>:
+                                <ul>
+                                    <li><strong>Perceptível:</strong>
+                                        <ul>
+                                            <li>
+                                                Forneça <strong>alternativas de texto</strong> para conteúdo não textual;
+                                            </li>
+                                            <li>
+                                                Forneça <strong>legendas e outras alternativas</strong> para multimídia;
+                                            </li>
+                                            <li>
+                                                Crie conteúdo que possa ser <strong>apresentado de diferentes maneiras</strong>, inclusive por meio de tecnologias assistivas, sem perder o sentido;
+                                            </li>
+                                            <li>
+                                                Torne mais fácil para os usuários <strong>ver e ouvir o conteúdo</strong>.
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>Operável:</strong>
+                                        <ul>
+                                            <li>
+                                                Disponibilize todas as funcionalidades de um <strong>teclado</strong>;
+                                            </li>
+                                            <li>
+                                                Dê aos usuários <strong>tempo suficiente</strong> para ler e usar o conteúdo;
+                                            </li>
+                                            <li>
+                                                Não use conteúdo que cause <strong>convulsões ou reações físicas</strong>;
+                                            </li>
+                                            <li>
+                                                Ajude os usuários a <strong>navegar e encontrar conteúdo</strong>;
+                                            </li>
+                                            <li>
+                                                Facilite o uso de <strong>outras entradas além do teclado</strong>.
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>Compreensível:</strong>
+                                        <ul>
+                                            <li>
+                                                Torne o texto <strong>legível e compreensível</strong>;
+                                            </li>
+                                            <li>
+                                                Faça o conteúdo aparecer e operar de <strong>maneiras previsíveis</strong>;
+                                            </li>
+                                            <li>
+                                                Ajude os usuários a <strong>evitar e corrigir erros</strong>.
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>Robusto:</strong>
+                                        <ul>
+                                            <li>
+                                                Maximize a <strong>compatibilidade</strong> com as ferramentas de usuário atuais e futuras.
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><strong>Authoring Tool Accessibility Guidelines (ATAG):</strong>
+                        <ul>
+                            <li>
+                                Os documentos de <strong>Authoring Tool Accessibility Guidelines (ATAG)</strong> explicam como:
+                                <ul>
+                                    <li>
+                                        Tornar as próprias <strong>ferramentas de autoria</strong> acessíveis, para que pessoas com deficiência possam criar conteúdo da Web;
+                                    </li>
+                                    <li>
+                                        Ajudar os autores a criar conteúdo da Web mais acessível, especificamente: habilitar, apoiar e promover a produção de conteúdo em conformidade com as WCAG.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Ferramentas de autoria</strong> são softwares e serviços que “autores” (desenvolvedores da Web, designers, escritores, etc.) usam para produzir conteúdo da Web (páginas da Web estáticas, aplicativos da Web dinâmicos, etc.);
+                            </li>
+                            <li>
+                                Alguns exemplos de ferramentas de autoria:
+                                <ul>
+                                    <li>
+                                        Ferramentas de criação de páginas da Web, por exemplo, editores de HTML what-you-see-is-what-you-get (WYSIWYG);
+                                    </li>
+                                    <li>
+                                        Sistemas de Gerenciamento de Conteúdo (CMS);
+                                    </li>
+                                    <li>
+                                        Sistemas de Gerenciamento de Aprendizagem (LMS);
+                                    </li>
+                                    <li>
+                                        Sites que permitem aos usuários adicionar conteúdo, como blogs, 
+                                        wikis, entre outros;
+                                    </li>
+                                    <li>
+                                        Sites de compartilhamento de fotos, fóruns online e sites de redes 
+                                        sociais;
+                                    </li>
+                                    <li>
+                                        Entre outros.
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><strong>User Agent Accessibility Guidelines (UAAG):</strong>
+                        <ul>
+                            <li>
+                                Os documentos das <strong>Diretrizes de Acessibilidade do Agente do Usuário (UAAG)</strong> explicam como tornar os <strong>agentes do usuário</strong> acessíveis para pessoas com deficiências;
+                            </li>
+                            <li>
+                                Alguns exemplos de agentes de usuário:
+                                <ul>
+                                    <li>Navegadores;</li>
+                                    <li>Extensões de navegador;</li>
+                                    <li>Reprodutores de mídia;</li>
+                                    <li>Leitores;</li>
+                                    <li>E outros aplicativos que processam conteúdo da Web.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                UAAG é principalmente para desenvolvedores destes agentes de usuário;
+                            </li>
+                            <li>
+                                Algumas necessidades de acessibilidade são mais bem atendidas no navegador do que no conteúdo da Web, como <strong>personalização de texto</strong>, <strong>preferências</strong> e <strong>acessibilidade da interface do usuário</strong>.
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </details>
+            <details class="main-grid-items item-links">
+                <summary><span>Saiba mais...</span></summary>
+                <ul>
+                    <li>
+                        <a href="https://www.w3.org/WAI/standards-guidelines/wcag/"
+                            target="_blank">
+                            Web Content Accessibility Guidelines (WCAG) - W3C
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.w3.org/WAI/standards-guidelines/wcag/glance/"
+                            target="_blank">
+                            4 Princípios WCAG - W3C
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.w3.org/WAI/standards-guidelines/atag/"
+                            target="_blank">
+                            Authoring Tool Accessibility Guidelines (ATAG)
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.w3.org/WAI/standards-guidelines/uaag/" 
+                            target="_blank">User Agent Accessibility Guidelines (UAAG)
+                        </a>
+                    </li>
+                </ul>
+            </details>
+        </article>
+
+        <article id="especificacoes-tecnicas" class="body-grid-items item-article-4 article-grid-container">
+            <details class="article-grid-items item-principal">
+                <summary><strong>Especificações Técnicas</strong></summary>
+                <ul>
+                    <li>
+                        <strong>Accessible Rich Internet Applications (WAI-ARIA):</strong>
+                        <ul>
+                            <li>
+                                O <strong>ARIA</strong> fornece semântica para que os autores possam transmitir os comportamentos da interface do usuário e informações estruturais para tecnologias assistivas (como leitores de tela);
+                            </li>
+                            <li>    
+                                Sua especificação fornece uma ontologia de funções, estados e propriedades que definem elementos de interface de usuário acessíveis;
+                            </li>
+                            <li>
+                                O conjunto ARIA inclui especificações de mapeamento de API que fornecem orientação de implementação de agente de usuário, além de módulos para Gráficos e Publicação Digital.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Áudio e Vídeo:</strong>
+                        <ul>
+                            <li>
+                                O <strong>Web Video Text Tracks Format (WebVTT)</strong> é um formato para legendas, descrições de vídeo de texto e outros metadados alinhados com o conteúdo de áudio ou vídeo;
+                            </li>
+                            <li>
+                                O <strong>Timed Text Markup Language (TTML)</strong> destina-se a ser usado para transcodificação ou troca de informações de texto cronometrado entre formatos de conteúdo de distribuição legado para subtítulos e legendagem.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b><a href="https://www.w3.org/WAI/test-evaluate/"><strong>Avaliação</strong></a>:</b>
+                        <ul>
+                            <li>
+                                A <b><a href="https://www.w3.org/WAI/standards-guidelines/act/">
+                                Visão Geral do Teste de Conformidade de Acessibilidade (ACT)</a></b> 
+                                estabelece e documenta regras para testar a conformidade do conteúdo da web 
+                                com os padrões de acessibilidade;
+                            </li>
+                            <li>
+                                A <b><a href="https://www.w3.org/WAI/standards-guidelines/earl/">
+                                Avaliação e Visão Geral da Linguagem de Relatório (EARL)</a></b> é um 
+                                formato legível por máquina para expressar os resultados do teste;
+                            </li>
+                            <li>
+                                A <b><a href="https://www.w3.org/WAI/test-evaluate/conformance/wcag-em/">
+                                Visão Geral da WCAG-EM: Metodologia de Avaliação de Conformidade de 
+                                Acessibilidade de Site</a></b> é uma abordagem para determinar o quão bem um site 
+                                está em conformidade com as Diretrizes de Acessibilidade de Conteúdo da Web (WCAG).
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </details>
+            <details class="main-grid-items item-links">
+                <summary><span>Saiba mais...</span></summary>
+                <ul>
+                    <li>
+                        <a href="https://www.w3.org/WAI/standards-guidelines/aria/">Accessible Rich Internet Applications (WAI-ARIA)</a>
+                    </li>
+                    <li>
+                        <a href="https://www.w3.org/TR/webvtt/">Áudio e Vídeo: Web Video Text Tracks Format (WebVTT)</a>
+                    </li>
+                    <li>
+                        <a href="https://www.w3.org/TR/webvtt/">Áudio e Vídeo: Timed Text Markup Language (TTML)</a>
+                    </li>
+                </ul>
+            </details>
+        </article>
+
+        <article id="internacionalizacao" class="body-grid-items item-article-5 article-grid-container">
+            <details class="article-grid-items item-principal">
+                <summary>Internacionalização (i18n)</summary>
+                <ul>
+                    <li>
+                        '<strong>Internacionalização</strong>' às vezes é abreviado para '<strong>i18n</strong>' em inglês, porque há 18 caracteres entre o 'i' e o 'n';
+                    </li>
+                    <li>
+                        Internacionalização é um padrão que recomenda que todo conteúdo ou aplicativo deve ser projetado e desenvolvido com recursos que permitam seu uso em diferentes idiomas, culturas, sistemas de escrita, scripts, etc.;
+                    </li>
+                    <li>
+                        Abaixo, alguns exemplos de internacionalização que ajudam a garantir que seu conteúdo seja 
+                        consumido por pessoas em diferentes partes do mundo:
+                        <ul>
+                            <li>
+                                <b>Declaração do Encoding de Caracteres:</b> Vital para garantir que o texto da 
+                                página web seja reconhecido em qualquer browser pelo mundo;
+                            </li>
+                            <li>
+                                <b>Declaração da Linguagem Primária:</b> 
+                            </li>
+                            <li>
+                                <b>Cultural:</b> 
+                            </li>
+                        </ul> 
+                    </li>
+                    <li>
+                        E, as 7 dicas ...
+                        <ul>
+                            <li>
+                                To be continued...
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div>
+                    <h4>Unicode</h4>
+                    <ul>
+                        <li>
+                            <b>Unicode</b> é um conjunto de caracteres universal, ou seja, um padrão que define, 
+                            em um só lugar, todos os caracteres necessários para escrever linguagens em uso em 
+                            computadores; 
+                        </li>
+                        <li>É um superconjunto de todos os outros conjuntos de caracteres que foram codificados;</li>
+                        <li><b>Conjunto de caracteres</b> é diferente de uma <b>codificação de caracteres</b>;</li>
+                        <li>
+                            Hoje em dia, você deve sempre escolher a <b>codificação de caracteres UTF-8</b> para 
+                            seu conteúdo ou dados. Essa codificação Unicode é uma boa escolha porque você pode usar 
+                            uma única codificação para lidar com qualquer caractere que provavelmente encontrará, 
+                            o que simplifica muito as coisas;</li>
+                    </ul>
+                </div>
+            </details>
+        </article>
+        
+        <footer class="body-grid-items item-footer">
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,685 @@
+#######################
+O QUE É CIÊNCIA DE DADOS
+
+=====
+A REVOLUÇÃO DOS DADOS
+
+    - Big Data está mais relacionado à tecnologia. Ele fornece um ambiente computacional não apenas para análise como também para outros tipos de tarefas de processamento. Inicialmente, o Big Data foi definido pelos três Vs: Velocidade, Volume e Variedade. No entanto, com o passar dos anos, outros Vs foram atribuídos a essa área do conhecimento, por exemplo:
+        - Veracidade (Veracity) – Refere-se à confiabilidade dos dados e
+        - Valor (Value) – Refere-se ao fato de os dados terem valor ou não dentro do nosso projeto ou negócio. Armazenar dados é importante, mas esses dados podem ter pouca utilidade se deles não puder ser extraído conhecimento.
+
+    - A Ciência de Dados, por sua vez, está mais relacionada à criação de modelos capazes de extrair padrões de dados complexos e o seu uso em problemas da vida real.
+
+    - Small Data = É um conjunto de dados cujos volume e formato permitem que o seu processamento e análise sejam realizados por uma pessoa ou uma pequena organização. Por exemplo, todos nós geramos pequenos dados por meio do uso dos nossos telefones celulares, e esses dados são armazenados localmente no dispositivo. No entanto, quando esses dados são enviados aos servidores para serem processados, eles se tornam Big Data.
+
+    - Business Intelligence explica dados exatos de eventos que já ocorreram. Ciência de Dados usa dados não estruturados para prever o futuro, dando um direcionamento para a tomada de decisões.
+
+    >> A general introduction to data analytics (MOREIRA et al., 2018) – Seções 1.1, 1.2 e 1.3. https://xn--webducation-dbb.com/wp-content/uploads/2019/01/Joao-Moreira-Andre-Carvalho-Tomas-Horvath-A-General-Introduction-to-Data-Analytics-Wiley-2019.pdf
+
+    >> The government-academia complex and big data religion. Disponível em: https://www.forbes.com. Acesso em: jan. 2020.
+
+    >> The data science handbook (CADY, 2017) – Seção 13.1.
+
+=====
+TOMADA DE DECISÃO BASEADA EM DADOS
+
+    - Tomada de Decisão Baseada em Dados (DDDM – Data-Driven Decision Making) é a prática de basear decisões na análise de dados, e não apenas na intuição e experiência. Na Ciência de Dados, fazemos exatamente isso: apoiamos a tomada de decisão na análise de dados.
+
+    - Dois exemplos de Tomada de Decisão Baseada em Dados são as decisões baseadas em descobertas, como o caso dos modelos de PREVISÃO do Walmart e da Target, e as decisões que repetem certos resultados em grande escala, como o caso da MegaTelCo, cujo objetivo é aplicar certos incentivos a um cliente, ver se é possível mantê-lo fidelizado à empresa e, caso o resultado seja positivo, repetir o processo para outros clientes. Um problema ocorrido na Target é que a empresa tinha dados sobre os hábitos de compra dos clientes, mas não achava que as suas práticas pudessem afetar as pessoas. No entanto, uma garota não contou aos seus pais que estava grávida, mas o WalMart a expôs, revelando o seu segredo.
+
+    - Estamos vendo uma revolução de propagandas e anúncios, em grande parte, esse fenômeno ocorre devido ao imenso aumento no tempo que os consumidores gastam on-line e à capacidade de tomar decisões de publicidade em frações de segundo.
+
+    >> Data science for business (PROVOST; FAWCETT, 2013) – Capítulo 1, Seção Data science, engineering, and data-driven decision making (p. 3-7). https://book.akij.net/eBooks/2018/May/5aef50939a868/Data_Science_for_Bus.pdf
+
+=====
+CONHECIMENTOS E HABILIDADES DE UM CIENTISTA DE DADOS
+
+    - A Ciência de Dados está na interseção de três áreas: Ciência da Computação, Matemática e Estatísticas e Conhecimento do Domínio/Negócio. Tanto a Matemática quanto a Computação nos permitem transitar em diferentes domínios, uma vez que as técnicas e os métodos aprendidos em cada uma dessas áreas são aplicáveis a diversas outras. O mesmo não acontece com a Biologia, por exemplo.
+
+    - Um modelo de dados é uma relação organizada e formal de dados que geralmente finge simular um fenômeno do mundo real. O modelo Spawer-Recruit Models, por exemplo, mede a saúde biológica de uma espécie. É uma relação básica entre o número de unidades parentais saudáveis de uma espécie e o número de novas unidades no grupo de animais. Formalmente, são as variáveis recruits e spawners, encontradas por meio da equação: recruits = 0,5 * spawner + 60
+
+    - Em muitos casos, não é possível ter um cientista de dados com todas as habilidades desejáveis da área. Esse problema é muito frequente, pois dominar todo conhecimento necessário ou exigido é difícil. Por esse motivo, geralmente, são formados grupos de Ciência de Dados, nos quais cada pessoa tem uma habilidade diferente. Nesse caso, no entanto, é muito importante que todos saibam trabalhar em grupo. Podemos ter os melhores colaboradores, mas nada funcionará se eles não se comunicarem.
+
+    - Engenheiro de Dados é responsável por coletar e armazenar os dados, enquanto o Cientista de Dados faz a leitura desses dados para aplicar seus modelos e obter as informações necessárias.
+
+    - Matemática: vai usar basicamente Álgebra Linear e Cálculos.
+
+    - Estatísticas: vai usar basicamente Teoria da Probabilidade, Estatística Inferencial e Análise Multivariada.
+
+    >> Principles of data science (Ozdemir, 2016) – Capítulo 1, Seções What is data science? e The data science Venn diagram. https://docplayer.net/92474494-Principles-of-data-science.html
+
+    >> https://www.youtube.com/watch?v=NmCuEgkVLWo
+
+=====
+CURIOSIDADES E INQUISIÇÕES (PERGUNTAS) SOBRE DADOS
+
+    >> The hardest thing In data science. Disponível em: https://buckwoody.wordpress.com. Acesso em: jan. 2019.
+
+    >> The data science design manual (SKIENA, 2017) – Seção 1.2. https://www.webpages.uidaho.edu/~stevel/517/The%20Data%20Science%20Design%20Manual.pdf
+
+###############
+PROBLEMAS E SOLUÇÕES EM CIÊNCIA DE DADOS
+
+=====
+CIÊNCIA DE DADOS NA VIDA REAL
+
+    - 85% dos projetos de Big Data falham.
+
+    - Os 2 fatores principais que podem ocasionar no sucesso ou falha em um projeto de Big Data são os Dados e as Pessoas.
+
+    >> Principles of data science (OZDEMIR, 2016) – Capítulo 1, Seção Data science case studies. https://docplayer.net/92474494-Principles-of-data-science.html
+
+=====
+FATORES DE SUCESSO NA CIÊNCIA DE DADOS
+
+    - Alguns fatores que podem levar a falhas em um projeto de Ciência de Dados são: foco, dados, pessoas, modelos, integração com o negócio, gerentes que não acreditam no projeto e falta de interação no processo.
+
+    - Uma das técnicas que está sendo usada com ênfase suficiente nos últimos cinco a oito anos, especificamente no contexto da aprendizagem profunda, envolve o conceito de redes neurais. Uma rede neural é um modelo computacional baseado em um grande conjunto de unidades neuronais simples (neurônios artificiais) cujo comportamento se aproxima ao observado nos axônios de neurônios de cérebros biológicos. A informação de entrada atravessa a rede neural, produzindo valores de saída.
+
+    >> https://www.yumpu.com/en/document/read/63817371/the-mit-press-essential-knowledge-john-d-kelleher-brendan-tierney-data-science-the-mit-press-2018
+
+=====
+LIMITAÇÕES NA CIÊNCIA DE DADOS
+
+    - Humanos executam algumas tarefas de forma melhor que um computador e vice-e-versa.
+
+    >> Data science for business (PROVOST; FAWCETT, 2013) – Capítulo 14, Seção What data can’t do: humans in the loop, revisited.  https://book.akij.net/eBooks/2018/May/5aef50939a868/Data_Science_for_Bus.pdf
+    >> https://www.dataversity.net/limitations-predictive-analytics-lessons-data-scientists/
+
+###########
+CIÊNCIA DE DADOS E SUAS ETAPAS 
+
+ETAPAS - Processo Cíclico
+    1 - Preparação dos Dados;
+    2 - Análise Exploratória;
+    3 - Escolha do Modelo;
+    4 - Ajuste do Modelo;
+    5 - Validação do Modelo.
+
+=====
+TIPOS DE DADOS
+
+    - Dados estruturados são aqueles organizados em um formato de fácil tratamento computacional, como planilhas e matrizes, enquanto dados não estruturados são aqueles fornecidos como um aglomerado de informações que precisam ser organizadas para que possam ser processadas computacionalmente.
+
+    - Tipos de dados estatísticos:
+        - QUALITATIVOS ou CATEGÓRICOS;
+        - QUANTITATIVOS ou NUMÉRICOS.
+
+    - O tipo de dado determina que operações podem ser empregadas sobre ele. Por exemplo, atributos quantitativos admitem operações aritméticas, enquanto atributos qualitativos são basicamente categóricos, admitindo contagem – e, em alguns casos, relação de ordem. O tipo de operação suportada pelos dados é, portanto, a principal característica que os diferencia.
+
+    - Admitem relação de ordem: tamanho de roupa (pequeno < médio < grande) e nível social do IBGE (A > B1 > B2 > C1 > C2 > D > E). Não admitem relação de ordem: cor da pele (branco, preto, pardo) e tipo de residência (casa térrea, casa geminada, apartamento). O importante é perceber que não é possível ordenar, claramente, os elementos categóricos, pois não existe uma relação natural de ordem entre eles.
+
+    - Ordenação se diz respeito à ordenação quantitativa, matemática, de grandeza ou importância. Não estamos falando d ordenação alfabética.
+
+    - Nominal, ordinal, intervalo e razão são definidos como os quatro níveis fundamentais de escalas ou níveis de medição que são usados para capturar dados na forma de pesquisas ou enquetes, sendo cada um deles uma pergunta de múltipla escolha. Cada escala é um nível incremental de medida, ou seja, cada escala preenche a função da escala anterior, e todas as escalas de perguntas de pesquisa como Likert, Diferencial Semântico, Dichotomous, etc, são a derivação destes 4 níveis fundamentais de medida variável.
+
+    - Dados são a base para as análises estatísticas.
+
+=====
+NÍVEL DE MEDIÇÃO 
+    - Determina o que usar para:
+        - Estatísticas Resumidas;
+        - Gráficos;
+        - Análises.
+
+    - Nível Nominal: 
+        - Nível mais básico de medição;
+        - Também conhecido como Categórico ou Qualitativo;
+        - Sem valor quantitativo;
+        - Sem ordenação;
+        - Armazenados como palavras, textos ou códigos númericos (também sem expressar ordenação);
+        - Resumidos com porcentagem ou frequência;
+        - Não é possível calcular valor médio;
+        - VISUALIZAÇÃO: 
+            - Gráficos de Pizza, Barras, Colunas, Colunas Empilhadas;
+        - Exemplos: Sexo, Cor, etc.
+        - Análise de dados da escala nominal:
+            - Fazendo uma pergunta aberta, cujas respostas podem ser codificadas para um número respectivo de etiquetas decidido pelo pesquisador;
+            - Fazendo uma pergunta de múltipla escolha, na qual as respostas serão etiquetadas.
+
+    - Nível Ordinal:
+        - Com ordenação e os intervalos entre os valores na escala podem ser irregulares;
+        - Resumidos com porcentagem ou frequência;
+        - Em algumas ocasiões é possível calcular valor médio;
+        - VISUALIZAÇÃO:   
+            - Gráficos de Barras, Colunas;
+        - Exemplos: Classificação, Satisfação, etc.
+        - Análise de dados da escala ordinal:
+            - Podem ser apresentados em formatos de tabela ou gráficos;
+            - Para análisar, podemos usar métodos como:
+                - O teste Mann-Whitney U: Os pesquisadores podem concluir qual variável de um grupo é maior ou menor do que outra variável de um grupo selecionado aleatoriamente;
+                - O teste Kruskal-Wallis H: Os pesquisadores podem analisar se dois ou mais grupos ordinais têm a mesma mediana ou não.
+
+    - Nível Intervalo/Razão:
+        - Nível mais preciso de medição;
+        - Também conhecido como Quantitativo, Escala ou Paramétrico;
+        - Dados que podem ser mensurados, ao invés de classificados ou ordenados;
+        - Divididos em:
+            - Discretos: Números Inteiros;
+            - Contínuos: Números Fracionários ou Decimais;
+        - Cálculos comuns são a média, a mediana e o padrão de desvio;
+        - VISUALIZAÇÃO: 
+            - Gráficos de Barras, Histograma, Boxplots para estatísticas de resumo para uma variável, Gráfico de Linhas para dados temporais, etc.
+        - Exemplos: Idade, Peso, Número de Clientes, etc.
+
+    - Nível de Intervalo:
+        - Escala numérica onde a ordem das variáveis é conhecida, assim como a diferença entre estas variáveis. As variáveis que têm diferenças familiares, constantes e computáveis são classificadas usando essa escala;
+        - Exemplos: Além da escala de temperatura, o tempo também é um exemplo muito comum de uma escala de intervalo, pois os valores já estão estabelecidos, constantes e mensuráveis. Escala Likert, NPS – Net Promoter Score, escala de diferencial semântica, tabela matriz bipolar, etc. São os exemplos mais utilizados de escalas de intervalos.
+        - Análise de dados da escala de intervalo:
+            - Todas as técnicas aplicáveis à análise de dados nominais e ordinais são aplicáveis também aos de Intervalo;
+            - Além dessas técnicas, há alguns métodos de análise, tais como estatística descritiva, uma análise de regressão que é extensivamente para análise de dados de intervalo. Estatística descritiva é o termo dado à análise de dados numéricos que ajuda a descrever, representar ou resumir dados de forma significativa e ajuda no cálculo da média, mediana e modo.
+
+    - Nivel de Razão:
+        - Tem todas as características que a escala de Intervalo;
+        - Escala de medição quantitativa que é caracterizada por um ponto zero absoluto, o que significa que não há valor numérico negativo;
+        - Ela é calculada assumindo que as variáveis têm uma opção para zero, a diferença entre as duas variáveis é a mesma e há uma ordem específica entre as opções;
+        - Exemplo: Um excelente exemplo é a medição da altura. A altura pode ser medida em centímetros, metros, polegadas ou pés e não é possível ter uma altura negativa.
+        - Análise de dados da escala de razão:
+            - Os dados da escala da razão são de natureza quantitativa, portanto as técnicas de análise quantitativas como SWOT, TURF, Conjoint, tabulação cruzada, etc. podem ser utilizadas.
+            - Técnicas, tais como SWOT e TURF, analisarão os dados de maneira que os pesquisadores possam criar roteiros de como melhorar produtos ou serviços e a tabulação cruzada será útil para entender se novas características serão úteis ou não para o mercado alvo.
+
+
+
+    >> https://en.wikipedia.org/wiki/Level_of_measurement
+    >> https://ilumeo.com.br/todos-posts/2020/05/24/tipos-de-dados-e-variaveis-um-guia-pratico
+    >> https://www.youtube.com/watch?v=rulIUAN0U3w
+    >> https://www.somatematica.com.br/estat/ap16.php
+    >> https://www.questionpro.com/blog/pt-br/escalas-de-medicao/
+    >> https://www.questionpro.com/pt-br/escala_likert/
+    >> https://www.questionpro.com/pt-br/escala-semantica-diferencial.html
+    >> https://www.questionpro.com/blog/pt-br/pergunta-dicotomica/
+    >> Data science, The MIT Press. (KELLEHER; TIERNEY, 2018) – Capítulo 2, da página 39 até a página 53. https://book.akij.net/eBooks/2018/May/5aef50939a868/Data_Science_for_Bus.pdf
+    >> Statistical data type. Disponível em: https://en.wikipedia.org/wiki/Statistical_data_type. Acesso em: jan. 2020.
+    >> Numsense! Data science for the layman: no math added (NG; SOO, 2017) – Seção 1.1.
+    >> Experimental design and analysis (SELTMAN, 2018) – Capítulo 2.
+
+============
+PREPARAÇÃO DOS DADOS
+   
+    - Objetivo:
+        - Transformar dados não estruturados em estruturados;
+        - Não visa, principalmente, estruturar os dados, mas sim eliminar erros, redundâncias e inconsistências nos dados;
+        - A etapa de Transformação de Atributos (contida na Preparação de Dados) vai além de eliminar inconsistências e ruídos. Ela tem por objetivo a criação de novos atributos, que melhor caracterizem os fenômenos e as propriedades dos dados.
+
+    - Linha: item, instância, objetivo
+    - Coluna: atributo, propriedade, característica
+
+    - Tipos de dados estruturadod: nominal, inteiro, contínuo ou real, binário, categórico, data, temporal
+    - Tipos de Atributos: Qualitativo ou Quantitativo
+
+    - Técnicas para Preparação de Dados:
+        - Tratamento dos dados faltantes
+            - Devemos considerar se a simples remoção dos dados pode acarretar uma quantidade muito restrita de informações, demandando operações alternativas
+            - Podem aparecer justamente em um grupo específico de dados, e que a sua remoção pode eliminar tal grupo do processo de análise
+            - Ignorar se forem uma pequena porcentagem do total
+            - Estimar os valores que faltam
+                - Abordagens Estatísticas 
+                    - Dados Qualitativos
+                        - Preencher com o valor da moda
+                    - Dados Quantitativos
+                        - Preencher com o valor da média ou da mediana
+                - Abordagens Computacionais
+                    - Dados Qualitativos
+                        - Técnica de predição para preencher os dados faltantes
+                    - Dados Quantitativos
+                        - Técnica de classificação para preencher os dados faltantes
+            - Desvantagens:
+                - O tratamento de dados faltantes pode introduzir mudanças estatísticas significativas nos dados, podendo interferir na geração de modelos e, consequentemente, na análise dos resultados.
+        - Identificação de Outliers
+            - Interessante para sistemas de detecção de fraudes
+            - Dificultam o ajuste de modelos em tarefas de predição e classificação, devendo ser removidos dos dados
+            - Não importa a tarefa, é sempre importante identificar outliers a fim de melhor compreender os dados de interesse
+            - Univariado
+                1 - Assumir que os valores de um atributo seguem uma distribuição normal (gaussiana)
+                2 - Identificar como outliers valores extremos em relação à distribuição
+                - Método Z-value Univariado
+                    - Fórmula: 
+                        Z-value = Valor do Atributo - Média / Desvio Padrão
+                    - Geralmente é estabelecido o valor 3 como parâmetro:
+                        - Se Z-value for = ou > 3 é considerado um outlier
+            - Bivariado e Multivariado
+                - Método Z-value Multivariado
+        - Transformações dos Atributos
+            - Evitam o problema de privilegiar   atributos em detrimento de outros
+            - Altera o número de objetos e atributos:
+                - Agregação
+                - Agrupamentos
+                - Categorização
+                - Criar novos atributos a partir dos atributos fornecidos
+            - Não altera o número de objetos e atributos:
+                - Escala = x - min(x) / max(x) - min(x)
+                - Normalização = x - Média / max(x) - min(x)
+                - Padronização = x - Média / Desvio Padrão
+        - Limpeza dos Dados
+        - Checagem de consistência;
+        - Tratamento dos atributos redundantes;
+            - Possuem informações correlatas que, tipicamente, não agregam valor aos dados;
+            - Podem ser de difícil detecção, demandando ferramentas sofisticadas de análise;
+            - Aumentam a complexidade dos modelos, piorando o seu desempenho em muitos casos.
+
+    - Limpeza de Dados é o processo de detecção e correção (ou remoção) de registros corrompidos ou imprecisos de um conjunto de registros, tabela ou banco de dados e refere-se à identificação de partes incompletas, incorretas, imprecisas ou irrelevantes dos dados e, em seguida, substituir, modificar, ou excluir os dados sujos ou grosseiros. A limpeza de dados pode ser realizada interativamente com ferramentas de manipulação de dados ou como processamento em lote por meio de script.
+
+    - Limpeza de dados difere da validação de dados, pois a validação quase invariavelmente significa que os dados são rejeitados do sistema na entrada e são executados no momento da entrada, em vez de em lotes de dados.
+
+    - Dados inconsistentes são aqueles que não condizem com o fenômeno ou processo a partir do qual foram obtidos.
+
+    >> Data science, The MIT Press – Capítulo 3, da página 69 à 80. https://book.akij.net/eBooks/2018/May/5aef50939a868/Data_Science_for_Bus.pdf
+    >> Data cleansing. Disponível em: https://en.wikipedia.org/wiki/Data_cleansing. Acesso em: jan. 2020.
+    >> https://xn--webducation-dbb.com/wp-content/uploads/2019/01/Joao-Moreira-Andre-Carvalho-Tomas-Horvath-A-General-Introduction-to-Data-Analytics-Wiley-2019.pdf;
+    >> The data science design manual (SKIENA, 2017) – Seção 3.3.
+
+================
+ANÁLISE EXPLORATÓRIA DE DADOS
+
+    - Objetivo:
+        - Extrair informações relevantes;
+        - Conhecer a base de dados;
+        - Extrair alguns conhecimentos;
+
+    - Estatística Descritiva:
+        - Fornece métodos para sumarizar dados e extrair informações;
+        - Sumários podem ser exibidos por meio de visualizações, que dependem do tipo de dado (qualitativo ou quantitativo);
+        - Exemplos de sumarização:
+            - Frequência 
+                - Contagem para atributos categóricos (qualitativos);
+                - Histogramas para atributos contínuos (quantitativos);
+            - Medidas Estatísticas
+                - Para atributos contínuos ou quantitativos;
+                - Mínimo, Máximo, Média, Moda, Variância, Desvio Padrão, Primeiro Quartil, Mediana ou Segundo Quartil, Terceiro Quartil;
+                - Variância = Soma do Quadrado do Desvio da Altura / Número de Itens. A variância (V) é útil para determinar o afastamento da média que os dados de um conjunto analisado apresentam.
+                - Desvio Padrão = Raíz Quadrada da Variância. O desvio-padrão mensura a dispersão de uma distribuição de dados. Ele mede a distância típica entre cada dado e a média.
+                - Boxplot;
+            - Medidas Estatísticas Bivariadas:
+                - Atuam em pares de atributos;
+                - Atributos categóricos ou qualitativos:
+                    - Tabela de Contingência;
+                - Atributos contínuos ou quantitativos:
+                    - Covariância;
+                    - Correlação;
+                    - Scatterplots
+            - Medidas Estatísticas Multivariadas
+            - Fórmulas:
+                - Média: media = soma-dos-valores / numero-itens
+                - Desvio Padrão Amostral e Populacional: https://pt.khanacademy.org/math/statistics-probability/summarizing-quantitative-data/variance-standard-deviation-sample/a/population-and-sample-standard-deviation-review
+
+    - Visualizações
+        - Cuidado com relação entre as escalas dos eixos x e y;
+
+    >> https://pt.wikipedia.org/wiki/An%C3%A1lise_explorat%C3%B3ria_de_dados
+    >> http://leg.ufpr.br/~fernandomayer/aulas/ce083-2016-2/05_Analise_exploratoria.html
+    >> https://www2.ufjf.br/lates//files/2016/12/Conte%c3%bado-1-%e2%80%93-N_Introdu%c3%a7%c3%a3o-%c3%a0-Estat%c3%adstica-Multivariada-e-an%c3%a1lise-dos-dados.pdf
+    >> https://pt.wikipedia.org/wiki/Estat%C3%ADstica_descritiva
+    >> https://operdata.com.br/blog/analise-multivariada/
+    >> https://professorjf.webs.com/multivariada.PDF
+    >> https://operdata.com.br/blog/qual-a-diferenca-entre-analise-descritiva-preditiva-e-prescritiva/#:~:text=A%20an%C3%A1lise%20descritiva%20%C3%A9%20respons%C3%A1vel,de%20acordo%20com%20cada%20cen%C3%A1rio.
+    >> A general introduction to data analytics (MOREIRA et al., 2018) – Capítulo 2, seções 2.1 e 2.2. https://xn--webducation-dbb.com/wp-content/uploads/2019/01/
+    >> Exploratory data analysis. Disponível em: https://en.wikipedia.org/wiki/Exploratory_data_analysis. Acesso em: jan. 2020.
+    >> Experimental design and analysis (SELTMAN, 2018) – Capítulo 4.
+    >> The data science design manual (SKIENA, 2017) – Capítulo 6.
+
+==============
+ESCOLHA E AJUSTE DO MODELOS
+
+    >> Data science, The MIT Press (KELLEHER; TIERNEY, 2018) – Capítulo 5. https://book.akij.net/eBooks/2018/May/5aef50939a868/Data_Science_for_Bus.pdf;
+    >> The data science design manual (SKIENA, 2017) – Seções de 7.1 a 7.3. Disponível no sistema de bibliotecas da FGV;
+    >> Numsense! Data science for the layman: no math added (NG; SOO, 2017) – Seções 1.2 e 1.3. Disponível no sistema de bibliotecas da FGV;
+    >> Moving into data science as a career (mathematical models). Disponível em: https://towardsdatascience.com. Acesso em: 8 set. 2019.
+
+=============
+VALIDAÇÃO DO MODELO
+
+    - Modelos são usados para classificação, predição, agrupamentos, etc.;
+    - Descritivos
+        - Agrupamentos: Os grupos encontrados realmente compreendem objetos semelhantes?
+        - Os atributos extraídos representam, de fato, o conjunto de interesse? 
+    - Preditivos
+        - Os valores preditos estão de acordo com o esperado?
+        - Técnicas de Classificação: A classificação dos objetos está correta?
+
+    - ESCOLHA DO TESTE:
+        1 - Por Dados: Qual Nível de Medição foi usado para os dados que analisamos?
+            - Nominal: 
+                - Teste de Proporção
+                - Diferença de Duas Proporções
+                - Teste Chi-sq (Qui-Quadrado) Para Independência (Prova de Independência X Ao Quadrado);
+            - Intervalar/Razão: 
+                - Teste para uma Média
+                - Diferença de Duas Médias (Amostras Independentes)
+                - Diferença de Duas Médias (Emparelhadas)
+                - Análise de Regressão;
+            - Os dados Ordinais usam os mesmos testes que dados Nominais ou Intervalar/Razão, depende da situação.
+
+        2 - Por Amostras: Quantas amostras teremos?
+            - Uma amostra que testamos uma estatística relevante contra um valor hipotético:
+                - Teste de Proporção
+                - Teste para uma Média;
+                - Exemplo: Comparar uma proporção ou valor médio contra um valor determinado;
+            - Uma amostra onde cada observação tem uma medição ou pontuação para mais de uma variável, a mesma amostra é medida duas vezes:
+                - Teste Chi-sq (Qui-Quadrado) Para Independência (Prova de Independência X Ao Quadrado)
+                - Análise de Regressão
+                - Diferença de Duas Médias (Emparelhadas)
+                - Exemplo: Saber o sexo e a idade de cada pessoa;
+            - Duas amostras que se comparam entre si:
+                - Diferença de Duas Proporções;
+                - Diferença de Duas Médias (Amostras Independentes);
+                - Exemplo: Comparar dois grupos de pessoas;
+
+        3 - Por Propósito: Qual o propósito da análise?
+            - Testar alguma coisa contra um valor hipotético: 
+                - Teste de Proporção
+                - Teste para uma Média
+                - Diferença de Duas Médias (Emparelhadas);
+            - Comparar duas estatísticas: 
+                - Diferença de Duas Proporções
+                - Diferença de Duas Médias (Amostras Independentes);
+            - Buscar uma relação:
+                - Teste Chi-sq (Qui-Quadrado) Para Independência (Prova de Independência X Ao Quadrado) para dados apresentados em uma tabela;
+                - Análise de Regressão para dados apresentados em um gráfico de dispersão;
+
+            - 11 Métricas de Validação de Modelo para Machine Learning:
+                    - Matriz de Confusão, Matriz de Erro ou Tabela de Confusão:
+                        
+                            - 
+
+
+                    - F1-Score:
+                    - Gráficos de Ganho e Elevação:
+                    - Gráfico Kolmogorov Smirnov:
+                    - AUC – ROC:
+                    - Log Loss ou Perda de Log:
+                    - Coeficiente de Gini:
+                    - Razão Concordante/Discordante:            
+                    - Root Mean Squared Error (RMSE) ou Erro Quadrático Médio (EQM):
+                        - Raiz quadrada da média do quadrado de todo o erro;
+                        - É a média da diferença entre o valor do estimador e do parâmetro ao quadrado;
+                        - Objetivo:
+                            - Medir o quão longe os dados estão dos valores previstos do modelo;
+                            - Avaliar a diferença entre um estimador e o verdadeiro valor da quantidade estimada;
+                            - É a mais popular métrica de avaliação usada em problemas de regressão;
+                            - Considerado uma excelente métrica de erro de uso geral para previsões numéricas;
+                            - Ajuda a fornecer resultados mais robustos que evitam o cancelamento dos valores de erro positivo e negativo; 
+                            - Em outras palavras, essa métrica exibe adequadamente a magnitude plausível do termo de erro;
+                            - Evitar o uso de valores de erro absolutos, o que é altamente indesejável em cálculos matemáticos;0
+                        - Vantagens:
+                            - Quando temos mais amostras, a reconstrução da distribuição de erros usando RMSE é considerada mais confiável;
+                            - Em comparação com o erro absoluto médio, o RMSE dá maior peso e pune grandes erros.
+                            - Tem as mesmas unidades que a variável de resposta;
+                            - Valores mais baixos de MSE indicam melhor ajuste;
+                        - Desvantagens:
+                            - O RMSE é altamente afetado por valores discrepantes ou atípicos, portanto, verifique se você removeu os valores discrepantes do seu conjunto de dados antes de usar essa métrica;
+                            - Se fizermos uma única previsão muito ruim, tirar o quadrado tornará o erro ainda pior e pode distorcer a métrica para superestimar a maldade do modelo;
+                            - Por outro lado, se todos os erros forem menores que 1, isso afeta na direção oposta: podemos subestimar a maldade do modelo;
+                            - Na verdade, é difícil perceber se nosso modelo é bom ou não olhando para os valores absolutos de MSE;
+
+                    - Root Mean Squared Logarithmic Error (RMSLE) ou Erro Logarítmico Quadrado Médio Raiz (ELQMR):
+                        - 
+                    - R-Quadrado/R-Quadrado Ajustado:
+                        
+
+
+
+          
+            
+
+    >> Evaluating a machine learning model. Disponível em: https://www.jeremyjordan.me/evaluating-a-machine-learning-model/
+    >> 11 important model evaluation metrics for machine learning everyone should know. Disponível em: https://www.analyticsvidhya.com
+    >> https://hackinganalytics.wordpress.com/2017/01/06/metricas-para-avaliacao-de-modelos/#:~:text=Existem%20diversas%20m%C3%A9tricas%20que%20podem,nas%20figuras%201%20e%202.
+    >> https://bioinfo.com.br/metricas-de-avaliacao-em-machine-learning-acuracia-sensibilidade-precisao-especificidade-e-f-score/
+    >> https://machinelearningmastery.com/regression-metrics-for-machine-learning/
+    >> https://towardsdatascience.com/what-are-the-best-metrics-to-evaluate-your-regression-model-418ca481755b
+    >> https://ilumeo.com.br/todos-posts/2020/06/22/um-tour-pelos-10-principais-algoritmos-de-machine-learning
+    >> A general introduction to data analytics (MOREIRA et al., 2018) – Seção 5.2. https://xn--webducation-dbb.com/wp-content/uploads/2019/01/Joao-Moreira-Andre-Carvalho-Tomas-Horvath-A-General-Introduction-to-Data-Analytics-Wiley-2019.pdf
+    >> Numsense! Data science for the layman: no math added (NG; SOO, 2017) – Seção 1.4. Disponível no sistema de bibliotecas da FGV;
+    >> Data mining: practical machine learning tools and techniques (WITTEN, et al., 2016) – Capítulo 5. Disponível no sistema de bibliotecas da FGV;
+
+###############
+MÉTODOS MATEMÁTICOS E COMPUTACIONAIS
+
+==========
+TÉCNICAS PARA TRATAMENTO E TRANSFORMAÇÃO DE DADOS
+
+    >> A general introduction to data analytics (MOREIRA et al., 2018) – Seções de 4.1 a 4.4.
+
+    >> Dealing with missing data: Kkey assumptions and methods for applied analysis (SOLEY-BORI, 2013) – Seções de 1 a 4.
+
+    >> The data science design manual (SKIENA, 2017) – Seções 3.3 e 4.3. Disponível no sistema de bibliotecas da FGV;
+
+    >> Outlier analysis (AGGARWAL, 2017) – Capítulo 1, Seções de 1.1 a 1.3. Disponível no sistema de bibliotecas da FGV e
+
+    >> Imputation (statistics). Disponível em: https://en.wikipedia.org . Acesso em: jan. 2020.
+
+==========
+ANÁLISE DE COMPONENTES PRINCIPAIS OU PRINCIPAL COMPONENT ANALYSIS (PCA)
+    - Objetivo
+        - Encontrar um conjunto de vetores-base que estejam alinhados com as direções de maior variação dos dados;
+
+    - Vantagens:
+        - Representar os dados com um conjunto menor de atributos, pois os coeficientes próximos de zero podem ser desconsiderados;
+        - Visualizar os dados a partir das duas direções principais (maior variação dos dados);
+            - Assim, é possível compactar a informação e, portanto, ter uma visualização dela;
+                - Exemplo: um conjunto de dados com 10 atributos podem ser representados com apenas 2 direções principais. Ou seja, daria para representar apenas com 2 atributos ou dimensões:
+                    - É preciso saber quais atributos representar
+                    - Quantas e quais atributos ou direções considerar?
+                    - Desvantagens: Atributos gerados a partir dos coeficientes associados às direções principais não possuem um significado ”semântico”.
+                - Resumindo, em outras palavras:
+                    - PCA permite reduzir a dimensão (número de atributos) dos dados criando novos atributos cujo conteúdo corresponde aos coeficientes associados às direções de maior variabilidade (direções principais). Tais atributos, contudo, não possuem um significado semântico, sendo de difícil interpretação.
+        - Utilizar os coeficientes associados às direções principais como atributos no lugar dos atributos originais;
+
+    - Bivariados ou Multivariados
+        - Podem ser representados em um plano cartesiano, onde cada par de atributos é interpretado como uma coordenada cartesiana
+        - Os vetores (1, 0) e (0, 1) são chamados de Vetores Canônicos;
+            - Fórmula Bivariada:
+                (x,y) = a * (1, 0) + b * (0, 1),
+            - Fórmula Multivariado para 4 Dimensões
+                (x,y,z,w) = a * (1, 0, 0, 0) + b * (0, 1, 0, 0) + c * (0, 0, 1, 0) + d * (0, 0, 0, 1)
+        - Além dos Vetores Canônicos, existem outras formas de representção com coordenadas cartesianas:
+            - Fórmula usando os vetores (0.72,0.69) e (-0.69,0.72) como base de representação:
+                (0.25,0.34) = 0.41 * (0.72,0.69) + 0.07 * (-0.69,0.72)
+    
+    - Direções Principais: São as direções de maior variabilidade dos dados, ou seja, aquelas nas quais os dados apresentam os maiores valores de variância estatística.
+    - Os coeficientes (ou atributos) dos dados após representados nos termos das suas direções principais são os valores correspondentes à projeção dos dados sobre as direções principais calculadas pela técnica PCA.
+    - O PCA permite reduzir a dimensão dos dados porque os coeficientes associados às direções principais com menor variabilidade podem ser desconsiderados, já que correspondem, tipicamente, a ruídos que não possuem informação relevante.
+    - Para visualizar dados com várias dimensões com apenas 2, podemos calcular as duas direções com maior variabilidade dos dados e utilizar os coeficientes associados a elas como coordenadas 2D, possibilitando realizar um scatter plot desses dados.
+
+    >> A tutorial on principal components analysis (SMITH, 2002) – Seção 3 e
+
+    >> Principal component analysis. Disponível em: http://setosa.io/ev/principal-component-analysis/. Acesso em: jan. 2020.
+
+    >> Numsense! Data science for the layman:no math added (NG; SOO, 2017) – Capítulo 3.
+
+    >> A tutorial on principal component analysis (SHLENS, 2014).
+
+    >> A one-stop shop for principal component analysis. Disponível em: https://towardsdatascience.com. Acesso em: jan. 2020.
+
+==========
+TÉCNICAS DE AGRUPAMENTO
+
+    >> A general introduction to data analytics (MOREIRO et al., 2018) – Capítulo 5, seções 5.1 e 5.3.
+
+    >> K-means clustering. Disponível em: https://en.wikipedia.org. Acesso em: jan. 2020.
+
+    >> Hierarchical clustering. Disponível em: https://en.wikipedia.org. Acesso em: jan. 2020.
+        
+    >> The data science design manual (SKIENA, 2017) – Capítulo 10, Seção 10.5.
+
+    >> Introduction to data mining (TAN et al., 2005) – Capítulo 8, seções DE 8.1 a 8.3. Disponível no sistema de bibliotecas da FGV e
+
+    >> Numsense! Data science for the layman: no math added (NG; SOO, 2017) – Capítulo 2.
+
+==========
+MODELOS DE REGRESSÃO
+
+    >> A general introduction to data analytics (MOREIRA et al., 2018) – Capítulo 8, Seções 8.1, 8.2.1, 8.2.2 e 8.2.3
+
+    >> Numsense! Data science for the layman: no math added (NG; SOO, 2017) – Capítulo 6. Disponível no sistema de bibliotecas da FGV;
+
+    >> The data science design manual (SKIENA, 2017) – Capítulo 9, seções 9.1, 9.2 e 9.5 – 9.5.1. Disponível no sistema de bibliotecas da FGV;
+
+    >> Data science, The MIT Press (KELLEHER; TIERNEY, 2018) – Capítulo 4, páginas de 97 a 120. Disponível no sistema de bibliotecas da FGV e
+
+    >> Linear regression. Disponível em: https://en.wikipedia.org. Acesso em: jan. 2020.
+
+==========
+MODELOS DE CLASSIFICAÇÃO pt 1
+
+    >> A general introduction to data analytics (MOREIRA et al., 2018) – Capítulo 9
+
+    >> Numsense! Data science for the layman: no math added (NG; SOO, 2017) – Capítulo 7
+
+    >> Introduction to data mining (TAN et al., 2005) – Capítulo 5, Seções 5.2 e 5.3
+
+    >> The data science design manual (SKIENA, 2017) – Capítulo 9, Seções 9.6 e 9.7, Capítulo 10, Seção 10.2 e Capítulo 11, Seção 11.1
+
+    >> Logistic regression. Disponível em: https://en.wikipedia.org/wiki/Logistic_regression. Acesso em: jan. 2020
+
+    >> Naive Bayes classifier. Disponível em: https://en.wikipedia.org/wiki/Naive_Bayes_classifier. Acesso em: jan. 2020
+
+==========
+MODELOS DE CLASSIFICAÇÃO pt 2
+
+    >> A general introduction to data analytics (MOREIRA, et al., 2018) – Capítulo 10, Seções 10.1 e 10.2.2.
+
+    >> Decision trees in machine learning. Disponível em: https://towardsdatascience.com. Acesso em: jan. 2020 e
+
+    >> A complete tutorial on tree based modeling from scratch (in R & Python). Disponível em: https://www.analyticsvidhya.com. Acesso em: jan. 2020.
+
+    >> Numsense! Data science for the layman: no math added (NG; SOO, 2017) – Capítulos 8, 9 e 10.
+
+    >> Introduction to data mining (TAN et al., 2005) – Capítulo 5, Seções 5.5 e 5.6, e Capítulo 4, Seção 4.3.
+
+    >> The data science design manual (SKIENA, 2017) – Capítulo 11, Seções de 11.2 a 11.4.
+
+    >> Support vector machine (SVM) tutorial. Disponível em: https://blog.statsbot.co/. Acesso em: jan. 2020
+
+    >> https://youtu.be/Y6RRHw9uN9o
+
+###############
+EXEMPLOS REAIS
+
+===========
+ESTRUTURA DE UM PROJETO DE CIÊNCIA DE DADOS
+
+    >> https://www.geeksforgeeks.org/kdd-process-in-data-mining/
+
+    >> A general introduction to data analytics (MOREIRA et al., 2018) – Seção 1.7
+
+###############
+QUESTÕES ÉTICAS EM CIÊNCIA DE DADOS
+
+===========
+PRIVACIDADE E SEGURANÇA
+
+    >> Data science, The MIT Press (KELLEHER; TIERNEY, 2018) – Capítulo 6 Privacy and ethics (p. 182-205)
+
+    >> The data science design manual (SKIENA, 2017) – Seção 12.7 Societal and ethical implications
+
+===========
+CALLING BULLSHIT
+
+    >> How to call B.S. on big data: a practical guide.
+
+    >> https://www.youtube.com/watch?v=A2OtU5vlR0k&t=3s
+
+===========
+A PRÓXIMA GERAÇÃO DE CIENTISTAS DE DADOS
+
+    - Correlação é uma medida estatística, expressa com um número, que descreve o tamanho e a direção de um relacionamento entre duas ou mais variáveis. Já a causalidade indica que um evento é o resultado da ocorrência de outro evento – isto é, existe uma relação causal entre os dois eventos. O exemplo clássico de causalidade versus correlação frequentemente usado é que o tabagismo está relacionado ao alcoolismo, mas não causa alcoolismo, enquanto fumar provoca um aumento no risco de desenvolver câncer de pulmão.
+
+
+
+    >> Doing data science: straight talk from the frontline (O'NEIL; SCHUTT, 2014) – Capítulo 16, Seção What are next-gen data scientists?
+
+===========
+A PRÓXIMA GERAÇÃO DE CIENTISTAS DE DADOS
+
+
+###############
+LEMBRETES RÁPIDOS
+
+    - Não precisamos de muitos dados, precisamos de dados com mais qualidade.
+
+    - Sempre fazer a pergunta correta e objetiva para termos informações mais precisas e obtidas de maneira mais rápida.
+
+    - Interpretar os dados rápida e corretamente.
+
+    - Conhecer ou saber estruturar bem os dados do problema em questão.
+
+    - Saber ouvir quem conhece o domínio e apresentar e explicar as técnicas que podem rersolver os problemas apresentados.
+
+    - Para a entrega ágil de soluções para clientes:
+        - Quebre o problema;
+        - Obtenha o máximo de respostas
+    curtas que puder para ganhar
+    tempo;
+        - Mostre resultados rapidamente;
+        - Mencione que há respostas
+    melhores chegando.
+
+###############
+MODELOS, MÉTODOS E TÉCNICAS
+
+    Vetor de Características:
+
+    - Bag-of-Word: O modelo Bag-of-Words é uma representação simplificada usada no Processamento de Linguagem Natural e na Recuperação de Informações (IR). Nesse modelo, um texto (como uma frase ou um documento) é representado como a bolsa (multiconjunto) de suas palavras, desconsiderando a gramática e até mesmo a ordem das palavras, mas mantendo a multiplicidade. O modelo Bag-of-Words também tem sido usado para visão computacional. O modelo Bag-of-Words é comumente usado em métodos de classificação de documentos onde a (frequência de) ocorrência de cada palavra é usada como um recurso para treinar um classificador.
+
+    https://en.wikipedia.org/wiki/Bag-of-words_model
+    https://www.computersciencemaster.com.br/como-criar-um-saco-de-palavras-em-python/
+    https://machinelearningmastery.com/gentle-introduction-bag-words-model/
+
+    - Word2vec: Word2vec é uma técnica para Processamento de Linguagem Natural (PLN) publicada em 2013. O algoritmo Word2vec usa um modelo de rede neural para aprender associações de palavras de um grande corpus de texto. Uma vez treinado, esse modelo pode detectar palavras sinônimas ou sugerir palavras adicionais para uma frase parcial. Como o nome indica, Word2vec representa cada palavra distinta com uma lista particular de números chamada de vetor. Os vetores são escolhidos cuidadosamente de modo que uma função matemática simples (a similaridade do cosseno entre os vetores) indique o nível de similaridade semântica entre as palavras representadas por esses vetores.
+
+    https://en.wikipedia.org/wiki/Word2vec
+    https://blogdozouza.wordpress.com/2019/03/29/o-word2vec-ilustrado/
+    https://www.alura.com.br/conteudo/introducao-word-embedding
+    https://blog.edrone.me/pt/o-que-e-word2vec/
+
+    - TF-IDF: 
+        - Na recuperação de informações, TF–IDF, abreviação de Term Frequency – Inverse Document Frequency, ou Frequência do Termo - Frequência Inversa do Documento, é uma estatística numérica que se destina a refletir a importância de uma palavra para um documento em uma coleção ou corpus. É frequentemente usado como fator de ponderação em buscas de recuperação de informações, mineração de texto e modelagem de usuários. O valor TF–IDF aumenta proporcionalmente ao número de vezes que uma palavra aparece no documento e é compensado pelo número de documentos no corpus que contêm a palavra, o que ajuda a ajustar o fato de que algumas palavras aparecem com mais frequência em geral. TF–IDF é um dos esquemas de ponderação de termos mais populares atualmente. Uma pesquisa realizada em 2015 mostrou que 83% dos sistemas de recomendação baseados em texto em bibliotecas digitais usam TF–IDF.
+        >> https://www.computersciencemaster.com.br/https://www.computersciencemaster.com.br/como-implementar-o-tf-idf-em-python/term-frequency-e-term-frequency-inverse-document-frequency/
+        >> https://rockcontent.com/br/blog/tf-idf/
+
+    - Boxplot, Diagrama de Caixas, Diagrama de Extremos e Quartis:
+    - Uso:
+        - Estatísticas Descritivas;
+        - Nível de Medição Intervalo ou Raiz;
+
+        - Exibe o resumo de cinco números de um conjunto de dados:
+            - Mínimo
+            - Primeiro Quartil
+            - Mediana
+            - Terceiro Quartil
+            - Máximo
+        >> https://pt.wikipedia.org/wiki/Diagrama_de_caixa
+
+    - Scatterplot, Gráfico de Dispersão :
+
+    https://en.wikipedia.org/wiki/Tf%E2%80%93idf
+    http://www.facom.ufu.br/~wendelmelo/ori201802/4_ponderacao_de_termos.pdf
+
+################
+PYTHON PARA CIÊNCIA DE DADOS
+
+    CountVectorizer = Essa função converte uma coleção de documentos em uma matriz cujas linhas são documentos, cujas colunas são tokens dos documentos e cujos valores referem-se ao número de tokens por documento.
+
+    Pandas: usado para manipulação e análise de dados – em particular, fornece estruturas e operações para manipular tabelas numéricas e séries temporais;
+
+    Numpy: uma das bibliotecas básicas de Python que nos permite manipular matrizes multidimensionais e também possui um grande número de operações matemáticas que nelas operam.
+
+    Scikit-learn: biblioteca que contém muitos algoritmos de aprendizado de máquina – existem algoritmos para classificação, regressão, agrupamento, etc.
+        - Valores padrão:
+            - Número de árvores: n_estimators = 10
+            - Profundidade máxima: max_depth = None, isto é, expande-se até as folhas ficarem totalmente puras.
+##########
+FERRAMENTAS
+
+    Apache Hadoop
+    - O projeto Apache Hadoop desenvolve software de código aberto para computação distribuída confiável e escalável. A biblioteca de software Apache Hadoop é uma estrutura que permite o processamento distribuído de grandes conjuntos de dados em clusters de computadores usando modelos de programação simples. Ele foi projetado para escalar de servidores únicos para milhares de máquinas, cada uma oferecendo computação e armazenamento locais. Em vez de depender de hardware para fornecer alta disponibilidade, a própria biblioteca foi projetada para detectar e lidar com falhas na camada de aplicação, fornecendo um serviço altamente disponível em um cluster de computadores, cada um dos quais pode estar propenso a falhas.
+    - Hadoop Distributed File System: Gerenciar os dados armazenados em um cluster de servidores de maneira simultânea.
+    https://hadoop.apache.org/docs/r1.2.1/hdfs_design.html
+
+    Apache Spark
+    - O Apache Spark é um mecanismo multilíngue para executar engenharia de dados, ciência de dados e aprendizado de máquina em máquinas ou clusters de nó único.
+    - Processar os dados de maneira distribuída.
+    - Permite executar SQL.
+    - Permite executar modelos de Machine Learning.
+

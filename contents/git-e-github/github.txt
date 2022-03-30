@@ -1,0 +1,6 @@
+Fork
+    Cria um repositório em seu perfil e com o nome que vc escolher a partir de um outro repo
+
+VSCode Online
+    Teclando ".", abre essa tool
+    

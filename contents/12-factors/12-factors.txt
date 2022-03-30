@@ -1,0 +1,14 @@
+O QUE é?
+    1 - Code Base: Git, Github
+    2 - Dependencies: npm, composer, maven;
+    3 - Config: Credenciais de acesso a serviços, etc. Env vars;
+    4 - Backing Services: MySQL, MongoDB, RabbitMQ, Memcached;
+    5 - Build, release (build + Config), run: CI/CD, contêineres, etc;
+    6 - Processes: Persistência com serviços de apoio;
+    7 - Port Binding;
+    8 - Concurrency: + de 1 processo para rodar, autosuficiente;
+    9 - Disposability: Início rápido e desligamento amigável;
+    10 - Dev/Prod Parity: + simples com contêineres;
+    11 - Logs: Captura e tratamento de logs com Logstash, Graylog ou Splunk;
+    12 - Admin Processes: Rotinas para manter ou atualizar os sistemas, como migrations, limpeza de históricos, consolidação de dados etc. Rotinas incorporadas na base do código da aplicação.
+    

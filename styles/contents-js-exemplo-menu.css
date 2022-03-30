@@ -1,0 +1,42 @@
+body {
+    background:#EEE;
+}
+aside {
+    position:fixed;
+    top:0;
+    right:0;
+    z-index:999;
+    display:flex;
+}
+#menu-opener {
+    cursor:pointer;
+    height:100px;
+    margin-top:10px;
+    margin-right:10px;
+    transition: all 1.5s linear;
+}
+#menu-opener:hover{
+    filter: brightness(250%) saturate(200%);
+}
+#menu-area {
+    display: none;
+    width:200px;
+    height:100vh;
+    background:#ccc;
+    overflow-x:hidden;
+    overflow-y:auto;
+}
+#menu-area ul, #menu-area li {
+    padding:0;
+    list-style:none;
+}
+#menu-area li {
+    display:block;
+    padding:10px;
+    color:#555;
+    cursor:pointer;
+    font-weight: bold;
+}
+#menu-area li:hover {
+    background:#DDD;
+}

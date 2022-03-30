@@ -1,0 +1,19 @@
+O Power BI Desktop coloca a análise visual ao seu alcance. Com essa ferramenta de criação poderosa, é possível criar visualizações de dados e relatórios interativos.
+ 
+Conecte, combine, modele e visualize seus dados. Coloque os elementos visuais exatamente onde deseja, analise e explore seus dados, e compartilhe o conteúdo com sua equipe publicando no serviço Web do Power BI.
+ 
+O Power BI Desktop faz parte do conjunto de produtos do Power BI. Use o Power BI Desktop para criar e distribuir o conteúdo BI. Para monitorar os principais dados e compartilhar painéis e relatórios use o  serviço Web do Power BI. Para exibir e interagir com seus dados em qualquer dispositivo do Windows 10, obtenha o aplicativo Power BI Mobile. 
+  
+Com o Power BI Desktop, é possível:
+ 
+•	Conectar com segurança centenas de fontes de dados — na nuvem e locais 
+•	Transformar e combinar dados de diversas fontes — com apenas alguns cliques
+•	Estender seus modelos de dados com fórmulas DAX
+•	Escolher mais de 100 elementos visuais de dados modernos — ou criar os seus
+•	Aprofundar-se nos dados para encontrar padrões e descobrir informações
+•	Criar seu design com ferramentas de formatação fáceis e temas
+•	Criar relatórios móveis para usuários em trânsito
+•	Compartilhar uma análise visual com todos em sua organização 
+•	Publicar com segurança na Web ou no servidor de relatório local, ou incorporar elementos visuais no site ou aplicativo
+ 
+Obter o conjunto Power BI completo e não perder nada com o Power BI Desktop, serviço Web do Power BI e aplicativo do Power BI.

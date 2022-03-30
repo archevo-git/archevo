@@ -1,0 +1,26 @@
+Android
+    https://developer.android.com/studio/intro/?gclid=Cj0KCQjw3IqSBhCoARIsAMBkTb3nUesFNEWf9cF-2ayjSqm3BjfMnuPHox7MO5YuceAKutAaYDJgAOIaAmgkEALw_wcB&gclsrc=aw.ds
+
+QUAIS são os principais conceitos e componentes?
+    Activities
+        Telas
+    .xml
+        Para desenvolver a tela
+    .kt
+
+    AndroidManifest.xml
+        Coração da Aplicação
+            Nome
+            Permissões de Uso de Recursos
+
+    activity_main.xml
+        Frontend
+
+    MainActivity.kt
+        Backend
+       
+COMO funciona o desenvolvimento com Android Studio?
+    Pasta do projeto: com.domain
+    
+    Selecionar a versão mínima do Android para atender o máximo de usuários possível;
+

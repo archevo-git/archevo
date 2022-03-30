@@ -1,0 +1,32 @@
+REGIÕES E ZONAS DE DISPONIBILIDADE
+
+SERVIÇOS DE COMPUTAÇÃO
+  EC2
+    Características
+      Quando é desligada, perdemos todo o conteúdo dela
+    Criar uma instância EC2
+      Escolha uma AMI
+      Escolha o tipo de instância
+        - https://aws.amazon.com/pt/ec2/instance-types/
+      Configure os detalhes da instância
+        - Role
+      Adicione o storage
+        - 
+      Adicione as tags
+        - Adicione nome, tags de projetos e outras para segregar os custos
+      Configure o Security Group
+        - Configurações de firewall
+        - Liberação de portas
+      Revise o lançamento da instância
+        - 
+
+
+SERVIÇOS DE ARMAZENAMENTO
+
+SERVIÇOS DE BANCO DE DADOS
+
+SERVIÇOS DE SEGURANÇA
+  Role
+    - Primeiro cria uma policy, usando o ARN;
+    - Depois cria uma role e atribui a policy criada;
+SERVIÇOS 

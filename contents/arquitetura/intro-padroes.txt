@@ -1,0 +1,136 @@
+Arquitetura de Software: Introdução aos Padrões de Projeto - LinkedIn
+ 
+Arquitetura de Software
+    - Trata-se de uma disciplina que enxerga o software como um elemento fundamental, planejando um design de alto nível que será a estrutura sobre a qual o software será desenvolvido.
+
+Papéis do Arquiteto de Software
+    - Os arquitetos precisam ter uma visão completa do projeto para compreender a capacidade técnica, as necessidades do negócio e os objetivos gerais do produto, a fim de criar estratégias coerentes que funcionem de modo global.
+    - Os arquitetos também devem ser capazes de criar estratégias e saber negociar, para ter uma visão clara do rumo que o projeto deve seguir, tomar decisões importantes e vincular as necessidades do negócio e a viabilidade técnica. 
+    - Além disso, eles precisam analisar problemas complexos para entender claramente as consequências de suas decisões.
+    - O arquiteto precisa desempenhar um papel de liderança, pois não se trata apenas de criar diagramas e escolher padrões de projeto, mas também de estabelecer as bases para a visão que a equipe de desenvolvimento deve ter, ser um exemplo de boas práticas e, em geral, guiar o projeto para criar uma solução funcional ao longo de sua vida útil.
+
+Padrões de Projeto
+    - Trata-se de uma solução geral e reutilizável para um problema frequente.
+    - Os padrões de projeto nos ajudam a prevenir erros antes que eles ocorram e a acelerar o processo de desenvolvimento, fornecendo paradigmas testados várias vezes e comprovados. 
+    - Ao utilizar padrões de projeto, evitamos problemas sutis que, às vezes, podem passar despercebidos e causar grandes problemas e melhoramos a legibilidade do código para todos os desenvolvedores que estão familiarizados com eles.
+    - Os padrões de projeto nos ajudam a prevenir erros antes que eles ocorram e a acelerar o processo de desenvolvimento, fornecendo paradigmas testados várias vezes e comprovados. Ao utilizar padrões de projeto, evitamos problemas sutis que, às vezes, podem passar despercebidos e causar grandes problemas e melhoramos a legibilidade do código para todos os desenvolvedores que estão familiarizados com eles.
+    - Antes de selecionar um padrão, é necessário ter um bom entendimento dos objetivos e características do projeto, suas metas de médio e longo prazo e os recursos técnicos disponíveis. Com todas essas informações, precisamos analisar os prós e contras de cada padrão de projeto para escolher o que melhor se adapta às nossas necessidades e funcionalidades.
+
+Requisitos Arquiteturais
+    - É um dos momentos mais importantes na fase inicial de qualquer projeto de software, pois oferece informações essenciais para traçar o plano que determinará sua vida útil. 
+    - Uma boa coleta de requisitos permitirá saber em detalhes as necessidades reais do projeto e analisar a fundo sua visão e objetivos de médio e longo prazo. 
+    - Precisamos encontrar todas as fontes possíveis para ampliar nossa visão dos requisitos. As fontes são todas as possíveis partes interessadas que estão envolvidas de alguma forma com o produto final. Isso inclui, especialmente, todos os usuários e clientes do software, que dependem e obtêm valor do produto. Também podemos obter informações dos responsáveis pela administração e gerenciamento dos produtos ou serviços fornecidos pelo software, pois eles têm uma visão de primeira linha do produto e suas necessidades de negócios. 
+    - Em seguida, podemos nos aprofundar um pouco mais e examinar os padrões do setor, conhecer o que os outros usam para fornecer um produto ou serviço similar, os protocolos de segurança, as boas práticas e experiências de trabalho. 
+    - Por fim, para ter uma visão ainda mais completa, podemos obter informações de fontes menos comuns, descobrindo os interesses das equipes de marketing ou a experiência dos líderes técnicos da empresa com versões anteriores ou semelhantes do produto. 
+    - Durante esse processo, os mapas mentais e diagramas UML são muito úteis para compreender profundamente o que pode ser necessário para criar um software que atenda às necessidades do cliente e de seus usuários. Criar uma documentação detalhada desde os estágios iniciais ajudará a ter uma visão mais completa do produto. Além disso, quando houver novos membros ou o projeto entrar em fase de manutenção, os responsáveis pelo projeto serão capazes de entender melhor seu propósito e sua funcionalidade específica. 
+    - Depois de coletar informações sobre os requisitos e ter uma visão geral clara das necessidades e objetivos do software, é hora de identificar o padrão de projeto de arquitetura que melhor se adapta a todas essas variáveis.
+    - Uma arquitetura sólida e a escolha do padrão de projeto adequado sempre devem ser precedidas de uma coleta exaustiva de requisitos.
+
+Restrições ou Limites de Projetos
+    - As restrições ou limites do projeto não se referem necessariamente a questões como disponibilidade de recursos, mas aos guias e diretrizes que todos os envolvidos no desenvolvimento do software devem seguir.
+    - Um conjunto de diretrizes que indicam para as pessoas que trabalham em um projeto qual é a melhor maneira de resolver um problema, quais são as características desejáveis de cada componente e, em geral, mostra um caminho comum que todos devem seguir. 
+    - As limitações do projeto devem existir para guiar o fluxo de ideias, viabilizar um framework comum de trabalho e ajudar a desenvolver um produto melhor. Por isso, elas precisam ser criadas adotando um ponto de vista geral.
+    - Concentrar-se em um nível muito específico pode levar ao resultado oposto, limitando a criatividade e promovendo cenários de microgestão, em que os desenvolvedores têm muitos limites para aplicar seus critérios técnicos.
+    - Ao utilizar um ou vários padrões de arquitetura, é muito importante manter a disciplina e sempre avaliar se o novo código se encaixa na estrutura e lógica desejadas. 
+    - Por isso, também é muito recomendável fazer revisões periódicas da arquitetura, principalmente quando um novo trecho de código que terá um impacto crítico no sistema vai ser incluído. Nessas revisões, os arquitetos do projeto se reúnem para falar sobre a implementação de um novo software antes de ele ser incluído no repositório principal, examinar se ele está vinculado ao padrão de projeto de arquitetura e avaliar quaisquer possíveis problemas que ele possa gerar para criar um plano de mitigação.
+    - Ao trabalhar com padrões de projeto complexos, as revisões de arquitetura são ótimas para controlar a qualidade do produto e sua implementação, portanto elas devem ser um evento recorrente em qualquer projeto.
+
+Padrões de Projeto
+    Arquitetura Monolítica
+        - Uma arquitetura monolítica refere-se ao design clássico unificado de um software, em que tudo está acoplado como um único elemento.
+        - Arquitetura fortemente acoplados.
+        - O software monolítico é projetado para ser independente. Todos os seus componentes estão interconectados e são interdependentes uns dos outros.
+        - Problemas para manutenção e escalabilidade.
+    Arquitetura de Microsserviços
+        - Distribui os processos em várias partes menores e independentes.
+        - Talvez a característica mais comum nesse padrão de projeto seja a distribuição de tarefas em blocos separados, que são chamados de componentes de serviço e agrupam um ou vários elementos focados na execução de uma tarefa ou área de negócios do aplicativo.
+        - A interação com os bancos de dados também seja desacoplada e realizada por meio de APIs REST. Isso permite que os arquitetos criem pontos de entrada e saída de dados que podem, por sua vez, ser encapsulados em seus próprios componentes de serviço, o que gera APIs consistentes, porém flexíveis, capazes de interagir com diferentes bancos de dados.
+    Arquitetura de Microkernel
+        - Também conhecido como padrão de arquitetura de plug-in, é muito popular para aplicativos que precisam usar software de terceiros ou adicionar funcionalidades rapidamente.
+        - Os componentes são claramente divididos em dois tipos:
+            - O primeiro e mais importante é o núcleo central, que envolve todas as funcionalidades críticas do aplicativo. O núcleo central desse aplicativo é totalmente independente e funcional, portanto não precisa de nenhum outro elemento para operar. Contudo, sua funcionalidade é limitada apenas a processos básicos, como gestão de hardware, interface gráfica ou pacotes de uso comum. 
+            - Por outro lado, temos os plug-ins, que funcionam como um componente para o núcleo do aplicativo. Os plug-ins são módulos independentes com uma funcionalidade específica e dependem do ambiente do núcleo para ampliar sua funcionalidade. Esse padrão é muito utilizado e semelhante ao padrão de seu sistema operacional.
+        - Uma vez instalado o núcleo central, temos tudo o que precisamos para começar a trabalhar, enquanto os plug-ins podem ser instalados para ampliar ou modificar suas capacidades.
+        - Geralmente, o núcleo central oferece algum tipo de API, uma série de rotinas ou comandos comumente usados que qualquer plug-in registrado no sistema pode utilizar para se comunicar com o núcleo central, acessar recursos ou introduzir novas funcionalidades.
+        - Já os plug-ins são módulos que devem ter todas as suas funcionalidades independentes e separadas do núcleo central. Se um plug-in tiver que criar arquivos dentro do aplicativo, ele precisa usar sua própria área de trabalho ou sandbox para gerenciar os dados ou arquivos em um ambiente seguro e encapsulado, sem prejudicar outros plug-ins ou o sistema principal.
+        - Nesse tipo de arquitetura, é importante que, mesmo que as APIs ou sandboxes sejam criadas para um plug-in, elas permaneçam totalmente desacopladas do núcleo central para evitar problemas de dependência. Em um cenário ideal, todo plug-in deve poder ser instalado ou desinstalado a qualquer momento, sem afetar o funcionamento normal do sistema.
+        - Uma das vantagens desse tipo de padrão de arquitetura é sua enorme flexibilidade. Quando temos o núcleo central, é extremamente fácil adicionar ou eliminar funcionalidades, sem nos preocuparmos com possíveis regressões ou o colapso do sistema. Isso é muito útil ao desenvolver um software com necessidades que podem mudar rapidamente ou quando as empresas externas precisam adicionar funcionalidades. 
+        - VANTAGENS:
+            - São fáceis de testar, o que reduz enormemente a taxa de erros e regressões, tornando-os muito estáveis e confiáveis; 
+        - DESVANTAGENS: 
+            - Tudo está centralizado em um núcleo principal;
+            - Esses aplicativos não são fáceis de escalar para uso massivo;
+            - O desenvolvimento desse tipo de aplicativo também requer um grande esforço técnico por vários motivos. 
+                - Primeiro, o núcleo central deve ser estável e, em muitos casos, precisa gerenciar ambientes muito complexos ou fornecer bibliotecas comuns extensas. 
+                - Segundo, é necessário criar uma API consistente e um sistema de encapsulamento robusto, para que os plug-ins funcionem corretamente.
+        - ANALOGIA: Por exemplo, quando você instala o Windows em seu computador, ele administra o hardware e oferece um ambiente para interagir com a máquina, mas não realiza nenhuma tarefa específica por si só. Para navegar na internet, você precisa descarregar um programa, que depende do ambiente e das ferramentas criadas pelo sistema operacional para funcionar.
+    Arquitetura em Camadas (Layers)
+        - Arquitetura padrão usada em projetos baseados em Java.
+        - Também chamado de arquitetura multicamadas, esse padrão de projeto, como o próprio nome indica, é baseado na separação de processos em unidades, ou camadas.
+        - Uma camada é uma unidade conceitual e lógica que cumpre uma função específica no aplicativo.
+        - Pode ter diferentes números de camadas.
+        - Arquitetura de N camadas.
+        - 3 camadas comuns nos diferentes tipos de Arquitetura em Camadas:
+            - Apresentação
+            - Negócios ou Camada intermediária ou Middle-Tier
+            - Camada de Dados
+        - O importante para aplicar corretamente é o fluxo de comunicação entre elas. Cada camada deve ser um ambiente individual que só pode interagir com as camadas próximas, mas não com as outras.
+        - A camada de apresentação interage apenas com a camada de negócios. Já a camada de negócios tem contato com a camada de dados. Isso significa que a camada de apresentação não tem como acessar diretamente o banco de dados.
+        - Um EXEMPLO muito comum de arquitetura de 3 camadas é o MEAN stack ou MERN stack. MERN é um acrônimo que envolve as 4 tecnologias usadas na criação de um aplicativo. 
+            - O M faz referência ao MongoDB, um tipo de banco de dados não relacional. 
+            - O E quer dizer Express, um framework utilizado no desenvolvimento back-end. 
+            - O R refere-se ao React, uma biblioteca JavaScript para gerenciar aplicativos web.
+            - O N significa Node.js, um servidor que também é baseado em JavaScript. 
+        - Portanto, no aplicativo, a separação por camadas ficaria assim: a camada de apresentação caberia ao React, que gerencia a interface do usuário. A camada de negócios, ou camada intermediária, é administrada pelo Express, através de uma API Rest com Node.js. Por fim, a camada de dados corresponde ao MongoDB.
+        - VANTAGENS:
+            - Ao manter as camadas tão separadas, é relativamente fácil executar testes de unidade, e a ocorrência de erros diminui ao evitar que um problema em uma camada afete as outras. 
+            - É muito fácil de desenvolver, pois a maioria dos programadores está familiarizada com seus conceitos. 
+        - DESVANTAGENS:
+            - Ela tende a gerar problemas em situações que exigem um desempenho muito alto, e, às vezes, sua estrutura complexa é difícil de escalar na nuvem.
+    Arquitetura Baseado no Espaço ou SBA (Space-Base Architecture)
+        - Surgiu da popularidade dos serviços em nuvem, a ponto de também ser conhecida como padrão de arquitetura em nuvem.
+        - O objetivo da arquitetura SBA é ajudar a melhorar o desempenho e escalar as operações para lidar com tráfego massivo. Um aplicativo baseado nesse tipo de arquitetura usa unidades de processamento como um elemento fundamental.
+        - Geralmente, uma unidade de processamento é composta de 3 grandes partes. 
+            - Primeiro, os módulos, que realizam as tarefas e processos do aplicativo. Os módulos formam as unidades de processamento.
+            - Segundo, uma matriz de dados, que gerencia todas as operações de dados na memória para aumentar a velocidade. 
+            - Por fim, o motor de replicação de dados que, em poucas palavras, sincroniza as informações de todas as unidades de processamento.
+        - O fato de que cada unidade de processamento seja independente e possa sincronizar seus dados através de processos paralelos em um ponto centralizado permite criar uma cópia da unidade de processamento e duplicar sua capacidade, caso haja um aumento no tráfego.
+        - As principais vantagens da arquitetura SBA é que ela se adapta perfeitamente às necessidades dos aplicativos web, pois permite escalar operações para lidar com grandes volumes de tráfego ou uso de recursos. O desempenho desses aplicativos é ótimo, pois minimiza a latência e otimiza o uso de recursos para gerenciar dados. 
+        - No entanto, a principal desvantagem desse tipo de arquitetura é que ela requer habilidades técnicas muito avançadas para gerenciar e controlar dados. Um erro de sincronização pode criar um efeito cascata, mostrando dados incorretos ou desatualizados para todos ou parte dos usuários.
+        - EXEMPLO:
+            - Vamos ilustrar como esse padrão se aplica ao software web com um exemplo simples. Imaginemos que estejamos criando uma loja on-line. Os módulos para esse aplicativo devem lidar com todo o processo de gestão do usuário, estoque ou carrinho de compras. Eles estão agrupados para trabalhar em conjunto e realizar o fluxo completo, a fim de que o usuário efetue uma compra. Todos formam uma unidade de processamento que pode ser publicada na nuvem. As informações de compra, os itens selecionados e os dados de envio são administrados nessa unidade de processamento, que pode gerenciar algum tipo de banco de dados local na memória do sistema enquanto o usuário faz a compra. As informações de todos os processos realizados por essa unidade são enviadas ao motor de replicação de dados, que seleciona, por exemplo, as informações da compra realizada e as envia para a matriz do aplicativo, que centraliza todos os dados. Essa unidade também pode coletar novas informações, por exemplo, usando a lista atualizada de produtos da loja.
+    Arquitetura Orientada a Eventos ou Event Driven Architecture (EDA)
+        - Eventos: Cliques de mouse, pressionar teclas, etc., todos visam capturar informações detalhadas sobre uma situação;
+        - Solicitação é diferente de Eventos;
+        - As informações são processadas quando são criadas, e isso muda tudo;
+        - A arquitetura orientada a eventos nos permite criar sistemas altamente eficientes e autônomos capazes de receber e processar informações em tempo real.
+        - Trata-se de um tipo de arquitetura muito complexo, que possui diversas implementações e tipologias, mas, em geral, ela funciona do seguinte modo:
+        - Começamos com um EVENTO, que pode ser qualquer coisa, como apertar o botão “comprar” ou até um sensor meteorológico que detecta a chuva.
+        - O evento passa para um MEDIADOR, que é a estrutura que recebe o evento, ingressando-o no sistema e iniciando o fluxo da tarefa. O mediador é o ponto de entrada do sistema.
+        - O mediador, ativado pelo evento, envia seus dados para uma unidade especializada chamada de PROCESSADOR DE EVENTOS, que, como o próprio nome sugere, é um conjunto de módulos que processa e armazena os dados  do evento e gera as ações correspondentes.
+        - A arquitetura orientada a eventos se destaca por ter um ótimo desempenho com excelentes recursos de escalabilidade na nuvem. 
+        - Porém, ela pode se tornar um sistema muito complexo e lidar com uma grande quantidade de eventos, dificultando sua função em cenários realistas com sistemas de teste automatizados. O software produzido com esse tipo de arquitetura é difícil de desenvolver e requer muita experiência e conhecimento técnico.
+    Model-View-Controller (MVC)
+        - É um padrão de projeto de software que pode ser usado como um padrão de arquitetura para um aplicativo completo.
+        - Raízes no setor de videogames.
+        - Só pode ser empregado quando existir uma interface gráfica e o usuário possa interagir com ela de alguma forma.
+        - O MODELO se refere aos dados do aplicativo. Aqui, todas as informações são armazenadas e processadas. Trata-se do cérebro do software. O modelo é a única fonte de informação.
+        - A VISÃO é a interface gráfica e tudo o que o usuário pode ver. Ela mostra as informações do modelo.
+        - O CONTROLE, que gerencia a interação com o usuário. Isso geralmente é feito por meio de eventos, como pressionar uma tecla ou mover o mouse. O controle detecta esses eventos e os vincula a processos que atualizam o modelo. Quando o controle atualiza o modelo, ele, por sua vez, atualiza a visão, mantendo um fluxo contínuo de dados. 
+        - VANTAGENS:
+            - Seu ponto forte é que permite um desenvolvimento rápido e, graças à sua separação, diferentes equipes podem trabalhar em paralelo sem prejudicar umas às outras. 
+            - A separação de áreas também facilita a execução de testes, reduzindo a taxa de erros e regressões. 
+            - No entanto, sua limitação para aplicativos com interface gráfica impede o uso em ambientes exclusivos para o servidor ou terminal. 
+            - O padrão também é difícil de escalar, tanto no nível de infraestrutura quanto no nível de código, dificultando a integração de aplicativos complexos e extensos que envolvem diferentes linguagens e plataformas.
+Antipadrões de Projetos
+    - São soluções comuns para um problema, mas, nesse caso, o resultado tem efeitos negativos. 
+    - Os antipadrões costumam surgir quando os arquitetos não têm conhecimento ou experiência suficiente para resolver um problema, quando não estão familiarizados com o conceito de padrões de projeto ou quando começam a aplicar um padrão de projeto adequado, mas ele é mal implementado ou usado no contexto errado.
+    - Muitas vezes, um padrão de projeto válido pode se tornar um antipadrão. Isso ocorre por vários motivos, como a introdução de mudanças em linguagens de programação ou paradigmas dominantes.
+    - EXEMPLO:
+        - O “canivete suíço”: Um exemplo seria a criação de estruturas muito complexas, como uma interface de classe, tentando envolver todos os usos possíveis e, como resultado, obter uma estrutura muito rígida. Esse padrão cria estruturas frágeis, pois muitas tarefas são centralizadas no mesmo lugar. Se uma pequena parte falhar, todo o sistema cairá facilmente.
+        - O “martelo de ouro”: Uma vez que um padrão dá bons resultados em alguns projetos, ele se torna, pouco a pouco, a única solução possível.
+Problemas comuns ao implementar padrões
+    - Implementar um padrão de projeto é um exercício social. Precisamos que muitas pessoas adotem o mesmo método de trabalho, e esse será justamente o primeiro problema que teremos que resolver. Ao apresentar um plano em uma organização, especialmente quando um padrão de projeto é usado pela primeira vez, é provável que encontremos alguma resistência à mudança. Nesse caso, devemos apresentar um plano de implementação, bem como oferecer sessões de treinamento e mentoria para a equipe de trabalho. Assim, as pessoas conhecerão melhor os prós e contras do cenário de trabalho. 
+    - O ambiente social também afeta diretamente o software, incluindo a escolha e implementação do padrão de projeto ideal. A Lei de Conway diz que: “As organizações que desenvolvem software tendem a produzir sistemas que são cópias de suas estruturas de comunicação”. Isso quer dizer que as organizações tendem a criar software semelhante à maneira como se organizam, e é comum que algumas firmas em que um pequeno grupo de pessoas decide até mesmo a menor parte do código criem software com características monolíticas. Contudo, as organizações descentralizadas e separadas em equipes independentes optam por usar uma arquitetura de microsserviços. Isso não significa que essas organizações só possam atuar desse modo, mas está provado que elas tendem a assimilar melhor um padrão que reflita a maneira de trabalho da organização. 
+    - Outro elemento importante que pode afetar muito a escolha de um padrão de projeto de arquitetura é o contexto. Refiro-me às condições e recursos do projeto, o tempo disponível, a perícia dos desenvolvedores e todos os aspectos que afetarão o software direta ou indiretamente. Existem centenas de padrões diferentes, e cada um deles pode ser ligeiramente modificado dependendo do software e da organização que o utiliza, gerando uma gama quase infinita de sutilezas. Se não considerarmos o contexto de nosso projeto, suas necessidades, recursos e objetivos, corremos o risco de criar uma solução incompatível com o projeto, que exija muito esforço para funcionar como esperado e, mesmo que um bom padrão de projeto seja escolhido, ele pode acabar sendo uma grande dor de cabeça. 
+    - A escolha de um padrão de projeto nem sempre envolve uma série de prós e contras inseparáveis. Por um lado, isso pode ajudar a escalar mais rápido. No entanto, pode prejudicar ou aumentar radicalmente o desempenho em troca de sacrificar a facilidade de programação. Por isso, como arquitetos de software, sempre devemos considerar que os padrões de projeto são como os remédios: eles melhoram nossa saúde, mas todos têm efeitos secundários.

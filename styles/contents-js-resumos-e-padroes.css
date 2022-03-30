@@ -1,0 +1,144 @@
+/* geral */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    margin: 3px 0;
+}
+
+.bg{
+    background-color: #444;
+    margin: 1px 0 0 0 ;
+    padding: 10px;
+    width: fit-content;
+}
+
+.btn-std{
+    background-image: linear-gradient(to bottom right, #ccc, white, #ccc);
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    width: 200px;
+}
+
+/* Selecionando e Manipulando Elementos */
+.grid-btns-colors{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 500px;
+}
+
+#add-classes div button {
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    margin: auto;   
+    height: 50px;
+    padding: 10px;
+    width: 120px;
+}
+
+#add-classes div button:hover {
+    box-shadow: 2px 2px 2px gold;
+}
+
+#add-classes div button:focus {
+    box-shadow: 2px 2px 2px white;
+}
+
+.btn-color-red{
+    background-color: red;
+}
+
+.btn-color-green{
+    background-color: green;
+}
+
+.btn-color-blue{
+    background-color: blue;
+}
+
+.img-btn-color-0,
+.img-btn-color-1,
+.img-btn-color-2{
+    display: flex;
+    height: 100px;
+    margin: auto;
+    padding: 10px;
+}
+
+/* Dimensões */
+.texto-0{
+    box-sizing: content-box;
+    height: 200px;
+    overflow: auto;
+    padding: 20px;
+    width: 300px;
+}
+
+/* for */
+#btn-for-0, #btn-while-0{
+    margin: 0;
+}
+
+.for-0, .while-0{
+    display: none;
+}
+
+#relogio{
+    background-image: linear-gradient(to bottom right, blue, mediumblue, darkblue);
+    border-radius: 10px;
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.flex-container{
+    display: flex;
+    margin-right: 20px;
+}
+
+#data-0,
+#data-1,
+#nro-dias-0,
+#nro-dias-1,
+#data-alterada-0,
+#data-alterada-1,
+#btn-add-date,
+#btn-sub-date,
+#setDate{
+    margin: 0;
+    padding: 5px;
+}
+
+#nro-dias-0, #nro-dias-1{
+    width: 8ch;
+    font-size: 16px;
+}
+
+#btn-add-date, #btn-sub-date{
+    background-image: linear-gradient(to bottom right, #ccc, white, #ccc);
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 20px 0 0 ;
+    width: 410px;
+}
+
+#data-alterada-0, #data-alterada-1{
+    display: none;
+    background-color: #888;
+}
+
+#btns-start-stop{
+
+}
+
+#lbl-timer-0{
+
+}

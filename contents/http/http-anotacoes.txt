@@ -1,0 +1,35 @@
+HTTP
+
+    - O HTTP (HyperText Transfer Protocol) É um protocolo de comunicação entre sistemas de informação que permite a 
+    transferência de dados entre redes de computadores, principalmente na World Wide Web (Internet);
+    - É independente de plataforma de desenvolvimento;
+    - É independente de navegadores;
+    - Define as regras de comunicação entre cliente e servidor na internet;
+    - O HTTP é stateless, não mantém o estado de requisições. Isso significa que só com HTTP não há como se lembrar 
+    das requisições anteriores enviadas para o servidor. Por isso, precisamos incluir em cada requisição todas as 
+    informações, sempre;
+
+Portas Principais
+    20, 21 - FTP
+    22 - SSH
+    80 - HTTP
+    443 - HTTPS
+    1433 - SQL Server
+    1521 - Oracle DB
+    3000 - Node.js
+    3306 - MySQL
+    5432 - PostgreSQL
+    27017 - MongoDB
+
+    >> https://pt.wikipedia.org/wiki/Lista_de_portas_dos_protocolos_TCP_e_UDP
+    >> https://www.neotel.com.br/blog/2019/07/22/portas-tcp-udp-mais-comuns/
+
+Métodos HTTP
+    GET
+    POST
+    PUT     Atualiza tudo
+    PATCH   Atualiza parcialmente
+    DELETE
+
+CORS
+    CORS (Cross-Origin Resource Sharing) é um mecanismo de segurança baseado em cabeçalhos HTTP que fornecem comunicação segura entre navegadores e servidores executados em diferentes origens. O CORS permite que uma página da Web de um domínio ou Origem acesse um recurso com um domínio diferente (uma solicitação entre domínios). O CORS foi implementado devido às limitações da política de origem única. A política de mesma origem restringe recursos para interagir apenas com recursos localizados no mesmo domínio. CORS é uma maneira de o servidor verificar se a solicitação está vindo de uma origem permitida e dizer ao navegador para não bloqueá-la.

@@ -1,0 +1,18 @@
+Intro
+    - Relacional:
+        - Relação entre linhas e colunas (a coluna nome só possui linhas com nomes)
+        - Relacionamento entre tabelas
+        - Linha = registro = tupla
+        - Coluna = atributo
+    - NoSQL:
+        - Não apenas SQL
+    - Antes de criar o bd, fazer a modelagem
+    - DDL: definição
+    - DML: manipulação
+    - DQL: seleção
+    
+Padrões de Nomenclatura
+    - Pesquisar
+    - Não é case-sensitive;
+    - Comandos DDL, DML e afins com letras maiúsculas;
+    - Camel case para nomes de databases e tabelas

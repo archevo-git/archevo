@@ -1,0 +1,148 @@
+/* ASIDE ICONS*/
+
+/* DETAILS SUMMARY ICONS */
+#icon-frontend{
+    background-image: url("../medias/_logos/logo-frontend-0.png");
+}
+#icon-frontend:hover,
+.details-flex-container[open] #icon-frontend{
+    background-image: url("../medias/_logos/logo-frontend-1.png");
+}
+
+#icon-programation{
+    background-image: url("../medias/_logos/logo-programation-0.png");
+}
+#icon-programation:hover,
+.details-flex-container[open] #icon-programation{
+    background-image: url("../medias/_logos/logo-programation-1.png");
+}
+
+#icon-mobile{
+    background-image: url("../medias/_logos/logo-mobile-0.png");
+}
+#icon-mobile:hover,
+.details-flex-container[open] #icon-mobile{
+    background-image: url("../medias/_logos/logo-mobile-1.png");
+}
+
+#icon-datascience{
+    background-image: url("../medias/_logos/logo-datascience-0.png");
+}
+#icon-datascience:hover,
+.details-flex-container[open] #icon-datascience{
+    background-image: url("../medias/_logos/logo-datascience-1.png");
+}
+
+#icon-containers{
+    background-image: url("../medias/_logos/logo-containers-0.png");
+}
+#icon-containers:hover,
+.details-flex-container[open] #icon-containers{
+    background-image: url("../medias/_logos/logo-containers-1.png");
+}
+
+#icon-cloud{
+    background-image: url("../medias/_logos/logo-cloud-0.png");
+}
+#icon-cloud:hover,
+.details-flex-container[open] #icon-cloud{
+    background-image: url("../medias/_logos/logo-cloud-1.png");
+}
+
+/* DETAILS ITEMS ICONS - FRONT-END*/
+#icon-html5{
+    content: url("../medias/_logos/logo-html5.png");
+}
+
+#icon-css3{
+    content: url("../medias/_logos/logo-css3.png");
+}
+
+#icon-bootstrap{
+    content: url("../medias/_logos/logo-bootstrap.png");
+}
+
+#icon-js{
+    content: url("../medias/_logos/logo-js.png");
+}
+
+#icon-ts{
+    content: url("../medias/_logos/logo-ts.png");
+}
+
+#icon-jquery{
+    content: url("../medias/_logos/logo-jquery.png");
+}
+
+#icon-angular{
+    content: url("../medias/_logos/logo-angular.png");
+}
+
+/* DETAILS ITEMS ICONS - PROGRAMATION */
+#icon-nodejs{
+    content: url("../medias/_logos/logo-nodejs.png");
+}
+
+#icon-python{
+    content: url("../medias/_logos/logo-python.png");
+}
+
+#icon-java{
+    content: url("../medias/_logos/logo-java.png");
+}
+
+#icon-php{
+    content: url("../medias/_logos/logo-php.png");
+}
+
+#icon-c{
+    content: url("../medias/_logos/logo-c.png");
+}
+
+#icon-cpp{
+    content: url("../medias/_logos/logo-cpp.png");
+}
+
+#icon-cs{
+    content: url("../medias/_logos/logo-cs.png");
+}
+
+/* DETAILS ITEMS ICONS - MOBILE */
+#icon-flutter{
+    content: url("../medias/_logos/logo-flutter.png");
+}
+
+/* DETAILS ITEMS ICONS - DATA SCIENCE */
+#icon-sqlserver{
+    content: url("../medias/_logos/logo-sqlserver.png");
+}
+
+#icon-plsql{
+    content: url("../medias/_logos/logo-plsql.png");
+}
+
+#icon-mongodb{
+    content: url("../medias/_logos/logo-mongodb.png");
+}
+
+/* DETAILS ITEMS ICONS - CONTAINERS */
+#icon-docker{
+    content: url("../medias/_logos/logo-docker.png");
+}
+
+#icon-k8{
+    content: url("../medias/_logos/logo-k8.png");
+}
+
+/* DETAILS ITEMS ICONS - CLOUD */
+#icon-aws{
+    content: url("../medias/_logos/logo-aws.png");
+}
+
+#icon-azure{
+    content: url("../medias/_logos/logo-azure.png");
+}
+
+#icon-gcloud{
+    content: url("../medias/_logos/logo-gcloud.png");
+}

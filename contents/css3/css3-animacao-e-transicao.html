@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+        <title>CSS3 - Animações e Transições | ArchEvo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+
+        <meta name="author" content="William Cardoso">
+        <meta name="description" content="A 'HTML5 - Resumos & Padrões' é uma base de conhecimento objetiva, centralizando diversos conteúdos: links úteis, padrões, recomendações e boas práticas.">
+
+        <meta property="og:url" content="../html5/html5-resumos-e-padroes.html">
+        <meta property="og:type" content="article">
+        <meta property="og:title" content="HTML5 - Resumos e Padrões">
+        <meta property="og:description" content="A 'HTML5 - Resumos & Padrões' é uma base de conhecimento objetiva, centralizando diversos conteúdos: links úteis, padrões, recomendações e boas práticas.">
+        <base href="C:/_TI-PROJETOS/_dev/archevo/">
+        <link rel="stylesheet" href="styles/contents-new.css">
+        <link rel="stylesheet" href="styles/contents-aside-icons.css">
+        <link rel="stylesheet" href="styles/code-box-new.css">
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Orbitron&family=Pacifico&family=Satisfy&display=swap" rel="stylesheet">
+        <style>
+            @keyframes ex-1{
+                0%{
+                    background-color: blue;
+                    color: white;
+                    left: 0;
+                    top: 0;
+                }
+                25%{
+                    background-color: green;
+                    color: yellow;
+                    font-size: 30px;
+                    left: 200px;
+                    top: 0;
+                }
+                50%{
+                    background-color: orange;
+                    color: darkred;
+                    left: 200px;
+                    top: 200px;
+                }
+                75%{
+                    background-color: yellow;
+                    color: black;
+                    font-size: 30px;
+                    left: 0;
+                    top: 200px;
+                }
+                100%{
+                    background-color: blue;
+                    color: white;
+                    left: 0;
+                    top: 0;
+                }
+            }
+
+            @keyframes ex-2 {
+                0%{
+                    bottom: 0%;
+                    left: -15%;
+                }
+                50%{
+                    bottom: 90%;
+                    left: 50%;
+                }
+                100%{
+                    bottom: 120%;
+                    left: 110%;
+                }
+            }
+
+            body{
+                background-color: #000;
+                max-width: 100%;
+            }
+
+            .example-1{
+                align-items: center;
+                /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+                /* animation-delay: 2s; */
+                animation-duration: 15s;
+                animation-iteration-count: infinite;
+                animation-name: ex-1;
+                box-shadow: 10px 10px 0 #444;
+                border-radius: 100px;
+                background-color: #ccc;
+                display: flex;
+                height: 200px;
+                justify-content: center;
+                position: absolute;
+                /* transition: property duration timing-function delay|initial|inherit; */
+                width: 200px;
+            }
+            .example-1 p:hover{
+                font-weight: bolder;
+            }
+
+            .example-1 p{
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            }
+            
+            .example-2{
+                animation-name: ex-2;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+                height: 100px;
+                position: absolute;
+                width: 100px;
+            }
+
+            .example-3 p{
+                color: white;
+                font-family: 'Pacifico';
+                font-size: 30px;
+                text-shadow: 5px 5px 5px lime;
+                text-align: center;
+                transition: all 2s linear;
+            }
+            .example-3 p:hover{
+                color: gold
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="example-1">
+            <p>HTML+CSS+JS</p>
+        </div>
+        <div class="example-2">
+            <img src="medias/examples/bird.gif">
+        </div>
+        <div class="example-3">
+            <p>Texto com sombra e transição.</p>
+        </div>
+    </body>
+</html>

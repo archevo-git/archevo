@@ -1,0 +1,6 @@
+{   
+    "databaseConfig":{
+        "host": "mongodb",
+        "database": "livros-node-2-db"
+    }
+}

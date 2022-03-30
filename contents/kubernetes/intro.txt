@@ -1,0 +1,9 @@
+O QUE é?
+    Kubernetes (K8s) é um produto Open Source utilizado para automatizar a implantação, o dimensionamento e o gerenciamento de aplicativos em contêiner. Ele agrupa contêineres que compõem uma aplicação em unidades lógicas para facilitar o gerenciamento e a descoberta de serviço.
+
+COMO preparar o ambiente?
+    Se você	utiliza	o Windows 10 em	qualquer versão	que	não	seja a Pro então você não terá como	 realizar a instalação do Docker, pois ele utiliza o Hyper-V para gerenciar	as máquinas virtuais.
+
+    1 - Instalar o Docker. https://docs.docker.com/desktop/windows/install/
+
+

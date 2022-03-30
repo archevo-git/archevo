@@ -1,0 +1,36 @@
+MongoDB
+
+Intro
+    - Ao invés de tabelas, temos Collections;
+    - Ao invés de registros, temos Documentos (JSON);
+    - Ao invés de colunas, temos Campos dos documentos;
+    - Ao invés de Primary Keys, temos os ObjectIDs em hexadecimal;
+    - Ao invés de Foreign Keys, não temos uma chave forte, mas podemos usar os ObjectIDs;
+    - Dados estruturados, estrutura flexível;
+    - Linguagem para consulta é o JavaScript;
+    - Dados relacionados, não é um relacionamento forte;
+
+MongoDB Compass
+    - Conectar aos bancos de dados
+    - Visualizar e editar banco de dados;
+    - Criar e editar as Collections;
+    - Inserir e editar os dados na Collection;
+    - Encontrar documentos.
+
+Bibliotecas JavaScript
+    - MongoDB Lib (nativo)
+    - Mongoose
+        - Conexão com ODM
+    - Prisma
+        - Conexão com ODM e ORM
+
+Criar cluster, projeto e banco de dados Online
+    https://cloud.mongodb.com/v2#/preferences/organizations
+    User: WilliamCardoso-1987
+    Password: N78Cs13FzUIMynBy
+    IP Address: 0.0.0.0/0 para testes
+    Finish and Close
+    Connect with your application
+    Seleciona o Driver e versão
+    String de Conexão: mongodb+srv://WilliamCardoso-1987:<password>@cluster0.6osjh.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
+    String de Conexão Modificada: mongodb+srv://WilliamCardoso-1987:N78Cs13FzUIMynBy@cluster0.6osjh.mongodb.net

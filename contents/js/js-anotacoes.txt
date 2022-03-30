@@ -1,0 +1,743 @@
+---------------
+<script>
+
+    .js
+
+    <script> no <head>
+
+    <script> no <body>
+    Colocar scripts na parte inferior do elemento <body> melhora a velocidade de exibição, porque a interpretação do script torna a exibição mais lenta.
+
+------------- 
+Selecionando Elementos:
+
+    Retornam uma string:
+        document.getElementById();
+        document.querySelector('#exemplo'); --> tags, ids, classes
+
+    Retornam uma collection:
+        document.getElementsByName('exemplo')
+        document.getElementsByTagName('button');
+        document.getElementsByClassName('lista');
+        document.querySelectorAll(); --> tags, ids, classes
+
+---------------
+Manipulando Objetos com DOM (Document Object Model)
+
+    document.getElementById("demo").style.display = "block";
+
+    document.getElementsByClassName('title')[1].innerHTML = 'Novo Texto';
+    
+    document.getElementsByClassName('field').value = 'Novo Texto';
+    
+    <button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+
+    classList: 
+        Alterar um atributo sem sobrescrever o anterior (ao contrário do setAttribute()):
+
+        document.querySelector('#elemento').classList.add('classe-verde');
+        el.classList.add();
+        el.classList.remove();
+        el.classList.contains();
+        el.classList.toggle(); //Alterna entre 2 classes
+        el.classList.item(index); //Retorna o nome da classe com um índice especificado.
+
+-------------------
+Manipulando os atributos dos objetos 
+
+    alterar:
+    document.querySelector(.imagem).setAttribute('src', '/imagem/dog.jpg');
+
+    pegar:
+    document.querySelector(.imagem).getAttribute('src');
+
+----------------
+Dimensões
+    
+    offset
+        Lembrar da diferença que os tipos de box-sizing trás
+
+    //Pegar a largura total do elemento (largura+padding+scroll+border)
+    document.querySelector('.texto-0').offsetWidth;
+
+    //Pegar a altura total do elemento (altura+padding+scroll+border)
+    document.querySelector('.texto-0').offsetHeigth;
+
+    //Pegar a largura do elemento (largura+padding)
+    //read-only
+    //A parte visual do conteúdo da caixa
+    document.querySelector('.texto-0').clientWidth;
+
+    //Pegar a largura do conteúdo (largura+padding)
+    //O tamanho de todo o conteúdo da caixa, incluindo as partes que estão atualmente ocultas fora da área de rolagem.
+    document.querySelector('.texto-0').scrollWidth;
+
+---------------
+Scrollbar
+
+    //Pegar em qual posição vertical o scroll está
+    document.querySelector('.texto-0').scrollTop
+    window.scrollY
+
+    //Pegar em qual posição horizontal o scroll está
+    document.querySelector('.texto-0').scrollLeft
+    window.scrollX
+
+    //Manipular o scroll
+    document.querySelector('.texto-0').scrollTo(0, 0);
+    window.scrollTo(0, 0);
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+
+    - Criar uma função que faça aparecer um botão de voltar para o início da tela sempre que chegar no final dela
+
+--------------
+Outputs
+
+    Pela janela:
+        alert("Olá");
+
+        prompt('Digite seu e-mail:');
+        var result = confirm("Você realmente quer deixar essa página?");
+        if (result == true) {
+            alert("Obrigado por nos visitar!");
+        }
+        else {
+            alert("Obrigado por permanecer conosco!");
+        }
+
+        var result = confirm("Do you really want to leave this page?");
+        if (result == true) {
+            alert("Thanks for visiting");
+        }
+        else {
+            alert("Thanks for staying with us");
+        }
+
+    Pelo console:
+        console.log("");
+        console.error(); //listar erros da aplicação
+
+    Pelo documento:
+        document.write("Olá"); //deve ser usado apenas para testes. Abordaremos alguns outros mecanismos de saída em breve.
+
+        document.getElementById("titulo").innerHTML("Olá");
+
+---------------
+var X let X const
+
+    var
+        - pode ser criada e recriada
+
+    let
+        - só pode ser criada uma vez por document
+        - Escopo Global: NÃO; Escopo de bloco: SIM; Redefinição: SIM; Redeclaração: NÃO.
+
+
+    cont
+        - só pode ser alterado nos casos de arrays e objetos
+        Use const when you declare:
+            A new Array
+            A new Object
+            A new Function
+            A new RegExp
+
+---------------
+Tipos de Dados
+
+    typeof nome_da_var; //no console retorna o tipo do dado
+    var tipo = typeof nome_da_var; // armazena o tipo de dado
+
+--------------
+comentários
+
+    /* */
+    //
+
+##########################
+condições
+
+    Exemplo:
+    1 = | typeof a === "number" && typeof b === "number"
+
+    Ternary Operator:
+        var age = 42;
+        var isAdult = (age < 18) ? "Too young": "Old enough";
+        document.write(isAdult);
+
+#########################
+Functions
+
+
+
+    alert("This is an alert box!");
+    console.log("Hello!");
+    document.write("Hola!");
+    eval("10 * 20 + 8");
+    drawBox(black);
+    drawBoxes("ggg www rrr");
+    pickRandom();
+    print();
+    newLine();
+
+    Methods are functions that are stored as object properties.
+
+#####################
+Events
+
+    window.addEventListener('scroll', nome_da_funcao);
+
+    <button onclick="nome_da_funcao()">Click me</button>
+
+    <button onclick="alert('Olá')">Click me</button>
+
+    <button onclick="this.innerHTML='Clicou no botão'">Click me</button>
+
+    <button onmouseover="alert('Está com dúvida se clica ou não?')">Click me</button> 
+
+    //Receber o event em uma função
+        HTML5
+        <button onkeydown="digitou(event)">Click me</button>
+        <button onclick="esconderBotao(this)">Click me too</button>
+
+        JS
+        function digitou(e){
+            console.log(e);
+
+            if(e.keyCode == 13 && e.ctrlKey == true) {
+                let texto = document.getElementById("campo").value;
+                console.log(texto);
+            }
+        }
+
+        function esconderBotao(elemento){
+            elemento.style.display = none;
+        }
+
+    - Eventos de Mouse
+        onclick
+        ondblclick
+        onmouseover
+        onmouseout
+        onscroll
+
+    - Eventos de Teclado
+        - onkeydown - quando pressiona a tecla
+        - onkeyup - quando tira o dedo da tecla
+        - onkeypress 
+
+    - Outros
+        onchange
+        oninput
+
+    addEventListener()
+    removeEventListener()
+
+    DOM Events
+    https://www.w3schools.com/jsref/dom_obj_event.asp
+
+####################
+Arrays
+
+    const carros = ["Ferrari F-50", "Fusca", "Kombi", "Corvette"];
+    const motos = ["Kawazaki Ninja", "CG150"]
+    const arrayVazio = [];
+
+    carros.toString();
+    carros.join('-'); - converte o array p/ str, separando pelo caractere escolhido
+    carros.indexOf('Fusca');
+    carros.sort();          - método para ordenar alfabeticamente
+    carros.reverse();       - inverter o array
+    carros.length - 1;      - propriedade; acssa o último objeto
+    carros.push("Uno");     - add no final
+    delete carros[1];       - 
+    carros.pop("Uno");      - remove e retorna o último elemento de um array
+    carros.shift();         - remove e retorna o primeiro elemento de um array
+    carros.splice(1, 1);    - remove o item 1 e remove apenas um item
+    carros.concat(motos)    - concatenar 2 arrays
+    carros.forEach();
+
+    // retorna true ou false, se for true dá para aproveitar
+    let arrayVazio = [];
+    arrayVazio = carros.filter(function(item){
+        if(item != 'Fusca'){
+            return true;
+        } else {
+            return false;
+        }
+    });        
+
+    let arrayVazio = [];
+    arrayVazio = carros.every(function(item){
+        return (item != 'Shelby Cobra') ? true : false;
+    });
+
+    let arrayVazio = [];
+    arrayVazio = carros.map(function(item){
+        return(item * 2);
+    });
+    ...É O MESMO QUE...
+    for i in carros{
+        arrayVazio.push(carros[1] * 2);
+    };
+
+    let arrayVazio = [];
+    array.Vazio = carros.find(function(item){
+        return (item == 'Fusca') ? true : false;
+    })
+
+    - looping
+        let carrosLen = carros.length;
+        let text = "<ul>";
+        for (let i = 0; i < fLen; i++) {
+            text += "<li>" + carros[i] + "</li>";
+        }
+        text += "</ul>";
+
+        OU
+
+        let text = "<ul>";
+        carros.forEach(myFunction);
+        text += "</ul>";
+        function myFunction(value) {
+            text += "<li>" + value + "</li>";
+        }
+
+    - Um array pode armazenar uma função, outro array, um objeto, etc;
+        let ingredientes = [
+            ["uva", "maçã"]
+            ["farinha de trigo", "fermento"]
+        ]
+        console.log([1] [0]) // Acessando o primeiro item do segundo array
+
+    - Os elementos de uma array podem ser objetos:
+        myArray[0] = Date.now;
+        myArray[1] = myFunction;
+        myArray[2] = myCars;
+
+    - Arrays de Objetos:
+        let lista = [
+            {id:1, nome:"William", nick:"PunkLoko"},
+            {id:2, nome:"Joey", nick:"Joey77"}
+        ]
+        let pessoa = lista.find(function(item){
+            return (item.id == 2) ? true : false;
+        });
+
+    - Adding elements with high indexes can create undefined "holes" in an array:
+
+    - JavaScript does not support arrays with named indexes. In JavaScript, arrays always use numbered indexes
+
+    - You should use objects when you want the element names to be strings (text).
+    - You should use arrays when you want the element names to be numbers.
+
+    - Reconhecendo um Array
+        - typeof retorna como objeto;
+        - Array.isArray(arros);
+        - carros instanceof Array; //O operador instanceof retorna true se um objeto for criado por um determinado construtor, como o array;
+
+
+    >> Referência completa sobreArray: https://www.w3schools.com/jsref/jsref_obj_array.asp
+
+#################
+Objeto
+
+    - Objeto é uma instância de uma classe
+
+    const person = {
+        firstName: "John",
+        lastName : "Doe",
+        id       : 5566,
+        fullName : function() {
+            return this.firstName + " " + this.lastName;
+        }
+    };
+    console.log(person.age);
+    console.log(person['id']]);
+
+#############
+strings
+
+    Escape Character: \
+    \b	Backspace
+    \f	Form Feed
+    \n	New Line
+    \r	Carriage Return
+    \t	Horizontal Tabulator
+    \v	Vertical Tabulator
+
+    let name = 'William Cardoso da Silva';
+    name.length;
+    name.indexOf('Silva');           //-1 quando não acha
+    name.lastIndexOf('o');
+    name.slice(0, 7);                //nros negativos significam que começa do final
+    name.substring(0, 7);            //não dá para começar do final
+    name.substr(5, 7);               //o 2o. parametro é a qtde de caracteres que desejamos pegar; aceita negativo
+    name.replace('Cardoso', 'Pereira'); 
+    name.toUpperCase();
+    name.toLowerCase();
+    name.concat(' Souza');
+    name.trim();                    //tira espaços em brancos
+    name.charAt(3);                 //qual caractere está na posição 3
+    name.split(' ');                //sempre que encontrar o espaço em branco, dividirá a string
+    name.search('Silva');
+    name.padStart(10,0);            //preenche para a esquerda
+    name.padEnd(10,0);              //preenche para o final
+    name.match('/car/gi)');         //O método match() pesquisa uma string em busca de uma correspondência com 
+                                    //uma expressão regular e retorna as correspondências como um objeto Array.
+                                    //gi = global insensitive
+    name.includes('iam', 3);        //Retorna true se incluir "iam"        
+    name.startsWith('Willam');      
+    name.endsWith('Silva');
+    
+    >>Referência sobre String: https://www.w3schools.com/jsref/jsref_obj_string.asp
+    >>Expressões Regulares: https://www.w3schools.com/js/js_regexp.asp
+
+###############
+números
+
+    let n = 10.45154;
+
+    n.toString();
+    n.toFixed(2);
+    parseInt();
+    parseFloat();
+
+###############
+Template Literals
+
+    - back-ticks (``)
+
+    - let text =
+    `The quick
+    brown fox
+    jumps over
+    the lazy dog`;
+
+    - interpolation
+        let firstName = "John";
+        let lastName = "Doe";
+
+        let text = `Welcome ${firstName}, ${lastName}!`;
+
+    - Substituição de Expressão
+        let price = 10;
+        let VAT = 0.25;
+
+        let total = `Total: ${(price * (1 + VAT)).toFixed(2)}`;
+
+    - Templates HTML
+        let header = "Templates Literals";
+        let tags = ["template literals", "javascript", "es6"];
+
+        let html = `<h2>${header}</h2><ul>`;
+        for (const x of tags) {
+        html += `<li>${x}</li>`;
+        }
+
+        html += `</ul>`;
+
+###############
+Datas
+
+    let d = new Date();
+
+    console.log(d);
+    console.log(d.toDateString());
+    console.log(d.toUTCString());
+    console.log(d.toString());
+
+    //
+
+    let d = new Date(2023, 0, 1, 12, 30, 59); //params mínimo para Date é ano e mês (2023, 0)
+    OU
+    let d = new Date('2023-01-01 12:00:59');
+
+    console.log(d.toString);
+    console.log(d.getFullYear());
+    console.log(d.getMonth());
+    console.log(d.getDay()); // retorna o dia da semana
+    console.log(d.getDate()); // retorna o dia do mês
+    console.log(d.getHours()); 
+    console.log(d.getMinutes()); 
+    console.log(d.getSeconds());
+    console.log(d.getMilliseconds());
+    console.log(d.getTime()); // ms de 1/1/70 até hoje
+
+    //
+    
+    console.log(d.setFullYear());
+    console.log(d.setMonth());
+    console.log(d.setDay()); // retorna o dia da semana
+    console.log(d.setDate()); // retorna o dia do mês
+    console.log(d.setHours()); 
+    console.log(d.setMinutes()); 
+    console.log(d.setSeconds());
+    console.log(d.setMilliseconds());
+    console.log(d.setTime()); // ms de 1/1/70 até hoje
+
+    //
+
+    - ms começam a ser contados a partir de 1 de jan de 1970;
+    let d = new Date(0);
+    console.log(d.toUTCString);
+
+    - Date.now();
+
+############
+Matematica
+
+    Math.PI();
+    Math.round(param);
+    Math.floor(3.45);
+    Math.ceil(3.45);
+    Math.abs(-7);
+    Math.min(-4,4,5);
+    Math.max(-7,-4,5);
+    Math.random();
+    Math.floor(Math.random() * 100);
+    Math.sin();
+    Math.cos();
+    Math.tan();
+    Math.acos();
+    Math.asin();
+
+    >>SoloLearn - JS
+
+#################
+INTERVALOS
+
+    - 
+
+##################
+Descontrução ou Desestruturação de Objetos
+
+    - É basicamente quebrar uma estrutura de um objeto ou array em partes mais simples;
+    - Descontruir é passar os dados para novas variáveis;
+
+##################
+Desestruturação de Arrays
+
+    - 
+
+##################
+Arrows Function 
+
+    - Usada quando vc não precisa do this;
+
+    const(x, y) => {
+        return x + y;
+    }
+
+    const(x, y) => x + y;
+
+    const nome => nome.length;
+
+##################
+Spread Operator
+
+    - Usado para adicionar informações internas
+
+    let numeros = [1,2,3];
+    let numerosAtualizados = [...numeros, 4, 5, 6];
+
+##################
+Rest Operadtor
+
+    - Recebe parâmetros como array, independente de quanto eles sejam.
+
+    function showArrayRest(...numerosRecebidos){
+        alert(numeros);
+    }
+
+    showArrayRest(1,2,3);
+    showArrayRest(2,3,4,5,6);
+
+##################
+Spread e Rest
+
+    function add(names, ...newNames){
+        let newGroup = [
+            ...names,
+            ...newNames
+        ]
+        return newGroup;
+    }
+    let names = ["William", "Enzo"];
+    allNamesAdded = add(names, "Jaqueline", "Enzo");
+
+    console.log(allNamesAdded);
+
+##################
+Includes e Repeat
+
+    let array = [1, 2, 25, 58];
+    let string = "Peace Burger";
+
+    console.log(array.includes(25));
+    console.log(string.includes('W'));
+
+    console.log(string.repeat(2));
+
+##################
+Keys, Values e Entries
+
+    let list = ['eggs', 'rice', 'beans'];
+
+    console.log(Object.Keys(list));
+    console.log(Object.Values(list));
+    console.log(Object.Entries(list)); //Cria um array com outro array dentro contendo um par de chave e valor
+
+    let object = {
+        name: "Golden Burger",
+        city: "São Paulo"
+    }
+    
+    console.log(Object.Keys(object));
+    console.log(Object.Values(object));
+    console.log(Object.Entries(object));
+
+##################
+padStart e padEnd
+
+    let phone = "9";
+    console.log(padEnd(9, "*"));
+
+    let card = '1234123413241354';
+    let lastNumbers = card.slice(-4);
+    let maskedCard = lastNumbers.padStart(16, '*');
+    console.log('Este é o cartão que deseja utilizar? ' + maskedCard);
+
+##################
+Requests
+
+##################
+JSON = JavaScript Object Notation
+
+    JSON.parse()
+        - Converte uma string em JSON
+
+        let person = JSON.parse('{"name":"William", "age":34}');
+
+    JSON.stringify();
+        - Converte um JSON para String
+
+        let string = JSON.stringify({name: "William", age: 34});
+
+##################
+Código síncrono vs assíncrono
+
+    Síncrono
+        Executa linha a linha;
+        
+    Assíncrono
+        Não espera a linha anterior finalizar para executar a próxima;
+
+##################
+Callback
+
+    Uma função callback é uma função passada a outra função como argumento, que é então invocado dentro da função externa para completar algum tipo de rotina ou ação.
+
+        function alert(){
+            alert("Exemplo de Callback, esperou ocorrer o evento para executar a função.");
+        }
+        setTimeout(5000, alert);
+
+    Callback e Código Assíncrona
+
+        function hello(){
+            alert("Hello, guys!");
+        }
+        let name = "Enzo";          //1
+        setTimeout(5000, alert);    //4
+        let lastname = "Cardoso";   //2
+        console.log("I'm here.");   //3
+
+##################
+Promises
+
+    - Promise é um objeto usado para processamento assíncrono. Um Promise (de "promessa") representa um valor que pode estar disponível agora, no futuro ou nunca.
+    - Usado quando temos tarefas que irão demorar;
+    - async / await
+
+    - Promise tem 3 status
+        pending
+        ok
+        nok
+    - Funciona em funções assíncronas
+
+    function getTemperature(){
+        return new Promise (function (resolve, reject)){
+            console.log('Getting temperature...');
+            setTimeout(function (){
+                resolve('40° C');
+            });
+        }
+    }
+
+    let temp = getTemperature();
+    temp.then(function(result){
+        console.log('Temperatura Atual: ' + result);
+    });
+    temp.catch(function(error){
+        console.log('Não foi possível coletar a temperatura, favor verificar o sensor!);
+    })
+
+##################
+Fetch
+
+    - A API Fetch fornece uma interface JavaScript para acessar e manipular partes do pipeline HTTP, tais como os pedidos e respostas.
+    - O método global fetch() inicia o processo de busca de um recurso da rede de forma assíncrona, retornando uma promessa que é cumprida assim que a resposta estiver disponível.
+    - A promessa é resolvida para o objeto Response que representa a resposta à sua solicitação. A promessa não rejeita erros de HTTP - apenas rejeita erros de rede. Você deve usar os manipuladores then para chechar erros de HTTP.
+    - Só funciona com requisições HTTP, ou seja, vindas de um servidor HTTP. Caso não seja, vai dar erro de CORS.
+
+    function loadPost(){
+        fetch('https://jsonplaceholder.typicode.com/posts')
+            .then(function(result){
+                alert(result);
+            })
+            .catch(function(error){
+                alert("Erro");
+            });
+    }
+
+
+##################
+async/await #promises #fetch
+
+    - 
+
+##################
+Erros
+
+    NaN (Not a Number): Trying to multiply a number with string values that aren’t numbers, like 'sololearn' * 5;
+
+##########################
+Padrões:
+
+    document.write() should be used only for testing
+
+    Devs mostly use the console to test their JavaScript code
+
+    JavaScript is case sensitive
+
+    if X switch: if para condições menos específicas, switch para condições mais específicas
+
+    Var name:
+    - The first character of a variable name must be a letter, underscore (_), or a dollar sign ($) (Subsequent characters can be letters, digits, underscores, or dollar signs);
+    - The first character of a variable name can’t be a number;
+    - Variable names can’t include a mathematical or logical operator in their name. For instance, 2*something or this+that;
+    - Variable names can’t contain spaces;
+    - You’re not allowed to use any special symbols, like my#num, num%, etc;
+    - JavaScript is a hyphen free zone. They’re reserved for subtractions.
+
+##################
+Dicas
+
+    - We can use the Modulus operator on integers AND on floating point numbers;
+
+    - One important thing to remember when we use Comparisson Operators, is that they only work when they’re comparing the same data type; numbers with numbers, strings with strings, you get the idea;
+
+    - With Logical Operators, you can check all types of data; Comparison Operators always return true or false;

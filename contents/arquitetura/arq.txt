@@ -1,0 +1,88 @@
+Intro
+ 
+    - Padrões de Arquitetura:
+        - PARA QUE servem?
+            - Direcionar a contrução de um produto/software compliance com todas as necessidades corporativas;
+            - Ajudar no processo de troubleshooting;
+            - Apoiar na tomada de decisões estratégicas;
+            - Auxiliar no estudo de escalabilidade vertical ou horizontal;
+            - Documentar a arquitetura para ajudar a empresa a ganhar certificações.
+            - Ajuda a ser mais assertivo para solucionar problemas;
+            - São padrões estruturais, de camadas, etc, que ajudam a estruturar a sua aplicação;
+            - Padrões facilitam a explicar projetos para novos membros;
+            - Facilita a aplicação evoluir ou crescer;
+            - MVC - Model View Controller;
+            - MVP;
+            - N-Tiers
+        - COMO definir bem uma arquitetura?
+            1 - ENTENDIMENTO 
+                - da Visão Estratégica
+                    - Visão dos stakeholders, sponsors, etc;
+                    - Como a empresa vê resultados financeiros;
+                    - Como os stakeholders vêem o produto no futuro;
+                - da Visão Funcional
+                    - Visão macro das funções da solução;
+                - dos RAs (Requisitos de Arquitetura):
+                    - Requisitos Funcionais;
+                    - Requisitos Não-Funcionais;
+                    - Requisitos Legais;
+                    - Requisitos de Segurança;
+                    - etc.
+            2 - DEFINIÇÃO DO MODELO ARQUITETURAL
+                - Monolitos
+                    - Prós:
+                        - Menor complexidade para manter, monitorar, etc.;
+                        - Menor custo;
+                    - Contras:
+                        - Compartilhamento de recursos;
+                        - Stack única;
+                        - Alto acomplamento;
+                        - Dificuldade para escalar;
+                        - Menor disponibilidade e flexibilida;
+                        - Demora mais para entregar um novo componente;
+                        - Maior dificuldade para testar;
+                - Semi-Monolitos
+                    - Sistemas grandes distribuídos
+                    - Orientada a microsserviços não necessariamente faz da sua aplicação micro componentizada, ela ainda pode ser semi-monolítica;
+                - Micro Componentizados
+                    - Prós:
+                        - Maior disponibilidade e flexibilida;
+                        - Entregas mais rápida de um novo componente;
+                        - Maior facilidade para testes;
+                        - Facilidade para escalar;
+                        - Stack dinâmica;
+                    - Contras:
+                        - Maior complexidade para manter, monitorar, etc.;
+                        - Maior custo;
+            3 - DEFINIÇÃO DAS ABORDAGENS ARQUITETURAIS E DE DESENVOLVIMENTO
+                - Negócios traz o O QUE, PARA QUE, POR QUE e a área Técnica traz o COMO, a junção dessas duas visões ajuda na definição das abordagens;
+                - Abordagem Modular;
+                - Abordagem por Domínios;
+                - Abordagem por Eventos;
+                - Pode ser a soma de mais de uma abordagem;
+            4 - DEFINIÇÃO DOS PADRÕES DE ARQUITETURA
+                - Como estruturar sua aplicação;
+                - De acordo com a abordagem escolhida, definir quais padrões serão usados;
+                - Definir as camadas e suas responsabilidade;
+                - MVC
+                - Arquitetura em camadas
+                - MVP
+            5 - TECNOLOGIAS
+                - Quais ferramentas e linguagens serão usadas para a construção da solução;
+            6 - COMPONENTES ARQUITETURAIS
+                - Orquestrador de Contêineres;
+                - Ferramentas de Log e Monitoração;
+            7 - VISÃO
+                - MDL
+                - UML
+                - C4
+                - Archmate
+            8 - APRESENTAR A VISÃO
+                - Meetup
+                - Apresentações
+    - Padrões de Projeto:
+        - Ajudam a resolver problemas específicos da aplicação, como estruturar componentes ou classes, por exemplo;
+        - Ajuda a resolver problemas comportamentais;
+        - GOF;
+        - GRASP;
+        - SOLID; 

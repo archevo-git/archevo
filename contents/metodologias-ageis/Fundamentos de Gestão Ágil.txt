@@ -1,0 +1,16 @@
+Fundamentos de Gestão Ágil
+
+Intro
+    - Melhorar a entrega de produtos
+    - Equipes ágeis devem fazer perguntas difíceis e estarem abertas a melhorias contínuas;
+
+O surgimento dos trabalhadores do conhecimento
+    - Equipes ágeis devem se auto-organizar, pois é difícil gerenciar uma equipe de cima para baixo;
+    - Gerentes devem tomar decisões coletivas;
+
+Desafios envolvidos no desenvolvimento de software
+    - Flexibilidade para mudanças no projeto;
+    - Cone da Incerteza: 
+        - A melhor maneira de pensar sobre isso é imaginar a relação entre tempo, conhecimento e custo.
+        - Com o passar de tempo e aumento do conhecimento que é possível saber qual realmente deve ser a entrega;
+    - Eiot.ncontre o equilíbrio entre tomar o mínimo de decisões para começar e dar flexibilidade suficiente para fazer mudanças.

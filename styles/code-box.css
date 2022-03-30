@@ -1,0 +1,31 @@
+/* CODE BOX */
+
+/* HTML */
+.html-element {
+    background-color: black;
+    color: dodgerblue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0.5;
+}
+
+/* CSS3 */
+.css-attribute {
+    background-color: black;
+    color: aquamarine;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0.5px;
+}
+
+.css-value {
+    background-color: black;
+    color: sandybrown;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0.5px;
+}
+

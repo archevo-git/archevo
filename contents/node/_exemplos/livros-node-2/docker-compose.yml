@@ -1,0 +1,65 @@
+version: '3'                                                                #Versão do Docker Compose
+
+services:                                                                   #Definição dos serviços
+  nginx:                                                                    #Nome do serviço
+    build:                                                                  #Indica que vai precisar buildar
+      dockerfile: nginx.dockerfile    #Dockerfile usado para buildar a imagem para esse serviço
+      context: .                                                            #Contexto de onde será buildada a imagem
+    image: bp_concedidos/solicitacao-nginx_lb                               #Nome da imagem que será buildada
+    container_name: bp_concedidos-solicitacao-nginx_lb                      #Nome do contêiner
+    ports:                                                                  #Portas disponíveis
+      - "80:80"                                                             #Porta 80 do contêiner mapeada para o 80 do host
+    networks:                                                               #Rede(s) onde o contêiner vai subir  
+      - rede-prd
+    depends_on:                                                             #Dependências para buildar esse serviço
+      - "node1"
+      - "node2"
+      - "node3"
+
+    mongodb:                                                                #Nome do serviço
+        image: mongo                                                        #Imagem base para subir esse serviço (build sem Dockerfile)
+        networks: 
+            - rede-prd                                                      #Mesma rede que os serviços do node e do nginx
+
+    node1:
+        build:
+            dockerfile: ./docker/livros-node.dockerfile
+            context: .
+        image: douglasq/alura-books
+        container_name: alura-books-1
+        ports:
+            - "3000"
+        networks: 
+            - rede-prd
+        depends_on:
+            - "mongodb"
+
+    node2:
+        build:
+            dockerfile: ./docker/livros-node.dockerfile
+            context: .
+        image: douglasq/alura-books
+        container_name: alura-books-2
+        ports:
+            - "3000"
+        networks: 
+            - rede-prd
+        depends_on:
+            - "mongodb"
+
+    node3:
+        build:
+            dockerfile: ./docker/livros-node.dockerfile
+            context: .
+        image: douglasq/alura-books
+        container_name: alura-books-3
+        ports:
+            - "3000"
+        networks: 
+            - rede-prd
+        depends_on:
+            - "mongodb"
+
+networks:                                           #Definição das redes      
+    rede-prd:                                       #Nome da rede
+        driver: bridge                              #Driver que será usado 

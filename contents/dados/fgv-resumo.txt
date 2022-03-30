@@ -1,0 +1,772 @@
+ETAPAS OU PROCESSO DA CIÊNCIA DE DADOS (Cíclico):
+    1 - Preparação dos Dados
+        - Tipos de Dados:
+            - Por Fonte:
+                - Primários:
+                    - Dados gerados pela própria empresa;
+                - Secundários: 
+                    - Dados externos e não públicos, obtidos por parcerias de troca de dados entre empresas não concorrentes;
+                - Terciários: 
+                    - Dados externos e públicos, obtidos gratuitamente ou pagando por eles.
+            - Pela Estrutura:
+                - Não-estruturados:
+                    - Dados brutos, sem CLASSIFICAÇÃO e sem esquema ou organização formal;
+                    - EXEMPLOS: Posts em redes sociais, imagens, vídeos, e-mails, etc;
+                - Semi-estruturados:
+                    - Dados classificados, mas sem um esquema ou organização formal;
+                    - Exemplo: Dados de backend de páginas web de texto, tem uma codificação onde cada dado pertence à um objeto ou elemento, mas não dá para fazer uma análise em cima desses dados pela falta de um esquema que permita quantificação;
+                - Estruturados:
+                    - Dados classificados e com um esquema ou organização formal;
+                    - Exemplo: Dados organizados em tabelas ou matrizes.
+            - Pela Característica:
+                - Transacionais:
+                    - Em constante mudança;
+                    - EXEMPLOS: Compras, vendas, cancelamentos, dados de estoque ou de entregas, etc.
+                - Master Data:
+                    - Caracterizam, de alguma forma, o perfil dos agentes das transações;
+                    - Propriedades e atributos transacionais;
+                    - EXEMPLOS: Sexo, renda, escolaridade de um cliente.
+                - De referência:
+                    - Tipo mais específico de Master Data;
+                    - Raramente é alterado;
+                    - EXEMPLOS: CEP, DDD, ISOs, tipos de medidas, etc.
+                - Metadados:
+                    - Que fornecem informações de outros dados;
+                    - EXEMPLOS: Tags, categorias, data de publicação, autor.
+            - Pela Granularidade (que serão coletados e armazenados):
+                - Desagregados:
+                    - Mais granulares possíveis;
+                    - Dados estruturados, separados caso a caso, sem processamento ou transformações;
+                    - Exemplo: Dados de inscrição de um aluno em um curso.
+                - Agregados:
+                    - Dados estruturados, agrupados ou classificados, que sofreram processamento analítico;
+                    - Exemplo: Dados dos alunos divididos por período, semestre, etc.
+            - Pelo Tipo de Variável:
+                - Numérica ou Quantitativa
+                    - Discretos: Inteiros
+                    - Contínuos: Fracionados
+                - Categórica ou Qualitativa
+                    - Nominal
+                    - Ordinal
+                - Dummy
+                    - Binárias
+        - Níveis de Medição:
+            - Nominal
+            - Ordinal
+            - Intervalo ou Intervalar
+            - Razão
+        - Técnicas para Preparação/Transformação de Dados:
+            - Tratamento dos dados faltantes
+                - Devemos considerar se a simples remoção dos dados pode acarretar uma quantidade muito restrita de informações, demandando operações alternativas
+                - Podem aparecer justamente em um grupo específico de dados, e que a sua remoção pode eliminar tal grupo do processo de análise
+                - Ignorar se forem uma pequena porcentagem do total
+                - Estimar os valores que faltam
+                    - Abordagens Estatísticas 
+                        - Dados Qualitativos
+                            - Preencher com o valor da moda
+                        - Dados Quantitativos
+                            - Preencher com o valor da média ou da mediana
+                    - Abordagens Computacionais
+                        - Dados Qualitativos
+                            - Técnicas de predição para preencher os dados faltantes
+                        - Dados Quantitativos
+                            - Técnica de CLASSIFICAÇÃO para preencher os dados faltantes
+                - Desvantagens:
+                    - O tratamento de dados faltantes pode introduzir mudanças estatísticas significativas nos dados, podendo interferir na geração de modelos e, consequentemente, na análise dos resultados.
+            - Identificação de Outliers
+                - Interessante para sistemas de detecção de fraudes
+                - Dificultam o ajuste de modelos em tarefas de predição e CLASSIFICAÇÃO, devendo ser removidos dos dados
+                - Não importa a tarefa, é sempre importante identificar outliers a fim de melhor compreender os dados de interesse
+                - Univariado
+                    1 - Assumir que os valores de um atributo seguem uma distribuição normal (gaussiana)
+                    2 - Identificar como outliers valores extremos em relação à distribuição
+                    ### Método Z-value Univariado
+                        - Fórmula: 
+                            Z-value = Valor do Atributo - Média / Desvio Padrão
+                        - Geralmente é estabelecido o valor 3 como parâmetro:
+                            - Se Z-value for = ou > 3 é considerado um outlier
+                - Bivariado e Multivariado
+                    ### Método Z-value Multivariado
+            - Transformações dos Atributos
+                - Evitam o problema de privilegiar   atributos em detrimento de outros
+                - Altera o número de objetos e atributos:
+                    ### Agregação
+                    ### Agrupamentos
+                    ### Categorização
+                    - Criar novos atributos a partir dos atributos fornecidos
+                - Não altera o número de objetos e atributos:
+                    ### Escala = x - min(x) / max(x) - min(x)
+                    ### Normalização = x - Média / max(x) - min(x)
+                    ### Padronização = x - Média / Desvio Padrão
+            - Limpeza dos Dados
+            - Checagem de consistência;
+            - Tratamento dos atributos redundantes;
+                - Possuem informações correlatas que, tipicamente, não agregam valor aos dados;
+                - Podem ser de difícil detecção, demandando ferramentas sofisticadas de análise;
+                - Aumentam a complexidade dos modelos, piorando o seu desempenho em muitos casos.
+    2 - Análise Exploratória de Dados ou Exploratory Data Analysis (EDA)
+        - Estatística Descritiva:
+            - Frequência:
+                ### Contagem: Para dados Qualitativos ou Categóricos;
+                ### Histogramas: Para dados Quantitativos ou Numéricos;
+            - Medidas Estatísticas:
+                - Univariadas
+                    ### Mínimo
+                    ### Máximo
+                    ### Média
+                    ### Primeiro Quartil
+                    ### Mediana ou Segundo Quartil
+                    ### Terceiro Quartil
+                    ### Variância
+                    ### Desvio Padrão
+                    ### Moda
+                    ### Intervalo Interquartil (IQR)
+                    ### Assimetria
+                    ### Curtose
+                    ### Boxplot
+                - Bivariadas
+                    - Para dados Qualitativos ou Categóricos:
+                        ### Barras Empilhadas;
+                        ### Barras por Grupos;
+                        ### Tabela de Contingência
+                    - Para dados Quantitativos ou Numéricos:
+                        ### Covariância;
+                        ### Correlação;
+                        ### Scatterplots ou Gráfico de Dispersão
+                    - Para 1 dado Qualitativo e 1 dado Quantitativo:
+                        ### Gráfico de Linhas (Perfil de Médias);
+                        ### Boxplot
+                    ### Teste para a Independência de Duas Variáveis (vulgarmente conhecido por Teste do x
+                    2)
+                    ### Correlação de Spearman: Avalia relações monótonas, sejam elas lineares ou não;
+                    ### Correlação de Pearson: Avalia relações lineares;
+                    ### Regressão Linear Simples.
+                - Multivariadas
+                    ### Análise de Correspondência
+                    ### Análise de Componentes Principais ou Principal Component Analysis (PCA):
+                        - Bivariados ou Multivariados
+                            - Vetores Canônicos:
+                                - Fórmula Bivariada:
+                                    (x,y) = a * (1, 0) + b * (0, 1),
+                                - Fórmula Multivariado para 4 Dimensões
+                                    (x,y,z,w) = a * (1, 0, 0, 0) + b * (0, 1, 0, 0) + c * (0, 0, 1, 0) + d * (0, 0, 0, 1)
+                            - Outros vetores (exemplo):
+                                - (0.25,0.34) = 0.41 * (0.72,0.69) + 0.07 * (-0.69,0.72)
+                        - Visualização:
+                            ### Gráfico de Dispersão ou Scatterplot
+                    ### Análise Fatorial
+                    ### Análise de Cluster
+                    ### Análise de Regressão Múltipla
+                    ### Modelagem de Equações Estruturais
+    3 - Escolha do Modelo
+        - Métodos Descritivos
+            - Métodos descritvos são aqueles que buscam encontrar padrões nos dados a partir de informações contidas nos atributos;
+            - Não supervisionados: Não demanda um conjunto de ”respostas” esperadas associadas a um subconjunto de objetos;
+            - Serve uma metodologia qualitativa.
+            - Geralmente, é uma primeira abordagem ao objeto de estudo e funciona como um catalisador para novas pesquisas.
+            - Permite obter muitos dados precisos sobre o objeto de estudo.
+            - Implica observação cuidadosa e um registro fiel do que foi observado.
+            - Não suporta generalizações ou projeções.
+            - Utiliza diferentes técnicas e instrumentos para coleta de dados: entrevistas, pesquisas, documentação, observação participante, etc.
+            - EXEMPLOS:
+                ### Análise Descritiva Quantitativa (ADQ)
+                ### AGRUPAMENTO (CLUSTERING)
+                    - Objetivo: 
+                        - Encontrar grupos de objetos similares em um conjunto de dados; 
+                            - Medidas de similaridade dependem do problema e do tipo de dados
+                    - Cálculo:
+                        - Definir uma medida para a semelhança ou similaridade (ou dissimilaridade) entre os objetos;
+                        - Definir/Calcular o centróide do grupo;
+                        - Calcular a distância de cada objeto em relação à esse centróide;
+                        - Os objetos mais próximos ao centróide tendem a ser de melhor qualidade;
+                        - O método de menor valor é o melhor para o problema.
+                    - EXEMPLOS de Métricas:
+                        ### Euclideana: Para dados multivariados, tabelados ou em matriz
+                        ### DTW: Para séries temporais
+                        ### Levenshtein: Para strings
+                    - EXEMPLOS de Técnicas:
+                        ### K-means
+                            - Definir o número de grupos a serem encontrados
+                            - O centróide de cada grupo precisa ser conhecido, senão calculado;
+                            - Calcular a distância dos elementos para os centróides
+                            - Dividir em 2 grupos, um com os elementos próximos ao centróide e outro com elementos distantes
+                            - O método K-means tende a gerar grupos contidos em regiões convexas do espaço
+                            - Vantagens:
+                                - É muito eficiente em termos computacionais, encontrando os grupos rapidamente;
+                                - Encontra grupos com forma esférica, os quais podem ser os mais adequados para certas aplicações
+                            - Desvantagens:
+                                - O número de grupos deve ser fixado no início do processo;
+                                - Tende a encontrar grupos contidos em regiões ”convexas” do espaço, sendo dificilmente adaptados para dados não cartesianos;
+                                - Realiza operações no espaço cartesiano para calcular os centroides, sendo difícil de ser adaptado para dados não cartesianos, como séries temporais, por exemplo (embora existam versões que utilizam somente a função de similaridade, evitando operações no espaço cartesiano)
+                        ### Agrupamento Hierárquico
+                            - Método de Particionamento: Dividir os dados até que algum critério pré-definido seja satisfeito;
+                            - Agrupamento Aglomerado: Agrupar os dados até que algum critério pré-definido seja atendido;
+                            - Um exemplo de critério pode ser o número de grupos a ser encontrados; 
+                            - Podem operar diretamente nas informações de similaridade, evitando cálculos em espaços cartesianos;
+                            - Tais métodos assumem como entrada a Matriz de Distâncias entre os objetos
+                            - Agrupamento Hierárquico Aglomerativo
+                                - Executar os seguintes passos até que o número de grupos desejados seja encontrado ou até que a distância entre esses elementos a serem unidos seja maior que um limiar desejado:
+                                    - Identificar e unificar os elementos mais similares
+                                    - Efetuar novo cálculo de distâncias
+                                - Alternativas para definir a ”distância” (similaridade) entre grupos de objetos, ou seja, comparar os grupos:
+                                    - Menor distância entre os elementos de cada conjunto;
+                                    - Maior distância entre os elementos de cada conjunto;
+                                    - Distância média entre pares de elementos dos conjuntos.
+                                - A ordem em que os grupos são unidos dá origem a uma estrutura chamada dendograma
+                                    - A linha horizontal de um dendograma indica o número de grupos que está sendo gerado e a distância máxima dos elementos em cada um desses grupos.  
+                            - Vantagens:
+                                - Permite interpretar visualmente como os grupos foram gerados;
+                                - Não preciso definir antecipadamente quantos grupos são esperados;
+                                - Possibilita identificar facilmente outliers
+                            - Desvantagens:
+                                - A visualização fica bastante confusa no caso de grandes conjuntos de dados;
+                                - Tem um custo computacional maior que o Kmeans (pode levar algum tempo para se calcularem os grupos)
+                            - Qualidade:
+                                - Comparar os clusters obtidos com aqueles adquiridos a partir de dados randômicos;
+                                - Verificar o quão coesos os clusters obtidos são, quando comparados a dados supervisionados (os grupos são previamente conhecidos);
+                                - Comparar clusters obtidos a partir de diferentes técnicas e utilizar alguma métrica de ”coesão de grupos” para identificar que grupos são os mais coesos
+                        ### DBSCAN
+                        ### Agrupamento Spectral
+                    - Visualização:
+                        ### Gráfico de Dispersão ou Scatterplot
+                        ### Dendograma
+                    - SAIBA MAIS: Veja as validações para as Técnicas de AGRUPAMENTO (CLUSTERING)
+                ### Regras de Associação
+                ### Mineração de Atributos Frequentes
+        - Métodos Preditivos
+            - Definir modelos que sejam capazes de predizer o que vai acontecer;
+            - Um modelo preditivo é, de forma simplificada, uma função matemática que pode ser aplicada a uma grande quantidade de dados soltos. A ideia é evidenciar padrões capazes de apontar as próximas tendências. É como se fosse possível prever com eficiência o futuro, de forma matemática, com probabilidade e estatística.
+            - Supervisionados: Demanda um conjunto de ”respostas” esperadas associadas a um subconjunto de objetos;
+            - EXEMPLOS:
+                ### CLASSIFICAÇÃO
+                    - Para que serve?
+                        - Encontrar um modelo matemático capaz de classificar objetos a partir de informações dos seus atributos;
+                    - Como funciona?
+                        - Para que o modelo possa ser encontrado, faz-se necessária uma amostra de dados em que os valores dos atributos e os rótulos das classes sejam conhecidos. Esse fato torna os modelos de Classificação métodos supervisionados.
+                        - Uma vez definido o modelo, a classe de qualquer objeto pode ser definida substituindo-se o valor dos atributos do objeto no modelo
+                        - Deve-se sempre iniciar com técnicas simples e de fácil interpretação. Caso os resultados com técnicas simples não sejam satisfatórios, devem-se então buscar modelos mais complexos
+                    - Métricas de CLASSIFICAÇÃO
+                        - VERDADEIROS POSITIVOS: 
+                            - PREVISÃO: Uma observação PERTENCE a uma classe;       POS
+                            - REALIDADE: Ela realmente PERTENCE a essa classe.      POS
+                        - VERDADEIROS NEGATIVOS:
+                            - PREVISÃO: Uma observação NÃO PERTENCE a uma classe;   NEG
+                            - REALIDADE: Ela NÃO PERTENCE a essa classe.            NEG
+                        - FALSOS POSITIVOS:
+                            - PREVISÃO: Uma observação PERTENCE a uma classe;       POS
+                            - REALIDADE: Ela NÃO PERTENCE a essa classe.            NEG
+                            - Exemplo: Prever POS para doente, mas deu NEG;
+                        - FALSOS NEGATIVOS:
+                            - PREVISÃO: Uma observação NÃO PERTENCE a uma classe;   NEG
+                            - REALIDADE: Ela PERTENCE a essa classe.                POS
+                    - Técnicas para construir um Modelo de Classificação:
+                        ### Vizinhos Mais Próximos
+                            - O que são:
+                                - O método de Vizinhos Mais Próximos pode ser empregado a problemas envolvendo várias classes, uma vez que cada objeto não classificado pode ser atribuído à classe mais frequente entre os seus vizinhos mais próximos, não importando quantas estejam envolvidas no problema;
+                                - Obviamente, se o problema envolve k diferentes classes, o número de vizinhos deve ser consideravelmente maior que k, o que pode forçar o uso de dados supervisionados que não estejam na vizinhança do objeto a ser classificado, prejudicando a confiabilidade dos resultados.
+                            - Para que servem:
+                                - Encontrar a classe de um elemento observando a classe dos elementos mais próximos
+                            - Vantagens:
+                                - Metodologia bastante simples;
+                                - Fácil interpretação;
+                                - Não linearidade (o método é mais flexível que um classificador linear).
+                            - Desvantagens:
+                                - Encontrar um valor apropriado para o número de vizinhos a ser considerado pode não ser tarefa ;
+                                - Usar outliers como dado de treinamento tende a atrapalhar a classificação;
+                                - Encontrar os vizinhos mais próximos demanda um razoável esforço computacional.
+                        ### Regressão Logística
+                            - Para que serve:
+                                - Aplicar a função logística para dividir os elementos em 2 classes, usando uma classificação binária:
+                                    - Classe 0: Elementos abaixo de 0,5
+                                    - Classe 1: Elementos acima de 0,5
+                            - Fórmula: Ver na apostila
+                        ### Naive Bayes
+                            - O que é?
+                                - É um classificador que ajuda estimar um atributo desconhecido através dos dados conhecidos; 
+                            - Para que serve?
+                                - Verificar qual a probabilidade de um objeto pertencer a uma determinada classe, calculando aquela com maior probabilidade de ocorrência, após conhecer:
+                                    - A probabilidade de cada uma das classes
+                                    - As probabilidades condicionais de cada atributo dadas a classe
+                            - Como funciona?
+                                - Constrói um modelo de classificação a partir de duas hipóteses:
+                                    1. A distribuição de probabilidade conjunta dos atributos e das classes é conhecida
+                                    2. Os atributos são todos estatisticamente independentemente distribuídos
+                                - A classe que resultar na maior probabilidade é atribuída ao objeto
+                                - Há uma diferença na aplicação para atributos Discretos e para atributos Contínuos
+                            - Vantagem:
+                                - Se o conjunto de treinamento for grande o suficiente, podem-se estimar todas as probabilidades envolvidas no modelo matemático com certa confiança
+                                - Minimização da chance de erro;
+                                - Metodologia simples (embora matematicamente robusta);
+                                - Fácil interpretação;
+                                - Robusta a outliers e atributos irrelevantes
+                            - Desvantagens:
+                                - Não considera a relação entre os atributos, pois assume que são independentes;
+                                - Torna-se mais complexa quando os atributos são contínuos
+                            - Fórmula: Ver na apostila
+                            - QUESTÕES: Questão 4/4
+                                - RESPOSTA pela explicação do curso: Probabilidade para objeto desagradável:
+
+                                    p(desagradável | azul, quadrado, ondulada)
+                                    = p(total de desagradável | total de objetos)  *
+                                        p(azul | desagradável) *
+                                        p(quadrado | desagradável) *
+                                        p (ondulada | desagradável)
+                                    
+                                    p(desagradável | azul, quadrado, ondulada)
+                                    = 6/15 * 3/6 * 1/6 * 2/6
+                                    = 0,4 * 0,5 * 0,16 * 0,33 = 0,01
+
+                                - RESPOSTA pela explicação do vídeo:
+                                    - DADOS DISCRETOS:
+                                        p(x | classificação = agradável) =
+                                            p(cor = azul | classificação = agradável) *
+                                            p(forma = quadrado | classificação = agradável) * 
+                                            p(textura = ondulada | classificação = agradável)
+                                        p(x | classificação = agradável) = 
+                                            5/9 * 6/9 * 4/9 = 
+                                            0,55555 * 0,66666 * 0,44444 = 0,16460
+
+                                        p(x | classificação = desagradável) =
+                                            p(cor = azul | classificação = desagradável) *
+                                            p(forma = quadrado | classificação = desagradável) * 
+                                            p(textura = ondulada | classificação = desagradável)
+                                        p(x | classificação = desagradável) =
+                                            3/6 * 1/6 * 2/6 =
+                                            0,5 * 0,16666 * 0,33333 = 0,02777
+
+                                    - Evidência:
+                                        p(x) = p(x | classificação = agradável) * p(classificação = agradável) +
+                                            p(x | classificação = desagradável) * p(classificação = desagradável)
+                                        p(x) = 0,16460 * 9/15 + 0,02777 * 6/15 
+                                        p(x) = 0,16460 * 0,6 + 0,02777 * 0,4
+                                        p(x) = 0,09876 + 0,01110 = 0,10986
+
+                                    - Probabilidades:
+                                        P(classificação = agradável | x) =
+                                            (probabilidade do objeto testado ter classificação = agradável) * 
+                                            (probabilidade da classificação = agradável) / Evidência
+                                        P(classificação = agradável | x) =
+                                            p(x | classificação = agradável) * P(classificação = agradável) / p(x)
+                                        P(classificação = agradável | x) =
+                                            0,16460 * 9/15 / 0,10986 = 0,89896... 
+                                                OU 90% de chance de ser agradável, azul, quadrado e ondulado
+
+                                        P(classificação = desagradável | x) =
+                                            (probabilidade do objeto testado ter classificação = desagradável) * 
+                                            (probabilidade da classificação = desagradável) / Evidência
+                                        P(classificação = desagradável | x) =
+                                            p(x | classificação = desagradável) * P(classificação = desagradável) / p(x)
+                                        P(classificação = desagradável | x) =
+                                            0,02777 * 6/15 / 0,10986 = 0,10111
+                                                OU 10% de chance de ser desagradável, azul, quadrado e ondulado
+
+                                >> https://www.youtube.com/watch?v=Bk2mSIMw_XE
+                        ### Máquinas de Vetores de Suporte ou Support Vector Machines (SVM)
+                            - Para que servem?
+                                - De forma similar ao método de regressão logística, a técnica SVM busca encontrar um modelo linear (plano) que separe objetos distribuídos em duas classes (classificação binária)
+                            - Como funcionam?
+                                - Existem muitas retas (Modelos Lineares) que separam os objetos em classes. A SVM busca encontrar a reta que está ”mais distante” de ambas as classes simultaneamente;
+                                - O fato importante é que nem todos os pontos influenciam no cálculo do Modelo Linear. Os pontos que influenciam o Modelo Linear são chamados de Vetores de Suporte, que são os pontos mais próximos da reta;
+                            - Vantagens:
+                                - Permite o uso de kernels:
+                                    - Kernels são mecanismos matemáticos que permitem o mapeamento de pontos de um determinado espaço para outro com dimensão maior;
+                                    - O fato de operar em um espaço com dimensão mais elevada aumenta as chances de o método SVM encontrar um modelo linear capaz de separar as classes
+                                - A formulação matemática na qual a técnica SVM está baseada é capaz de encontrar um ótimo modelo linear mesmo quando as classes não estão perfeitamente separadas
+                                - De fato, a SVM possui uma formulação matemática bastante sólida, cuja compreensão demanda alguma familiaridade com a teoria de otimização
+                            - Desvantagens:
+                                - O custo computacional associado ao problema de otimização pode ser proibitivo quando o número de vetores de suporte é grande
+                        ### Árvores de Decisão ou Random Forest (e as suas variantes)ss
+                            - Para que servem?
+                                - Particionar o espaço de distribuição dos dados com base nos dados de treinamento e, a cada etapa de divisão, esses objetos são melhor classificados;
+                            - Como funcionam?
+                                - Primeiro particiona o espaço com base no eixo x, dividindo os elementos de acordo com seus atributos
+                                - Cria-se uma árvore hierárquica e no topo colocamos esse primeiro parâmetro usado para traçar a linha dessa primeira divisão
+                                - Depois, particionamos a primeira metade do lado esquerdo com base no eixo y, novamente tentando enxergar atributos que diferenciam os elementos;
+                                - Novamente coloca-se o valor do parâmetro para essa divisão, seguindo a hierarquia;
+                                - Então, repete-se essa forma de divisão, mas agora na segunda metade do lado direito e, assim, sucessivamente até termos as classes bem definidas;
+                                - O ponto importante é essa árvore que é criada com os parâmetros usados nas divisões;
+                                - Um novo ponto é classificado seguindo-se a hierarquia dessa árvore, assumindo-se o rótulo mais frequente da região a que ele pertence
+
+                                - 3 fatores que precisam ser analisados a cada etapa do processo:
+                                    - Qual atributo deve ser escolhido como particionador; 
+                                    - Escolhido o atributo, que valor utilizar no particionamento;
+                                    - Quando parar o processo de particionamento.
+                            - Métodos Baseados em Comitê
+                                - Na prática, não se utiliza apenas uma árvore de decisão, mas sim um conjunto de árvores geradas a partir de conjuntos de treinamento randomicamente gerados a partir de um único conjunto de treinamento;
+                                - A utilização de várias árvores é um exemplo dos métodos baseados em Comitê;
+                                - O processo de geração de vários conjuntos de treinamento a partir de um único é chamado de Bootstrap; 
+                                - Então, após o processo de Bootstrap, que geram diversos conjuntos de dados aleatoriamente, executamos métodos baseados em Comitê para gerarmos diversas árvores de decisão com base nesses novos conjuntos de dados.
+                                - O Bootstrap gera uma variedade de conjuntos de treinamento, amostrando randomicamente e com reposição, o conjunto de treinamento original. Uma árvore de decisão é gerada para cada conjunto produzido pelo Bootstrap;
+                                - O Bootstrap é utilizado para aumentar a estabilidade e a precisão de métodos baseados em comitê, pois ajuda a evitar o problema de overfitting.
+                                - A classificação de um objeto é aquela atribuída pela maioria das árvores do comitê.
+                                ### Floresta Randômica:
+                                    - O qué é?
+                                        - Na construção do comitê, nem todos os atributos são analisados em cada etapa do particionamento, evitando que atributos mais importantes sejam sempre escolhidos, o que introduz um viés no comitê;
+                                ### Boosting:
+                                    - O que é?
+                                        - Os conjuntos de treinamento gerados pelo Bootstrap recebem pesos de acordo com a sua ”complexidade”. Os pesos são associados às árvores geradas e utilizados para ponderar a decisão de cada elemento do comitê;
+                                ### Gradiente Boosting:
+                                    - As árvores do comitê são geradas com base nos dados e no erro de treinamento
+                                
+                                - Técnicas baseadas em comitês também podem ser utilizadas para fins de predição e em conjunto com outros métodos além de árvores de decisão. No caso de predição, o valor predito é tomado como a média dos valores preditos pelo comitê;
+                                - Bootstrap é sempre a base para técnicas baseadas em comitê.
+                            - Vantagens:
+                                - Técnicas baseadas em comitê tendem a produzir resultados mais confiáveis
+                            - Desvantagens:
+                                - Demandam um esforço computacional maior e são mais difíceis de serem interpretadas
+                    - SAIBA MAIS: Veja as validações para as Técnicas de CLASSIFICAÇÃO
+
+                    - QUESTÕES
+                        - Suponha que tenhamos um conjunto de dados no qual cada objeto possui as seguintes informações: valor do atributo 1, valor do atributo 2 e rótulo da classe do objeto. Explique como, nesse caso, um método de Regressão Linear pode ser utilizado como um método de Classificação Binária.
+                            - RESPOSTA: Usando a técnica de Regressão Logística, classificando os elementos acima da reta como 1 e os baixo como 0:
+                                - Supondo que os rótulos das classes são números inteiros fixos (-1 e 1, por exemplo), a equação linear resultante do processo de regressão corresponde a uma reta no espaço dos atributos. Essa reta divide o espaço em duas partes, uma acima do plano e outra abaixo;
+                                - Objetos cujos atributos correspondem a pontos situados acima do plano são classificados como pertencentes a uma das classes. Objetos cujos atributos correspondem a pontos situados abaixo do plano são classificados como pertencentes a outra classe, gerando uma classificação binária.
+                
+                        - Diferença entre SVM e Regressão Linear:
+                            - A técnica SVM encontra o modelo linear que maximiza a margem do plano que separa as classes, enquanto as técnicas de regressão minimizam o erro de predição com relação aos dados de treinamento     
+                ### REGRESSÃO
+                    - O que é:
+                        - Métodos de Regressão fazem uma hipótese sobre o tipo do modelo matemático, ou seja, tenta adivinhar o valor em determinada posição
+                            - Exemplo de Fórmula para Hipótese Linear
+                                y = a * x + b
+                        - Podem envolver diversas variáveis
+                    - Objetivo:
+                        - Encontrar um modelo matemático, isto é, uma função que se comporte aproximadamente como os dados
+                    - Tipos de Modelo de Regressão
+                        ### Modelo de Regressão Linear
+                            - A Regressão Linear é um processo supervisionado em que um Modelo Linear é adotado para modelar os dados. A Regressão é o processo matemático no qual os coeficientes associados às variáveis (atributos) são calculados de modo a minimizar o erro do modelo com relação aos dados de treinamento. Uma vez que o modelo esteja calculado, é utilizado para predizer valores a partir de informações dos atributos dos dados – ou seja, dado um conjunto de atributos, o modelo gera uma aproximação da variável dependente.
+                            - Modelos Lineares possuem coeficientes associados a cada atributo. Coeficientes que possuem maior magnitude indicam que o atributo correspondente tem maior importância no processo de predição. Coeficientes com magnitude próxima de zero indicam atributos pouco relevantes.
+                        ### Modelo de Regressão Não-linear
+                            - 
+
+                    - Definido o tipo do modelo e o dado de treinamento, os coeficientes são calculados de modo a minimizar o erro entre o modelo e os dados:
+                        - Métodos de Otimização
+                        - Álgebra Linear: mínimos
+
+                    - Cálculo:
+                        - Normalizar atributos
+                        - Evitar outliers nos dados de treinamento
+                        - Se a diferença entre o menor e o maior valor de um atributo (ou da variável de predição) é muito grande, deve-se aplicar uma transformação nos valores antes de utilizar a regressão
+                        - Atributos altamente correlacionados não devem ser utilizados simultaneamente no modelo de Regressão, pois dificultam a análise do modelo e o cálculo dos coeficientes
+                    - Vantagens:
+                        - Uma das vantagens da regressão linear é a interpretabilidade do modelo gerado
+  
+                    - Se todos os atributos são igualmente importantes para predizer a variável y, então os coeficientes associados a todos os atributos devem possuir magnitudes semelhantes
+                    - Coeficientes de maior magnitude (mais distantes de zero) apontam uma maior importância do atributo na predição da variável y
+                    - Técnicas de Regularização do Problema: Métodos matemáticos para o cálculo dos coeficientes que ”forçam” coeficientes menos relevantes a terem valores próximos de zero
+                        ### Regressão Ridge
+                        ### Regressão Lasso
+                        - Vantagens:
+                            - Obter coeficientes próximos de zero é ótimo para identificar atributos pouco relevantes
+                        - Desvantagens:
+                            - Empregam um parâmetro que ajusta o peso do termo de regularização no cálculo dos coeficientes, e o ajuste desse parâmetro pode não ser tarefa fácil
+                            - Exige mais dos recursos computacionais
+                    - SAIBA MAIS: Veja as validações para as Técnicas de REGRESSÃO
+
+        - "Simplicidade primeiro" ao escolher um método ou modelo;
+        -  Quando temos um baixo erro no treinamento e alto erro na validação, temos um clássico problema de overfitting, que é um problema de alta variância.
+        - Overfitting:
+            - O modelo representa bem os dados de treinamento, mas não necessariamente o conjunto de dados reais;
+            - Quando fazemos uma predição com base nos dados de treinamento, mas a REALIDADE trás dados bem diferentes dos que foram preditos;
+            - Pode ocorrer quando um conjunto de dados de treinamento também é usado para validação.
+        - Underfitting:
+            - É uma tradução para o inglês de sub-ajustado;
+            - Nosso modelo não conseguiu aprender suficiente sobre os dados;
+            - Leva à um erro elevado tanto nos dados de treino, quanto nos dados de teste;
+            - Em outras palavras, é quando temos um alto erro no treinamento com valor próximo ao erro na validação;
+            - É um problema de alto bias.
+        - Diferença entre parâmetros e hiperparâmetros
+            - Os parâmetros, também conhecidos como parâmetros do modelo, são estabelecidos pelos algoritmos de treinamento com procedimentos internos. Por exemplo, em métodos de agrupamento hierárquico, os parâmetros são os valores usados em cada variável para fazer a divisão. Já os hiperparâmetros são valores estabelecidos pelo usuário ou por algum método de otimização externa. Por exemplo, no algoritmo k-means, temos o hiperparâmetro k;
+            - O número de níveis em um Agrupamento hierárquico é um hiperparâmetro, já que devemos defini-lo antes de usar a técnica. Existem algumas maneiras pelas quais esse nível é identificado automaticamente, mas, considerando o que aprendemos nesta disciplina, podemos dizer que seria um hiperparâmetro;
+            - No caso dos valores escolhidos em cada nível para separar os valores da variável, esse valor é um parâmetro, pois é definido automaticamente pelo algoritmo de treinamento.
+        - Modelo Nulo: 
+            - Normalmente, o modelo nulo é como fazer previsões aleatórias. Por exemplo, se for preciso fazer uma classificação entre duas classes, o modelo nulo seria como jogar uma moeda e escolher entre cara e coroa, com 50% de probabilidade cada. Nesse sentido, vencer o modelo nulo significa que o modelo proposto é melhor que a aleatoriedade.
+    4 - Ajuste do Modelo
+        - Qualidade do modelo gerado = adequação do modelo para representar os dados + qualidade dos dados de treinamento;
+        - Modelos preditivos possuem parâmetros que precisam ser ajustados a partir de informações contidas nos dados de treinamento;
+        - Aumentar a complexidade (ou capacidade) de um modelo pode gerar overfitting. Dados de treinamento de baixa qualidade tendem a gerar modelos pouco eficazes em termos de predição.
+    5 - Validação do Modelo
+        - Descritivos
+            - Não supervisionados, não possuindo dados de treinamento, o que demanda abordagens específicas para a validação;
+            - Os atributos extraídos representam, de fato, o conjunto de interesse?
+            - Precisamos definir uma métrica capaz de dizer o quão eficaz ele é. Em geral, a métrica é utilizada de forma comparativa – isto é, aplicam-se diferentes métodos ao mesmo dado e ao mesmo problema, comparando o resultado da métrica quando aplicada a cada método;
+            - EXEMPLOS de Validações:
+                ### AGRUPAMENTO (CLUSTERING)
+                    - Os grupos encontrados realmente compreendem objetos semelhantes?
+                    - A soma total da média das distâncias entre os objetos e o centróide define se um agrupamento é mais ou menos eficaz:
+                        - Cada conjunto possui vários subconjuntos;
+                        - Cada subconjunto terá uma média de distância entre o objeto e o centróide;
+                        - Basta somar todas essas médias dos subconuntos e teremos um valor que permite mensurar a eficácia desse modelo nesse conjunto;
+                        - Quanto menor a soma das médias, melhor a qualidade;
+                    - Porém, apenas esse cálculo não é suficiente para dizer se o agrupamento é bom ou ruim;
+        - Preditivos
+            - Supervisionados, logo o conjunto de treinamento pode ser utilizado para teste
+            - Possui resposta esperada que pode ser usada para validar se o modelo atende o propósito esperado;
+            - Compara a resposta com o conjunto de treinamento;
+            - Conjunto de Dados:
+                - Conjunto de Dados de Treinamento para ajustar o modelo:
+                - Conjunto de Dados de Teste para avaliação do modelo
+            - Para evitar um overfitting:
+                - Os dados de treinamento não devem ser utilizados diretamente devido ao fenômeno de overfitting, que, em geral, resulta em erros baixos para os dados de treinamento, mesmo que o modelo gerado não seja eficaz para o problema como um todo;
+                - Dividir os dados, como mostrado acima;
+                    - Os dados de treinamento devem ser divididos em um subconjunto de treinamento e em um subconjunto de teste. No caso, esse último não é empregado para ajustar o modelo, mas somente para avaliar a sua qualidade;
+                - Comparar esses dados para avaliar a quantidade de erros.
+            - Exemplo: 
+                - 60% dos dados para treinamento, 20% dos dados para validação e 20% dos dados para teste;
+                - Embaralhar os dados antes de fazer essas divisões para que cada divisão tenha uma representação precisa do conjunto de dados.
+            - EXEMPLOS de Validações:
+                ### CLASSIFICAÇÃO
+                    - Métricas de Validação
+                        - Quando os dados estão desbalanceados (isto é, quando uma das classes possui uma quantidade de objetos muito diferente das demais classes), algumas métricas, como Acurácia ou Sensitividade, não são boas medidas de qualidade.
+                        ### Acurácia ou Exatidão
+                            - Fórmula:
+                                Acurácia = (VP + VN) / Todas as Predições
+                            - A porcentagem de previsões corretas para os dados de teste;
+                            - Grau de proximidade de uma estimativa com seu parâmetro (ou valor verdadeiro);
+                            - Indica uma performance geral do modelo;
+                            - Dentre todas as classificações, quantas o modelo classificou corretamente;
+                            - Pode haver situações em que ela é enganosa;
+                            - Exemplo:
+                                - Criação de um modelo de identificação de fraudes em cartões de crédito;                 
+                        ### Precisão
+                            - Fórmula:
+                                Precisão Positiva = VP / (VP + FP)
+                                Precisão Negativa = VN / (VN + FN)
+                            - A fração de exemplos relevantes (verdadeiros positivos) entre todos os exemplos que foram previstos;
+                            - Grau de consistência da grandeza medida com sua média;
+                            - Dentre todas as classificações de classe POSITIVO que o modelo fez, quantas estão corretas;
+                            - Pode ser usada quando os FALSOS POSITIVOS são considerados mais prejudiciais que os FALSOS NEGATIVOS;
+                            - Útil nos casos em que as classes não são distribuídas uniformemente
+                            - Exemplo:
+                                - Ao classificar uma ação como um bom investimento, é necessário que o modelo esteja correto, mesmo que acabe classificando bons investimentos como maus investimentos (situação de FN) no processo;
+                        ### Recall, Revocação ou Sensibilidade
+                            - Fórmula:
+                                Recall = VP / VP + FN
+                            - A fração de exemplos que foram previstos como pertencentes a uma classe em relação a todos os exemplos que realmente pertencem à classe;
+                            - Dentre todas as situações de classe POSITIVO como valor esperado, quantas estão corretas;
+                            - Pode ser usada quando os FALSOS NEGATIVOS são considerados mais prejudiciais que os FALSOS POSITIVOS;
+                            - Útil nos casos em que as classes não são distribuídas uniformemente
+                            - Exemplo:
+                                - O modelo deve de qualquer maneira encontrar todos os pacientes doentes, mesmo que classifique alguns saudáveis como doentes (situação de FP) no processo;
+                        ### Taxa Falso Positivo
+                            - Fórmula:
+                                Taxa Falso Positivo = FP / (FP + VN)
+                        ### Taxa Falso Negativo 
+                            - Fórmula
+                                Taxa Falso Negativo = FN / (FN + VP)
+                        ### F-Score ou F1-Score
+                            - Fórmula:
+                                F-Score = 2 x (Precisão x Sensibilidade) / (Precisão + Sensibilidade)
+                            - Média harmônica entre precisão e recall
+                            - Está muito mais próxima dos menores valores do que uma média aritmética simples;
+                            - Um F1-Score baixo indica que, ou a precisão, ou o recall está baixo.  
+                        ### Especificidade
+                            - Fórmula:
+                                Especificidade = VN / (FP + VN)
+                        ### AUC (Area under the ROC Curve)
+                        ### Log Loss
+                        ### Viés de Previsão  
+                    - Visualização
+                        ### Matriz de Confusão
+                            - Os 4 possíveis resultados das Métricas de Classificaão são plotados em uma Matriz de Confusão
+                            - O que é:
+                                - É uma tabela com duas linhas e duas colunas que relata o número de Falsos Positivos, Falsos Negativos, Verdadeiros Positivos e Verdadeiros Negativos;
+                                - Um dos mecanismos mais utilizados para avaliar o desempenho de classificadores binários
+                            - Objetivo:
+                                - Calcular a quantidade de Verdadeiros Positivos, Verdadeiros Negativos, Falsos Positivos e Falsos Negativos;
+                                - Calcular a Acurácia e a Sensibilidade;
+                                - Definir um conjunto de medidas de qualidade. 
+                                    - Não são apropriadas quando existe desbalanceamento entre classes
+                            - O desempenho não é adequado, uma vez que a Taxa de FP está longe de zero.
+                            - O classificador ideal é o que tem Sensitividade próxima de 1 (um) e Taxa de FP próxima de 0 (zero)
+                            - Uso:
+                                - Análise Preditiva;
+                            - Vantagem:
+                                - Permite uma análise mais detalhada do que a mera proporção de classificações corretas (Precisão);
+                            - Exemplo para Classificação Binária;
+                            - Gerar matriz depois de fazer previsões em seus dados de teste e identificar cada PREVISÃO como um dos quatro resultados possíveis descritos acima.
+                        ### Conjunto de Dados Flor Iris, Conjunto de Dados da Íris de Anderson ou Conjunto de Dados Iris de Fisher:
+                            - Conjunto de dados multivariados
+                            - Estender a Matriz de Confusão para traçar previsões de classificação multiclasse.
+                        ### ROC (Receiver Operator Characteristic) Curve
+                    - Qualidade:
+                        - As medidas de qualidade não são apropriadas quando existe desbalanceamento entre classes;
+                        - Uma técnica ideal é aquela que tem Sensitividade próximo de 1 com Taxa de Falso Positivo próximo de 0;
+                    ### Árvore de Decisão:
+                        - Uma estratégia possível e utilizada por vários algoritmos é testar todas as divisões possíveis para todos os atributos, escolhendo aquela que melhor satisfaz algum critério de qualidade
+                        - Um critério de qualidade bastante utilizado é o índice de Gini, que mede o quão pura é uma região do espaço. Índice de Gini igual a zero indica que a região contém objetos pertencentes a apenas uma classe, sendo a mais pura possível
+                        - A divisão é feita de modo que ambas as regiões geradas no particionamento sejam as mais puras possível
+                ### REGRESSÃO
+                    - Métricas de Validação
+                        ### Mean Squared Error (MSE)
+                        ### Root Mean Squared Error (RMSE)
+                        ### Root Mean Squared Log Error (RMSLE)
+                        ### Mean Absolute Error (MAE) ou Mean Absolute Deviation (MAD)
+                        ### Max Error
+                        ### R Square (R2)
+                        ### Adjusted R Square
+                    - Técnica de Validação
+                        ### Validação Cruzada ou Cross Validation:
+                            - Particionar os dados randomicamente em conjuntos de treinamento e conjunto de teste
+                            - A regressão é feita (cálculo dos coeficientes) utilizando-se os dados de treinamento, e o modelo gerado é avaliado nos dados de teste
+                            - A eficácia e a predição são obtidas calculando-se o erro médio e o valor médio predito a partir de todos os modelos produzidos
+                            - Objetivo:
+                                - Avaliar a capacidade de generalização de um modelo;
+                                - Detectar sobreajuste, ou seja, a não generalização de um padrão;
+                                - Avaliar o desempenho de modelos de machine learning;
+                                - Proteger contra overfitting em um modelo preditivo, particularmente quando a quantidade de dados pode ser limitada;
+                            - EXEMPLOS:
+                                - Validação Cruzada de 2 Vezes:
+                                    - Dividir a população em 50:50;
+                                    - Treinamos na 1ª parte e validamos/testamos na 2ª parte;
+                                    - Depois, fazemos o contrário, treinamos na 2ª parte e validamos/testamos na 1ª;
+                                    - Reduz o viés devido à seleção da amostra até certo ponto, mas fornece uma amostra menor para treinar o modelo;
+                                - Validação Cruzada k-fold:
+                                    - Consiste em dividir o conjunto total de dados em k subconjuntos mutuamente exclusivos do mesmo tamanho:
+                                    - Um subconjunto é utilizado para teste;
+                                    - Os k-1 restantes são utilizados para treinamento, ou seja, para estimação dos parâmetros, fazendo-se o cálculo da Acurácia do modelo;
+                                    - A cada iteração, muda de subconjunto para teste, até que todos os subconjuntos sejam usados para teste, enquanto os outros servem para treinamento;
+                                    - No final, calculamos a média dos termos de erro para descobrir qual dos modelos é o melhor;
+                                    - Reduz o viés de seleção e a variância no poder de previsão;
+
+- Um projeto sobre ciência de dados se baseia nas seguintes etapas:
+    - entender o problema a ser resolvido;
+    - definir os objetivos do projeto;
+    - procurar os dados necessários;
+    - preparar esses dados para que possam ser usados;
+    - identificar métodos adequados e escolher entre eles;
+    - ajustar os hyper-parâmetros de cada método;
+    - analisar e avaliar os resultados e
+    - refazer as tarefas de pré-processamento e repetir os
+    experimentos
+
+METODOLOGIAS PARA PROJETOS DE DADOS
+
+    ### KNOWLEDGE DISCOVERY IN DATABASE PROCESS (KDD PROCESS)
+        1 - Compreensão de domínio
+        2 - Criação de um conjunto de dados objetivo
+        3 - Limpeza de dados e pré-processamento
+        4 - Redução e projeção de dados
+        5 - Escolha da função de mineração de dados
+        6 - Escolha do algoritmo de mineração de dados
+        7 - Mineração de dados
+        8 - Interpretação
+        9 - Uso do conhecimento descoberto
+
+        - Processo Cíclico
+    
+    ### CRISP-DM
+        - CRoss-Industry Standard Process for Data Mining
+        - Em todos os anos, a metodologia CRIPS_DM aparece como a mais utilizada.
+
+        1 - Entendendo o Problema
+        2 - Entendimento dos Dados
+        3 - Preparação de Dados
+        4 - Modelagem
+            - Selecionar a Técnica
+            - Separar conjuntos para testes
+            - Construir o modelo
+            - Avaliar o modelo
+        5 - Avaliação
+            - Comparar resultados com os requisitos do cliente
+            - Comunicar os resultados ao cliente
+            - Obter algum tipo de "aceite" do cliente
+        6 - Implementação
+
+CASOS DE ESTUDO
+
+    - CASE STUDY 1 – CÂNCER DE MAMA EM WISCONSIN - CRISP-DM
+        1 - Entendendo o Problema
+            - Objetivo:
+                - Entender os padrões que podem existir na massa mamária para diagnosticar o câncer de mama;
+        2 - Entendimento dos Dados
+        3 - Preparação de Dados
+        4 - Modelagem
+            - K-means
+            - Curva Elbow
+        5 - Avaliação
+        6 - Implementação
+
+    - CASE STUDY 2 – PREVENDO PREÇOS DE AÇÕES BASEADOS EM MÍDIAS SOCIAIS
+
+        >> Principles of data science (OZDEMIR, 2016) – Capítulo 13, seção Case study 1 – predicting stock prices based on social media
+
+CICLO DE VIDA DA CIÊNCIA DE DADOS:
+    1 - Entendimento do Negócio;
+    2 - Mineração de Dados;
+    3 - Limpeza dos Dados;
+    4 - Exploração dos Dados;
+    5 - Engenharia de Recursos;
+    6 - Modelagem Preditiva;
+    7 - Visualização dos Dados.
+
+CICLO DE VIDA DOS DADOS (Cíclico):
+    1 - Coleta
+    2 - Processamento
+    3 - Análise
+    4 - Compartilhamento
+    5 - Armazenamento
+    6 - Reutilização
+    7 - Eliminação
+
+    >> https://www.xpositum.com.br/ciclo-de-vida-dos-dados-e-lgpd
+
+- De acordo com o blog do Microsoft Azure, normalmente usamos a ciência de dados para responder a 5 tipos de perguntas:
+    1 - Quanto ou quantos? (REGRESSÃO);
+    2 - Qual categoria? (CLASSIFICAÇÃO);
+    3 - Qual grupo? (Agrupamento);
+    4 - Isso está ficando estranho? (Detecção de anomalia);
+    5 - Qual opção deve ser adotada? (Recomendação).
+
+- PRIVACIDADE E SEGURANÇA
+
+    - Consentimento informado - O sujeito humano deve:
+        - Ser informado sobre o experimento;
+        - Consentir com o experimento voluntariamente e
+        - Ter o direito de retirar o consentimento a qualquer momento
+
+    -  Organisation for Economic Co-operation and Development (OCDE)
+        - Um framework para a proteção de privacidade;
+        - Protege o uso:
+            - Coleção para um propósito;
+            - Uso apenas para fins autorizados;
+            - Prestação de contas em todos esses princípios.
+
+        1. limitação de coleta;
+        2. qualidade dos dados;
+        3. especificação final;
+        4. limitação de uso;
+        5. salvaguardas de segurança;
+        6. abertura;
+        7. participação individual e
+        8. prestação de contas
+
+        ### Técnicas de Anonimização:
+            - Como funciona?
+                - Substituir dados por outros gerados aleatoriamente ou identificadores padrão;
+                - Abstração: Substituir valores por intervalos;
+                - Agrupar os dados e substituí-los pelo centróide do cluster;
+                - Remover valores que contenham identificadores;
+
+                - Reidentificação
+                    - A reidentificação é frequentemente trivial:
+                        - por exemplo: lista anônima de alunos admitidos que apresentam graduação universitária e GPA médio;
+                    - A reidentificação é possível com alta certeza em muitos casos:
+                        - vinculando o conjunto de dados anonimizado a outros dados
+                        públicos não anonimizados
+            - Desvantagens:
+                - Não é muito bom para pesquisa;
+            
+        ### Privacidade Diferencial
+            - A privacidade diferencial é um método matemático por meio do qual aprendemos informações úteis de uma população sem aprender nada a respeito de cada indivíduo em particular.
+
+        ### Aprendizado Federado
+            - O aprendizado federado é um método utilizado para injetar ruído no processo de coleta de dados ou nas respostas das consultas ao banco de dados. O ruído protege a privacidade dos indivíduos, mas pode ser removido em um nível de agregação. Dessa forma, as estatísticas calculadas no nível da população são válidas e úteis.
+
+- CALLING BULLSHIT
+
+    >> How to call B.S. on big data: a practical guide.
+
+
+https://developers.google.com/machine-learning/crash-course
+https://developers.google.com/machine-learning/crash-course/classification/roc-and-auc

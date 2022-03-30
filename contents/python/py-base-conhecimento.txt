@@ -1,0 +1,63 @@
+
+#####################
+Sobre o Python
+
+    - É fácil de aprender, é de fácil manutenção e possui o modo interativo;
+    - É orientado à objetos, multi-propósito e uma linguagem de alto nível;
+    - Está presente nas áreas de Desenvolvimento Web, IA, Computação Gráfica, Big Data, Ciência de Dados, etc.;
+    - É case sensitive;
+
+##############################################
+Guia de Estudos:
+
+    Aprenda Python:
+        Gratuito
+        Android: https://play.google.com/store/apps/details?id=com.feteps.projeto.aprendapython
+    SoloLean:
+        Gratuito e Pago
+        Android: https://play.google.com/store/apps/details?id=com.sololearn
+        iOS: https://apps.apple.com/br/app/sololearn-learn-to-code/id1210079064
+        Web: https://www.sololearn.com/learning/
+    W3Schools:
+        Android: https://play.google.com/store/apps/details?id=com.w3.schools
+        Web: https://www.w3schools.com/python/default.asp
+    Data Camp:
+        Gratuito e Pago
+        Android: https://play.google.com/store/apps/details?id=com.datacamp
+        iOS: https://apps.apple.com/br/app/datacamp-learn-data-science/id1263413087
+        Desktop: https://www.datacamp.com/onboarding
+    Learn Python: Programiz:
+        Gratuito e Pago
+        iOS: https://apps.apple.com/br/app/learn-python-programiz/id1472188189
+    PythonX:
+        Gratuito e Pago
+        Android: https://play.google.com/store/apps/details?id=python.learnpython.learn.pythonx.coding.programming.python3.tutorials.codingx
+    Mimo:
+        Gratuito e Pago
+        Android: https://play.google.com/store/apps/details?id=com.getmimo
+        iOS: https://apps.apple.com/br/app/mimo-learn-coding-programming/id1133960732
+    Learn Python Coding Lessons:
+        Gratuito
+        iOS: https://apps.apple.com/br/app/learn-python-coding-lessons/id1524447908
+    Python Programs:
+        Gratuito
+        https://play.google.com/store/apps/details?id=com.vrpmeone.pythonPractice
+    Learn Python - ApkZube
+        Gratuito
+        Android: https://play.google.com/store/apps/details?id=com.apkzube.learnpython
+
+########################
+Tipos de Dados
+
+<img>
+########################
+Pré-Requisitos e Configuração do Ambiente
+
+- Baixe e instale o Python; --https://www.python.org/downloads/
+- Se usa o VSCode, vá em Extensões (Ctrl+Shift+X) e instale os seguintes itens:
+
+########################
+Strings
+
+f-string = formatted strings. Permite mostrar expressões com string e outros valores sem gerar erro
+

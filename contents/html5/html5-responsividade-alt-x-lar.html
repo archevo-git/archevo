@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>CSS3 - Responsividade - Altura x Largura | ArchEvo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="initial-scale=1.0, width=device-width">
+        <meta name="author" content="William Cardoso">
+        <meta name="description" content="O 'HTML5 - Resumo & Padrões' é uma página para consultas rápidas e aprendizado, que centraliza diversos conteúdos resumidos, links úteis, padrões, recomendações e boas práticas.">
+        <base href="C:/_PROJETOS/archevo/">
+        <link rel="icon" href="medias/_logos/logo-archevo-2.png">
+        <style>
+            body{
+                background-color: #111;
+            }
+
+            .container{
+                margin: auto; /* Para o vídeo ficar no meio da tela */
+                width: 80%;
+            }
+
+            .video-area{
+                background-color: #111;
+                padding: 0 0 56.22%; /* A '%' refere-se a proporção da altura em relação à  largura (height / width * 100) */
+                position: relative;
+            }
+
+            .video-area iframe{
+                border: 0;
+                bottom: 0;
+                left: 0;
+                height: 100%;
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="video-area">
+                <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=0&loop=1&controls=1">
+                </iframe>
+            </div>
+        </div>
+
+    </body>
+</html>
+
+

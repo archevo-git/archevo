@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>CSS3 - Flexbox | ArchEvo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+
+        <meta name="author" content="William Cardoso">
+        <meta name="description" content="A 'HTML5 - Resumo & Padrões' é uma página para consultas rápidas e aprendizado, que centraliza diversos conteúdos resumidos, links úteis, padrões, recomendações e boas práticas.">
+
+        <meta property="og:url" content="../css3/css-resumo-e-padroes.html">
+        <meta property="og:type" content="article">
+        <meta property="og:title" content="HTML5 - Resumo e Padrões">
+        <meta property="og:description" content="A 'HTML5 - Resumo & Padrões' é uma página para consultas rápidas e aprendizado, que centraliza diversos conteúdos resumidos, links úteis, padrões, recomendações e boas práticas.">
+        <meta property="og:image" content="C:\_PROJETOS\archevo\medias\examples\title.png">
+
+        <base href="C:/_PROJETOS/archevo/">
+        <link rel="icon" href="medias/_logos/logo-archevo-2.png">
+        <link rel="stylesheet" href="styles/contents-new.css">
+        <link rel="stylesheet" href="styles/contents-aside-icons.css">
+        <link rel="stylesheet" href="styles/code-box.css">
+        <style>
+            .container-1{
+                align-items: center;
+                background-color: indigo;
+                display: flex;
+                flex-direction: row;
+                height: 200px;
+                justify-content: center;
+                margin-bottom: 10px;
+                padding: 20px;
+                text-align: center;
+            }
+
+            .item-1{
+                background-color: gold;
+                flex: 1; /* Grupo a qual o item pertence e o tamanho proporcioal. */
+                font-size: x-large;
+                margin: 10px;
+            }
+
+            .item-2{
+                background-color: gold;
+                flex: 1;
+                font-size: x-large;
+                margin: 10px;
+                order: -1;
+            }
+
+            .item-3{
+                align-self: flex-start;
+                background-color: gold;
+                flex: 1;
+                font-size: x-large;
+                margin: 10px;
+                order: -1;
+            }
+
+            .item-4{
+                background-color: gold;
+                flex: 3;
+                font-size: x-large;
+                margin: 10px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container-1">
+            <div class="item-1">Item 1</div>
+            <div class="item-2">Item 2</div>
+            <div class="item-3">Item 3</div>
+            <div class="item-4">Item 4</div>    
+        </div>
+    </body>
